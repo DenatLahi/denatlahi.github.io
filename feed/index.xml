@@ -9,10 +9,10 @@
 
 <channel>
 	<title>DENAT LAHI</title>
-	<atom:link href="http://localhost/feed/?simply_static_page=2677" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="http://localhost/feed/?simply_static_page=18740" rel="self" type="application/rss+xml" />
+	<link>httpdenatlahi.com/</link>
 	<description></description>
-	<lastBuildDate>Sat, 19 Aug 2023 19:15:08 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 20 Aug 2023 21:57:42 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
