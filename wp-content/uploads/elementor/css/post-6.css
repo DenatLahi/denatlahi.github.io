@@ -12,7 +12,7 @@
 						body[data-elementor-device-mode="mobile_extra"] .ha-scroll-to-top-wrap.edit-mode,
 						body[data-elementor-device-mode="mobile_extra"] .ha-scroll-to-top-wrap.single-page-off{visibility:visible;opacity:1;}body[data-elementor-device-mode="mobile"] .ha-scroll-to-top-wrap,
 						body[data-elementor-device-mode="mobile"] .ha-scroll-to-top-wrap.edit-mode,
-						body[data-elementor-device-mode="mobile"] .ha-scroll-to-top-wrap.single-page-off{visibility:visible;opacity:1;}.ha-scroll-to-top-wrap .ha-scroll-to-top-button{bottom:10px;z-index:200;background-color:#3D3D3D8A;border-radius:0px 0px 0px 0px;}.ha-scroll-to-top-wrap .ha-scroll-to-top-button i{font-size:18px;color:#D1D1D1;}.ha-scroll-to-top-wrap .ha-scroll-to-top-button img{height:18px;width:18px;}.ha-scroll-to-top-wrap .ha-scroll-to-top-button span{color:#D1D1D1;}.ha-scroll-to-top-wrap .ha-scroll-to-top-button:hover i{color:#EFEFEF;}.ha-scroll-to-top-wrap .ha-scroll-to-top-button:hover span{color:#EFEFEF;}.ha-scroll-to-top-wrap .ha-scroll-to-top-button:hover{background-color:#383838E6;}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}body[data-elementor-device-mode="widescreen"] .ha-scroll-to-top-wrap,
+						body[data-elementor-device-mode="mobile"] .ha-scroll-to-top-wrap.single-page-off{visibility:visible;opacity:1;}.ha-scroll-to-top-wrap .ha-scroll-to-top-button{bottom:62px;right:23px;z-index:200;background-color:#454545;border-radius:1px 1px 1px 1px;}.ha-scroll-to-top-wrap .ha-scroll-to-top-button i{font-size:9px;color:#FFFFFF;}.ha-scroll-to-top-wrap .ha-scroll-to-top-button img{height:9px;width:9px;}.ha-scroll-to-top-wrap .ha-scroll-to-top-button span{color:#FFFFFF;}.ha-scroll-to-top-wrap .ha-scroll-to-top-button:hover i{color:#EFEFEF;}.ha-scroll-to-top-wrap .ha-scroll-to-top-button:hover span{color:#EFEFEF;}.ha-scroll-to-top-wrap .ha-scroll-to-top-button:hover{background-color:#717171;}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}body[data-elementor-device-mode="widescreen"] .ha-scroll-to-top-wrap,
 						body[data-elementor-device-mode="widescreen"] .ha-scroll-to-top-wrap.edit-mode,
 						body[data-elementor-device-mode="widescreen"] .ha-scroll-to-top-wrap.single-page-off{visibility:visible;opacity:1;}body[data-elementor-device-mode="desktop"] .ha-scroll-to-top-wrap,
 						body[data-elementor-device-mode="desktop"] .ha-scroll-to-top-wrap.edit-mode,
@@ -40,4 +40,7 @@
 						body[data-elementor-device-mode="mobile_extra"] .ha-scroll-to-top-wrap.edit-mode,
 						body[data-elementor-device-mode="mobile_extra"] .ha-scroll-to-top-wrap.single-page-off{visibility:visible;opacity:1;}body[data-elementor-device-mode="mobile"] .ha-scroll-to-top-wrap,
 						body[data-elementor-device-mode="mobile"] .ha-scroll-to-top-wrap.edit-mode,
-						body[data-elementor-device-mode="mobile"] .ha-scroll-to-top-wrap.single-page-off{visibility:visible;opacity:1;}}
+						body[data-elementor-device-mode="mobile"] .ha-scroll-to-top-wrap.single-page-off{visibility:visible;opacity:1;}}/* Start custom CSS */.ha-scroll-to-top-button {
+width: 31px;
+height: 31px;
+}/* End custom CSS */
