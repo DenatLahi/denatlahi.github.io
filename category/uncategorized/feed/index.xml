@@ -8,9 +8,9 @@
 	>
 
 <channel>
-	<title>Behind The Scenes</title>
-	<atom:link href="http://localhost/feed/?simply_static_page=7014" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<title>Uncategorized &#8211; Behind The Scenes</title>
+	<atom:link href="http://localhost/category/uncategorized/feed/?simply_static_page=7127" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
 	<description></description>
 	<lastBuildDate>Mon, 21 Aug 2023 21:16:31 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,20 +21,20 @@
 	<generator>https://wordpress.org/?v=6.3</generator>
 	<item>
 		<title>Hello world!</title>
-		<link>./../hello-world/index.html</link>
-					<comments>./../hello-world/index.html#respond</comments>
+		<link>./../../../hello-world/index.html</link>
+					<comments>./../../../hello-world/index.html#respond</comments>
 		
 		<dc:creator><![CDATA[admin4]]></dc:creator>
 		<pubDate>Mon, 21 Aug 2023 21:16:31 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">./../index.html?p=1</guid>
+		<guid isPermaLink="false">./../../../index.html?p=1</guid>
 
 					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
 										<content:encoded><![CDATA[
 <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../hello-world/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>./../../../hello-world/feed/index.html</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
