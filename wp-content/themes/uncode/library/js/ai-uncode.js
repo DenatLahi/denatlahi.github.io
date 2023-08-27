@@ -111,13 +111,14 @@
 			var pixelRatio = getDevicePixelRatio();
 			var imgBreakpoint = '2880';
 			var limitDensity = scripts[index].getAttribute('data-limit-density');
+			var secureFlag = location.protocol === 'https:' ? ';secure' : '';
 
 			pixelRatio = limitDensity && pixelRatio > 2 ? 2 : pixelRatio;
 
 			path = path + scripts[index].getAttribute('data-home');
 			if (scripts[index].getAttribute('data-async') == 'true') cookiesEnable = false;
 			// Set the general screen size cookie
-			if (cookiesEnable) doc.cookie = uncode + '.screen=' + screenWidth + path; // + 'x' + screenHeight + '@' + pixelRatio + path;
+			if (cookiesEnable) doc.cookie = uncode + '.screen=' + screenWidth + path + secureFlag; // + 'x' + screenHeight + '@' + pixelRatio + path;
 			w.uncodeScreen = screenWidth;
 			// Set the image engine cookie (if enabled)
 			if (!scripts[index].getAttribute('data-disable-images')) {
@@ -138,7 +139,7 @@
 			}
 
 			if (cookiesEnable) {
-				doc.cookie = uncode + '.images=' + imgBreakpoint + path;
+				doc.cookie = uncode + '.images=' + imgBreakpoint + path + secureFlag;
 			}
 
 			w.uncodeImages = imgBreakpoint;
@@ -151,7 +152,7 @@
 					var emRatio = winWidth / measureWindowEmWidth(parseFloat(scripts[index].getAttribute('data-em-precision') || .5, 10) / 100);
 					cssBreakpoint = screenWidth + 'x' + screenHeight + '@' + (Math.round(emRatio * 10) / 10);
 				}
-				doc.cookie = uncode + '.css=' + cssBreakpoint + path;
+				doc.cookie = uncode + '.css=' + cssBreakpoint + path + secureFlag;
 			}
 			break;
 		}
