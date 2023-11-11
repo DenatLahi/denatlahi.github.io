@@ -8,7 +8,7 @@
 <channel>
 	<title>
 	Comments on: Grebe reningsdammar BTS &#8211; Finns mobile footage	</title>
-	<atom:link href="http://localhost/grebe-reningsdammar-bts/feed/?simply_static_page=26073" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost/grebe-reningsdammar-bts/feed/?simply_static_page=26395" rel="self" type="application/rss+xml" />
 	<link>./../index.html</link>
 	<description></description>
 	<lastBuildDate>Sat, 14 Oct 2023 21:33:10 +0000</lastBuildDate>
@@ -16,6 +16,6 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.3.2</generator>
+	<generator>https://wordpress.org/?v=6.4.1</generator>
 </channel>
 </rss>
