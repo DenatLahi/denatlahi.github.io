@@ -525,6 +525,14 @@
 @media (max-width: 320px) { .fontsize-120354 { font-size: 28px; }}
 
 /*----------------------------------------------------------
+#Font-size: 55px
+----------------------------------------------------------*/
+.fontsize-355770 { font-size: 55px; }
+@media (max-width: 959px) { .fontsize-355770 { font-size: 36.666666666667px; }}
+@media (max-width: 569px) { .fontsize-355770 { font-size: 35px; }}
+@media (max-width: 320px) { .fontsize-355770 { font-size: 28px; }}
+
+/*----------------------------------------------------------
 #Line-height: 1.75
 ----------------------------------------------------------*/
 .fontheight-524109 { line-height: 1.75; }
