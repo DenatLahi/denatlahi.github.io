@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This sitemap was dynamically generated on November 15, 2023 at 5:47 pm by All in One SEO v4.5.0 - the original SEO plugin for WordPress. -->
+
+<?xml-stylesheet type="text/xsl" href="./default-sitemap.xsl?sitemap=portfolio"?>
+<urlset
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+	<url>
+		<loc><![CDATA[./portfolio/original-layout/]]>/index.html</loc>
+		<lastmod><![CDATA[2022-08-16T13:55:35+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-4-min.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-4-min-uai.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-7-min.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-1-min.jpg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[./portfolio/classic-layout/]]>/index.html</loc>
+		<lastmod><![CDATA[2021-12-15T23:32:09+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-2-min.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-3-min-uai.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-6-min-uai.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-4-min-uai.jpg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[./portfolio/wedding-photo-layout/]]>/index.html</loc>
+		<lastmod><![CDATA[2021-12-15T23:22:01+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-8-min.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-1-min.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-9-min.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-4-min.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-7-min.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-2-min.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-3-min.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-10-min.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-6-min.jpg]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost:10035/wp-content/uploads/2022/09/image-placeholder-5-min.jpg]]></image:loc>
+		</image:image>
+	</url>
+</urlset>
