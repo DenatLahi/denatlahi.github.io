@@ -9,10 +9,10 @@
 
 <channel>
 	<title>denatlahi.com</title>
-	<atom:link href="http://localhost/feed/?simply_static_page=24787" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost/feed/?simply_static_page=24925" rel="self" type="application/rss+xml" />
 	<link>./../index.html</link>
 	<description></description>
-	<lastBuildDate>Fri, 08 Dec 2023 22:39:24 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 08 Dec 2023 22:42:42 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
