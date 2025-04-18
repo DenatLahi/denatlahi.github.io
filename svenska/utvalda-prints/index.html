@@ -49,6 +49,14 @@ document.addEventListener('keydown', function(event) {
     showScreenshotWarning(); // Handle screenshot attempt
   }
 });
+document.addEventListener("visibilitychange", function () {
+  if (document.hidden) {
+    document.body.style.filter = "blur(20px)";
+  } else {
+    document.body.style.filter = "none";
+  }
+});
+
 
 if (window.location.pathname.endsWith('/index.html') && !window.location.pathname.includes('/bestallning-av-fotoprints/')) {
   const newPath = window.location.pathname.replace(/\/index\.html$/, '/');
@@ -59,8 +67,12 @@ if (window.location.pathname.endsWith('/index.html') && !window.location.pathnam
 document.addEventListener("DOMContentLoaded", function () {
   const userLang = navigator.language || navigator.userLanguage;
   const hasRedirected = sessionStorage.getItem("langRedirectDone");
+  const ua = navigator.userAgent.toLowerCase();
+  const isInAppBrowser = ua.includes("instagram") || ua.includes("fbav");
 
-  if (userLang.startsWith('sv') && !window.location.pathname.startsWith('/svenska') && !hasRedirected) {
+  if (!hasRedirected && (
+      userLang.startsWith('sv') || isInAppBrowser
+    ) && !window.location.pathname.startsWith('/svenska')) {
     sessionStorage.setItem("langRedirectDone", "true");
     const newPath = '/svenska' + window.location.pathname;
     window.location.href = newPath;
@@ -99,7 +111,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel="stylesheet" id="uncodefont-google-css" href="//fonts.googleapis.com/css?family=Lora%3Aregular%2Citalic%2C700%2C700italic%7CCormorant%3A300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%7CInter%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%7CJost%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CInter+Tight%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CLato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic%7CLibre+Franklin%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7COswald%3A200%2C300%2Cregular%2C500%2C600%2C700&#038;subset=vietnamese%2Ccyrillic%2Clatin%2Ccyrillic-ext%2Clatin-ext%2Cgreek%2Cgreek-ext&#038;ver=2.8.5" type="text/css" media="all">
 <link rel="stylesheet" id="trp-language-switcher-style-css" href="./../../wp-content/plugins/translatepress-multilingual/assets/css/trp-language-switcher.css?ver=2.9.11" type="text/css" media="all">
 <link rel="stylesheet" id="uncode-gutenberg-frontend-css" href="./../../wp-content/themes/uncode/core/inc/compatibility/gutenberg/assets/css/uncode-gutenberg-frontend.css?ver=2.8.5" type="text/css" media="all">
-<link rel="stylesheet" id="uncode-style-css" href="./../../wp-content/themes/uncode/library/css/style.css?ver=879649819" type="text/css" media="all">
+<link rel="stylesheet" id="uncode-style-css" href="./../../wp-content/themes/uncode/library/css/style.css?ver=1024704858" type="text/css" media="all">
 <style id="uncode-style-inline-css" type="text/css">@media (max-width: 959px) { .navbar-brand > * { height: 26px !important;}}
 @media (min-width: 960px) { .limit-width { max-width: 1200px; margin: auto;}}
 body.menu-custom-padding .col-lg-0.logo-container, body.menu-custom-padding .col-lg-2.logo-container, body.menu-custom-padding .col-lg-12 .logo-container, body.menu-custom-padding .col-lg-4.logo-container { padding-top: 27px; padding-bottom: 27px; }
@@ -114,8 +126,8 @@ body.menu-custom-padding .col-lg-0.logo-container.shrinked, body.menu-custom-pad
 				width: calc( ( 100vw - 9px ) - 45px);
 			}
 		}</style>
-<link rel="stylesheet" id="uncode-icons-css" href="./../../wp-content/themes/uncode/library/css/uncode-icons.css?ver=879649819" type="text/css" media="all">
-<link rel="stylesheet" id="uncode-custom-style-css" href="./../../wp-content/themes/uncode/library/css/style-custom.css?ver=879649819" type="text/css" media="all">
+<link rel="stylesheet" id="uncode-icons-css" href="./../../wp-content/themes/uncode/library/css/uncode-icons.css?ver=1024704858" type="text/css" media="all">
+<link rel="stylesheet" id="uncode-custom-style-css" href="./../../wp-content/themes/uncode/library/css/style-custom.css?ver=1024704858" type="text/css" media="all">
 <style id="uncode-custom-style-inline-css" type="text/css">.btn-button_color-177256 { color:#ffffff !important; background-color:#242424 !important; border-color:#242424 !important; }.btn-button_color-177256:not(.btn-hover-nobg):not(.icon-animated):hover, .btn-button_color-177256:not(.btn-hover-nobg):not(.icon-animated):focus, .btn-button_color-177256:not(.btn-hover-nobg):not(.icon-animated):active { background-color:transparent !important; border-color:#242424 !important;}.btn-button_color-177256.btn-flat:not(.btn-hover-nobg):hover, .btn-button_color-177256.btn-flat:not(.btn-hover-nobg):focus, .btn-button_color-177256.btn-flat:active { background-color:#171717 !important; border-color:#171717 !important;}.btn-button_color-177256:not(.btn-flat):not(.btn-hover-nobg):not(.icon-animated):not(.btn-text-skin):hover, .btn-button_color-177256:not(.btn-flat):not(.btn-hover-nobg):not(.icon-animated):not(.btn-text-skin):focus, .btn-button_color-177256:not(.btn-flat):not(.btn-hover-nobg):not(.icon-animated):not(.btn-text-skin):active { color:#242424 !important; }.btn-button_color-177256.btn-outline { background-color:transparent !important; border-color:#242424 !important; }.btn-button_color-177256.btn-outline:not(.btn-text-skin) { color:#242424 !important; }.btn-button_color-177256.btn-outline:not(.btn-hover-nobg):hover, .btn-button_color-177256.btn-outline:not(.btn-hover-nobg):focus, btn-button_color-177256.btn-outline:active { background-color:#242424 !important; border-color:#242424 !important; }.btn-button_color-177256.btn-outline:not(.btn-hover-nobg):not(.btn-text-skin):not(.icon-animated):hover, .btn-button_color-177256.btn-outline:not(.btn-hover-nobg):not(.btn-text-skin):not(.icon-animated):focus, btn-button_color-177256.btn-outline:active { color:#ffffff !important; }.style-light .btn-button_color-177256.btn-text-skin.btn-outline, .style-light .btn-button_color-177256.btn-text-skin:not(.btn-outline):hover, .style-light .btn-button_color-177256.btn-text-skin:not(.btn-outline):focus, .style-light .btn-button_color-177256.btn-text-skin:not(.btn-outline):active { color:#303133 !important; }.style-light .btn-button_color-177256.btn-text-skin.btn-outline:hover, .style-light .btn-button_color-177256.btn-text-skin.btn-outline:focus, .style-light .btn-button_color-177256.btn-text-skin.btn-outline:active { color:#ffffff !important; }.style-light .style-dark .btn-button_color-177256.btn-text-skin.btn-outline, .style-light .style-dark .btn-button_color-177256.btn-text-skin:not(.btn-outline):hover, .style-light .style-dark .btn-button_color-177256.btn-text-skin:not(.btn-outline):focus, .style-light .style-dark .btn-button_color-177256.btn-text-skin:not(.btn-outline):active { color:#ffffff !important; }.style-light .style-dark .btn-button_color-177256.btn-text-skin.btn-outline:hover, .style-light .style-dark .btn-button_color-177256.btn-text-skin.btn-outline:focus, .style-light .style-dark .btn-button_color-177256.btn-text-skin.btn-outline:active { color:#303133 !important; }.text-button_color-177256-color { color:#242424 !important; fill:#242424 !important; }.style-back_color-168492-bg { background-color:#0f0f0f; }.text-text_color-195715-color { color:#e9e9e9 !important; fill:#e9e9e9 !important; }.style-back_color-883410-bg { background-color:#0f0f0f; }.text-text_color-119539-color { color:#e9e9e9 !important; fill:#e9e9e9 !important; }
  .menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a {padding-top:9px;padding-bottom:9px;}.menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner {vertical-align:middle;}.font-size-menu,.menu-container:not(.grid-filters) ul.menu-smart > li > a:not(.social-menu-link),.menu-container:not(.vmenu-container):not(.grid-filters) ul.menu-smart > li > a:not(.social-menu-link):not(.vc_control-btn),.menu-smart > li > a > div > div > div.btn,.burger-label,#masthead .overlay .overlay-search-wrapper .search-container {font-size:15px;}body[class*=hmenu-]:not(.hormenu-position-right) .navbar-nav-last > ul:last-child > li:last-child > a,body[class*=hmenu-]:not(.hormenu-position-right) .navbar-nav-last > ul:last-child > li:only-child > a {margin-right:0px;padding-right:0px !important;padding-left:5px !important;}@media (max-width:768px) { .menu-item-121880 {left:30px !important;position:relative !important;}}body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.active > a,body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li a.active,body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-parent > a,body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-ancestor > a,body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-item:not(.menu-item-type-custom) > a {color:rgba(255,255,255,.5)!important;}h4:not([class*="fontsize-"]), .h4:not([class*="fontsize-"]) {font-size:17px;}.text-lead, .text-lead > *, .nav-tabs .tab-excerpt.text-lead {font-size:19px;}.font-weight-100, .font-weight-100 *:not(strong):not(b), .btn-custom-typo.font-weight-100 {font-weight:200 !important;}body {position:relative;}.no-screenshot-overlay {position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(255, 0, 0, 0.5);color:white;font-size:3em;text-align:center;z-index:9999;display:none;justify-content:center;align-items:center;}body.screenshot-blocked .no-screenshot-overlay {display:flex;}img {user-drag:none; -webkit-user-drag:none; }.flag-image {display:block;margin-top:1px;max-width:100%;height:auto;}@media (max-width:958px) {.flag-image {transform:scale(1.5);transform-origin:center;}}@media (min-width:958px) {.flag-image {transform:scale(1.15);transform-origin:center;}}@media (max-width:958px) {.trp-flag-image.flag-image {margin-top:14px; margin-bottom:6px;}}</style>
 <script type="text/javascript" src="./../../wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
@@ -126,7 +138,7 @@ body.menu-custom-padding .col-lg-0.logo-container.shrinked, body.menu-custom-pad
 var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds":"seconds","constant_scroll":"on","scroll_speed":"12.25","parallax_factor":"0.1","loading":"Loading…","slide_name":"slide","slide_footer":"footer","ajax_url":".\/\/wp-admin\/admin-ajax.php","nonce_adaptive_images":"9350052133","nonce_srcset_async":"b9df176e08","enable_debug":"","block_mobile_videos":"","is_frontend_editor":"","main_width":["1200","px"],"mobile_parallax_allowed":"","listen_for_screen_update":"1","wireframes_plugin_active":"1","sticky_elements":"on","lazyload_type":"","resize_quality":"70","register_metadata":"","bg_changer_time":"1000","update_wc_fragments":"1","optimize_shortpixel_image":"","menu_mobile_offcanvas_gap":"45","custom_cursor_selector":"[href], .trigger-overlay, .owl-next, .owl-prev, .owl-dot, input[type=\"submit\"], input[type=\"checkbox\"], button[type=\"submit\"], a[class^=\"ilightbox\"], .ilightbox-thumbnail, .ilightbox-prev, .ilightbox-next, .overlay-close, .unmodal-close, .qty-inset > span, .share-button li, .uncode-post-titles .tmb.tmb-click-area, .btn-link, .tmb-click-row .t-inside, .lg-outer button, .lg-thumb img, a[data-lbox], .uncode-close-offcanvas-overlay","mobile_parallax_animation":"","lbox_enhanced":"1","native_media_player":"","vimeoPlayerParams":"?autoplay=0","ajax_filter_key_search":"key","ajax_filter_key_unfilter":"unfilter","index_pagination_scroll_to":"","uncode_wc_popup_cart_qty":"","uncode_adaptive":"1","ai_breakpoints":"1440,2064,2880"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="./../../wp-content/themes/uncode/library/js/init.js?ver=879649819" id="uncode-init-js"></script>
+<script type="text/javascript" src="./../../wp-content/themes/uncode/library/js/init.js?ver=1024704858" id="uncode-init-js"></script>
 <script></script><link rel="https://api.w.org/" href="./../wp-json/index.html">
 <link rel="alternate" title="JSON" type="application/json" href="./../wp-json/wp/v2/pages/123836/index.html">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../../xmlrpc.php?rsd">
@@ -373,7 +385,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../kung-av-vildmarken-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123134" src="./../../wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123134-141541" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg" data-path="2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123134" src="./../../wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123134-595711" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg" data-path="2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -393,7 +405,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../ravfamiljen-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123133" src="./../../wp-content/uploads/2025/03/IMG_4443-Copy-naturum-skrylle-SRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123133-146758" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_4443-Copy-naturum-skrylle-SRGBWEB-1920x.jpg" data-path="2025/03/IMG_4443-Copy-naturum-skrylle-SRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123133" src="./../../wp-content/uploads/2025/03/IMG_4443-Copy-naturum-skrylle-SRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123133-812718" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_4443-Copy-naturum-skrylle-SRGBWEB-1920x.jpg" data-path="2025/03/IMG_4443-Copy-naturum-skrylle-SRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -415,7 +427,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../ravsyskon-i-staden-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123132" src="./../../wp-content/uploads/2025/03/IMG_3748-Naturum-Skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123132-116059" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_3748-Naturum-Skrylle-sRGBWEB-1920x.jpg" data-path="2025/03/IMG_3748-Naturum-Skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123132" src="./../../wp-content/uploads/2025/03/IMG_3748-Naturum-Skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123132-452511" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_3748-Naturum-Skrylle-sRGBWEB-1920x.jpg" data-path="2025/03/IMG_3748-Naturum-Skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -435,7 +447,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../lilla-drommaren-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123131" src="./../../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123131-799717" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg" data-path="2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123131" src="./../../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123131-182439" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg" data-path="2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -457,7 +469,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../ett-byte-for-familjen-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123135" src="./../../wp-content/uploads/2025/03/IMG_6333-naturum-skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123135-732253" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_6333-naturum-skrylle-sRGBWEB-1920x.jpg" data-path="2025/03/IMG_6333-naturum-skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123135" src="./../../wp-content/uploads/2025/03/IMG_6333-naturum-skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123135-243301" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_6333-naturum-skrylle-sRGBWEB-1920x.jpg" data-path="2025/03/IMG_6333-naturum-skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -477,7 +489,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../ravportratt-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123908" src="./../../wp-content/uploads/2025/04/IMG_2177-Enhanced-NR-v20-STICK-FIXv3-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123908-160402" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_2177-Enhanced-NR-v20-STICK-FIXv3.jpg" data-path="2025/04/IMG_2177-Enhanced-NR-v20-STICK-FIXv3.jpg" data-width="1620" data-height="1080" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123908" src="./../../wp-content/uploads/2025/04/IMG_2177-Enhanced-NR-v20-STICK-FIXv3-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123908-337744" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_2177-Enhanced-NR-v20-STICK-FIXv3.jpg" data-path="2025/04/IMG_2177-Enhanced-NR-v20-STICK-FIXv3.jpg" data-width="1620" data-height="1080" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -499,7 +511,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../brak-vid-ravgrytet-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123130" src="./../../wp-content/uploads/2025/03/IMG_1040-naturum-skrylle-sRGBWEB-1920x-1-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123130-581425" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_1040-naturum-skrylle-sRGBWEB-1920x-1.jpg" data-path="2025/03/IMG_1040-naturum-skrylle-sRGBWEB-1920x-1.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123130" src="./../../wp-content/uploads/2025/03/IMG_1040-naturum-skrylle-sRGBWEB-1920x-1-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123130-738428" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_1040-naturum-skrylle-sRGBWEB-1920x-1.jpg" data-path="2025/03/IMG_1040-naturum-skrylle-sRGBWEB-1920x-1.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -519,7 +531,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../lukta-pa-blommorna-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123880" src="./../../wp-content/uploads/2025/04/IMG_5155-v2WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123880-179723" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_5155-v2WEB.jpg" data-path="2025/04/IMG_5155-v2WEB.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123880" src="./../../wp-content/uploads/2025/04/IMG_5155-v2WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123880-202093" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_5155-v2WEB.jpg" data-path="2025/04/IMG_5155-v2WEB.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -541,7 +553,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 65.6%;"></div>
 <a tabindex="-1" href="./../stork-pa-gatulampan-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123941" src="./../../wp-content/uploads/2025/04/IMG_8728-Enhanced-NRWEB-uai-1440x944.jpg" width="1440" height="944" alt="" data-uniqueid="123941-100711" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_8728-Enhanced-NRWEB.jpg" data-path="2025/04/IMG_8728-Enhanced-NRWEB.jpg" data-width="1920" data-height="1258" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123941" src="./../../wp-content/uploads/2025/04/IMG_8728-Enhanced-NRWEB-uai-1440x944.jpg" width="1440" height="944" alt="" data-uniqueid="123941-141026" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_8728-Enhanced-NRWEB.jpg" data-path="2025/04/IMG_8728-Enhanced-NRWEB.jpg" data-width="1920" data-height="1258" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -561,7 +573,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../skarflacka-portratt-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123921" src="./../../wp-content/uploads/2025/04/IMG_7890_v3WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123921-108008" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_7890_v3WEB.jpg" data-path="2025/04/IMG_7890_v3WEB.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123921" src="./../../wp-content/uploads/2025/04/IMG_7890_v3WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123921-154962" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_7890_v3WEB.jpg" data-path="2025/04/IMG_7890_v3WEB.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -583,7 +595,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../ravens-blick-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123900" src="./../../wp-content/uploads/2025/04/IMG_7674-naturum-skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123900-148593" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_7674-naturum-skrylle-sRGBWEB-1920x.jpg" data-path="2025/04/IMG_7674-naturum-skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123900" src="./../../wp-content/uploads/2025/04/IMG_7674-naturum-skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123900-113897" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_7674-naturum-skrylle-sRGBWEB-1920x.jpg" data-path="2025/04/IMG_7674-naturum-skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -603,7 +615,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../matning-i-luften-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123886" src="./../../wp-content/uploads/2025/04/IMG_3493-v10WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123886-888218" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_3493-v10WEB.jpg" data-path="2025/04/IMG_3493-v10WEB.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123886" src="./../../wp-content/uploads/2025/04/IMG_3493-v10WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123886-176828" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_3493-v10WEB.jpg" data-path="2025/04/IMG_3493-v10WEB.jpg" data-width="1920" data-height="1280" data-singlew="6" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -646,7 +658,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../gravling-vid-grytet-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123861" src="./../../wp-content/uploads/2025/04/IMG_8875-Naturum-Skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123861-600710" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_8875-Naturum-Skrylle-sRGBWEB-1920x.jpg" data-path="2025/04/IMG_8875-Naturum-Skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123861" src="./../../wp-content/uploads/2025/04/IMG_8875-Naturum-Skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123861-857572" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_8875-Naturum-Skrylle-sRGBWEB-1920x.jpg" data-path="2025/04/IMG_8875-Naturum-Skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -666,7 +678,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../flockdynamik-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123856" src="./../../wp-content/uploads/2025/04/IMG_2659-fake-adobergbWEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123856-110757" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_2659-fake-adobergbWEB.jpg" data-path="2025/04/IMG_2659-fake-adobergbWEB.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123856" src="./../../wp-content/uploads/2025/04/IMG_2659-fake-adobergbWEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123856-432236" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_2659-fake-adobergbWEB.jpg" data-path="2025/04/IMG_2659-fake-adobergbWEB.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -686,7 +698,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../skrattande-rav-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123931" src="./../../wp-content/uploads/2025/04/IMG_6900-naturum-skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123931-771769" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_6900-naturum-skrylle-sRGBWEB-1920x.jpg" data-path="2025/04/IMG_6900-naturum-skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123931" src="./../../wp-content/uploads/2025/04/IMG_6900-naturum-skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123931-173788" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_6900-naturum-skrylle-sRGBWEB-1920x.jpg" data-path="2025/04/IMG_6900-naturum-skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -708,7 +720,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../ravunge-portrattet-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123916" src="./../../wp-content/uploads/2025/04/IMG_1605-v3WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123916-164958" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_1605-v3WEB.jpg" data-path="2025/04/IMG_1605-v3WEB.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123916" src="./../../wp-content/uploads/2025/04/IMG_1605-v3WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123916-181881" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_1605-v3WEB.jpg" data-path="2025/04/IMG_1605-v3WEB.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -728,7 +740,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 67.6%;"></div>
 <a tabindex="-1" href="./../solnedgang-med-ladusvalorna-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123935" src="./../../wp-content/uploads/2025/04/IMG_4092_V10WEB-uai-1440x973.jpg" width="1440" height="973" alt="" data-uniqueid="123935-140829" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_4092_V10WEB.jpg" data-path="2025/04/IMG_4092_V10WEB.jpg" data-width="1920" data-height="1297" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123935" src="./../../wp-content/uploads/2025/04/IMG_4092_V10WEB-uai-1440x973.jpg" width="1440" height="973" alt="" data-uniqueid="123935-193507" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_4092_V10WEB.jpg" data-path="2025/04/IMG_4092_V10WEB.jpg" data-width="1920" data-height="1297" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -748,7 +760,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../utforskaren-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123946" src="./../../wp-content/uploads/2025/04/IMG_8835-naturum-skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123946-190707" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_8835-naturum-skrylle-sRGBWEB-1920x.jpg" data-path="2025/04/IMG_8835-naturum-skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123946" src="./../../wp-content/uploads/2025/04/IMG_8835-naturum-skrylle-sRGBWEB-1920x-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123946-458313" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_8835-naturum-skrylle-sRGBWEB-1920x.jpg" data-path="2025/04/IMG_8835-naturum-skrylle-sRGBWEB-1920x.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -770,7 +782,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../hungrig-liten-sadesarla-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-124074" src="./../../wp-content/uploads/2025/04/IMG_9445-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="124074-122281" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_9445.jpg" data-path="2025/04/IMG_9445.jpg" data-width="1500" data-height="1000" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-124074" src="./../../wp-content/uploads/2025/04/IMG_9445-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="124074-160844" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_9445.jpg" data-path="2025/04/IMG_9445.jpg" data-width="1500" data-height="1000" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -790,7 +802,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../gosande-i-morgonljuset-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-124068" src="./../../wp-content/uploads/2025/04/IMG_3533WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="124068-764084" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_3533WEB.jpg" data-path="2025/04/IMG_3533WEB.jpg" data-width="1921" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-124068" src="./../../wp-content/uploads/2025/04/IMG_3533WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="124068-174908" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_3533WEB.jpg" data-path="2025/04/IMG_3533WEB.jpg" data-width="1921" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -812,7 +824,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../rav-i-vetefaltet-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123896" src="./../../wp-content/uploads/2025/04/IMG_7802-enhanced-nr-uai-1440x960.jpeg" width="1440" height="960" alt="" data-uniqueid="123896-381790" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_7802-enhanced-nr.jpeg" data-path="2025/04/IMG_7802-enhanced-nr.jpeg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123896" src="./../../wp-content/uploads/2025/04/IMG_7802-enhanced-nr-uai-1440x960.jpeg" width="1440" height="960" alt="" data-uniqueid="123896-353676" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_7802-enhanced-nr.jpeg" data-path="2025/04/IMG_7802-enhanced-nr.jpeg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -832,7 +844,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../kungsfiskare-och-mossan-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123972" src="./../../wp-content/uploads/2025/04/MG_9951WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123972-156182" data-guid="http://localhost:10086/wp-content/uploads/2025/04/MG_9951WEB.jpg" data-path="2025/04/MG_9951WEB.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123972" src="./../../wp-content/uploads/2025/04/MG_9951WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123972-634968" data-guid="http://localhost:10086/wp-content/uploads/2025/04/MG_9951WEB.jpg" data-path="2025/04/MG_9951WEB.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -852,7 +864,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../radjur-och-ett-hav-av-guld-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123891" src="./../../wp-content/uploads/2025/04/IMG_5969-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123891-124738" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_5969.jpg" data-path="2025/04/IMG_5969.jpg" data-width="1500" data-height="1000" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123891" src="./../../wp-content/uploads/2025/04/IMG_5969-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123891-178417" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_5969.jpg" data-path="2025/04/IMG_5969.jpg" data-width="1500" data-height="1000" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -874,7 +886,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 64.7%;"></div>
 <a tabindex="-1" href="./../mustasch-av-smafisk-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123987" src="./../../wp-content/uploads/2025/04/IMG_8427_V4-uai-1440x932.jpg" width="1440" height="932" alt="" data-uniqueid="123987-174847" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_8427_V4.jpg" data-path="2025/04/IMG_8427_V4.jpg" data-width="1500" data-height="971" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123987" src="./../../wp-content/uploads/2025/04/IMG_8427_V4-uai-1440x932.jpg" width="1440" height="932" alt="" data-uniqueid="123987-497044" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_8427_V4.jpg" data-path="2025/04/IMG_8427_V4.jpg" data-width="1500" data-height="971" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -894,7 +906,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../ravungar-i-solljuset/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123961" src="./../../wp-content/uploads/2025/04/IMG_0345-v4WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123961-152657" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_0345-v4WEB.jpg" data-path="2025/04/IMG_0345-v4WEB.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123961" src="./../../wp-content/uploads/2025/04/IMG_0345-v4WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123961-953872" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_0345-v4WEB.jpg" data-path="2025/04/IMG_0345-v4WEB.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -914,7 +926,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 64.4%;"></div>
 <a tabindex="-1" href="./../jakt-vid-solnedgangen-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123992" src="./../../wp-content/uploads/2025/04/IMG_3813-v2-uai-1440x927.jpg" width="1440" height="927" alt="" data-uniqueid="123992-785292" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_3813-v2.jpg" data-path="2025/04/IMG_3813-v2.jpg" data-width="1500" data-height="966" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123992" src="./../../wp-content/uploads/2025/04/IMG_3813-v2-uai-1440x927.jpg" width="1440" height="927" alt="" data-uniqueid="123992-224259" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_3813-v2.jpg" data-path="2025/04/IMG_3813-v2.jpg" data-width="1500" data-height="966" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -936,7 +948,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../ladusvala-med-ett-leende-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-124037" src="./../../wp-content/uploads/2025/04/p19v1-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="124037-281985" data-guid="http://localhost:10086/wp-content/uploads/2025/04/p19v1.jpg" data-path="2025/04/p19v1.jpg" data-width="1500" data-height="1000" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-124037" src="./../../wp-content/uploads/2025/04/p19v1-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="124037-602407" data-guid="http://localhost:10086/wp-content/uploads/2025/04/p19v1.jpg" data-path="2025/04/p19v1.jpg" data-width="1500" data-height="1000" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -956,7 +968,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../rav-i-morgonljuset-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-124016" src="./../../wp-content/uploads/2025/04/IMG_6116WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="124016-305489" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_6116WEB.jpg" data-path="2025/04/IMG_6116WEB.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-124016" src="./../../wp-content/uploads/2025/04/IMG_6116WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="124016-150955" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_6116WEB.jpg" data-path="2025/04/IMG_6116WEB.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -976,7 +988,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../nyfikna-ekorren-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123999" src="./../../wp-content/uploads/2025/04/IMG_6704V4-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123999-214311" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_6704V4.jpg" data-path="2025/04/IMG_6704V4.jpg" data-width="1500" data-height="1000" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123999" src="./../../wp-content/uploads/2025/04/IMG_6704V4-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123999-120661" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_6704V4.jpg" data-path="2025/04/IMG_6704V4.jpg" data-width="1500" data-height="1000" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -998,7 +1010,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 67.5%;"></div>
 <a tabindex="-1" href="./../skarv-och-svart-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-124050" src="./../../wp-content/uploads/2025/04/IMG_9723-v3-uai-1440x972.jpg" width="1440" height="972" alt="" data-uniqueid="124050-206272" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_9723-v3.jpg" data-path="2025/04/IMG_9723-v3.jpg" data-width="1500" data-height="1013" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-124050" src="./../../wp-content/uploads/2025/04/IMG_9723-v3-uai-1440x972.jpg" width="1440" height="972" alt="" data-uniqueid="124050-327862" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_9723-v3.jpg" data-path="2025/04/IMG_9723-v3.jpg" data-width="1500" data-height="1013" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -1018,7 +1030,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 67.6%;"></div>
 <a tabindex="-1" href="./../ladusvala-och-vitt-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-124030" src="./../../wp-content/uploads/2025/04/IMG_7184-Enhanced-NR-uai-1440x974.jpg" width="1440" height="974" alt="" data-uniqueid="124030-151137" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_7184-Enhanced-NR.jpg" data-path="2025/04/IMG_7184-Enhanced-NR.jpg" data-width="1478" data-height="1000" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-124030" src="./../../wp-content/uploads/2025/04/IMG_7184-Enhanced-NR-uai-1440x974.jpg" width="1440" height="974" alt="" data-uniqueid="124030-105287" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_7184-Enhanced-NR.jpg" data-path="2025/04/IMG_7184-Enhanced-NR.jpg" data-width="1478" data-height="1000" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -1040,7 +1052,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../gaspande-rav-portratt-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-124005" src="./../../wp-content/uploads/2025/04/IMG_5960-Enhanced-NR-1WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="124005-181363" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_5960-Enhanced-NR-1WEB.jpg" data-path="2025/04/IMG_5960-Enhanced-NR-1WEB.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-124005" src="./../../wp-content/uploads/2025/04/IMG_5960-Enhanced-NR-1WEB-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="124005-177025" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_5960-Enhanced-NR-1WEB.jpg" data-path="2025/04/IMG_5960-Enhanced-NR-1WEB.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -1060,7 +1072,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../inte-morgonpigg-print/index.html" class="pushed"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123869" src="./../../wp-content/uploads/2025/04/IMG_0602-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123869-194241" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_0602.jpg" data-path="2025/04/IMG_0602.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123869" src="./../../wp-content/uploads/2025/04/IMG_0602-uai-1440x960.jpg" width="1440" height="960" alt="" data-uniqueid="123869-215671" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_0602.jpg" data-path="2025/04/IMG_0602.jpg" data-width="1920" data-height="1280" data-singlew="4" data-singleh="" data-crop="" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -1086,7 +1098,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 75%;"></div>
 <a tabindex="-1" href="mailto:kontakta@denatlahi.com?subject=Förfrågan%20om%20specialbeställd%20fotoprint&body=Hej!%0A%0AJag vill beställa en bild som inte fanns bland dina utvalda prints. Denna bild vill jag beställa%3A%0A-Beskrivning eller bifogad screenshot%0A-Önskad storlek%0A%0AFullt namn%3A%0ATelefonnummer%3A%0AAdress (för frakt)%3A%0A%0APrislista:%0A30x45 cm : 850 kr%0A40x60 cm : 950 kr%0ABetalningen görs via Swish till 0760838746%0A%0AMvh" class="pushed" target="_blank"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123618" src="./../../wp-content/uploads/2025/04/image-27-0-00-00-00-0-00-00-00-uai-1440x1080.jpg" width="1440" height="1080" alt="" data-uniqueid="123618-624986" data-guid="http://localhost:10086/wp-content/uploads/2025/04/image-27-0-00-00-00-0-00-00-00.jpg" data-path="2025/04/image-27-0-00-00-00-0-00-00-00.jpg" data-width="2138" data-height="1448" data-singlew="6" data-singleh="4.5" data-crop="1" data-fixed=""></a>
+<img decoding="async" class="adaptive-async wp-image-123618" src="./../../wp-content/uploads/2025/04/image-27-0-00-00-00-0-00-00-00-uai-1440x1080.jpg" width="1440" height="1080" alt="" data-uniqueid="123618-179365" data-guid="http://localhost:10086/wp-content/uploads/2025/04/image-27-0-00-00-00-0-00-00-00.jpg" data-path="2025/04/image-27-0-00-00-00-0-00-00-00.jpg" data-width="2138" data-height="1448" data-singlew="6" data-singleh="4.5" data-crop="1" data-fixed=""></a>
 </div>
 					</div>
 				</div></div></div></div></div></div>
@@ -1392,8 +1404,8 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 /* ]]> */
 </script>
 <script type="text/javascript" src="./../../wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.8" id="wp-mediaelement-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/uncode/library/js/plugins.js?ver=879649819" id="uncode-plugins-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/uncode/library/js/app.js?ver=879649819" id="uncode-app-js"></script>
+<script type="text/javascript" src="./../../wp-content/themes/uncode/library/js/plugins.js?ver=1024704858" id="uncode-plugins-js"></script>
+<script type="text/javascript" src="./../../wp-content/themes/uncode/library/js/app.js?ver=1024704858" id="uncode-app-js"></script>
 <script></script>
 </body>
 </html>
