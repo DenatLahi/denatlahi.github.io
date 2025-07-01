@@ -2,9 +2,9 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>./index.html</loc>
-		<lastmod>2025-06-21T14:02:43+00:00</lastmod>
+		<lastmod>2025-07-01T11:00:06+00:00</lastmod>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/IMG_6099-Bright-sRGB.jpg</image:loc>
+			<image:loc>./wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
@@ -37,9 +37,6 @@
 			<image:loc>./wp-content/uploads/2025/03/IMG_4443-Copy-WEB1920x-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/501757259_1480496886442277_5430427133676875783_n-1-1-1024x773.jpg</image:loc>
-		</image:image>
-		<image:image>
 			<image:loc>./wp-content/uploads/2025/03/IMG_7890_v3WEB-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
@@ -55,7 +52,7 @@
 			<image:loc>./wp-content/uploads/2025/03/IMG_4443-Copy-WEB1920x-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/501757259_1480496886442277_5430427133676875783_n-1-1-1024x773.jpg</image:loc>
+			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-2-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/03/IMG_7890_v3WEB-1024x683.jpg</image:loc>
@@ -65,6 +62,9 @@
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/03/IMG_8728-Enhanced-NRWEB-1024x671.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/06/Denat-Lahi-image-1024x768.jpg</image:loc>
@@ -86,9 +86,6 @@
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-2-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/Snapchat-1157076603-768x1024.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/04/IMG_2177-Enhanced-NR-v20-STICK-FIXv3-1024x683.jpg</image:loc>
@@ -116,26 +113,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>./a-mothers-warmth-standard-print/index.html</loc>
-		<lastmod>2024-11-09T16:48:50+00:00</lastmod>
-	</url>
-	<url>
-		<loc>./above-the-city-lights-standard-print/index.html</loc>
-		<lastmod>2024-11-09T16:49:03+00:00</lastmod>
-	</url>
-	<url>
-		<loc>./king-of-the-woodland-standard-print/index.html</loc>
-		<lastmod>2024-11-09T16:49:09+00:00</lastmod>
-	</url>
-	<url>
-		<loc>./young-siblings-standard-print/index.html</loc>
-		<lastmod>2024-11-09T16:49:15+00:00</lastmod>
-	</url>
-	<url>
-		<loc>./little-dreamer-standard-print/index.html</loc>
-		<lastmod>2024-11-09T16:52:43+00:00</lastmod>
-	</url>
-	<url>
 		<loc>./coming-soon/index.html</loc>
 		<lastmod>2024-11-16T22:11:07+00:00</lastmod>
 		<image:image>
@@ -151,14 +128,6 @@
 		<image:image>
 			<image:loc>./wp-content/uploads/2024/11/Fine-Art-Print-With-Frame_00004-1024x694.jpg</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>./store/index.html</loc>
-		<lastmod>2025-01-07T07:25:05+00:00</lastmod>
-	</url>
-	<url>
-		<loc>./gravling-workshops/index.html</loc>
-		<lastmod>2025-03-08T11:47:09+00:00</lastmod>
 	</url>
 	<url>
 		<loc>./other-mammals/index.html</loc>
@@ -205,10 +174,6 @@
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/03/IMG_5179-1024x683.jpg</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>./my-first-fox-ever-2024/index.html</loc>
-		<lastmod>2025-03-28T17:43:28+00:00</lastmod>
 	</url>
 	<url>
 		<loc>./badgers/index.html</loc>
@@ -692,148 +657,8 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>./bildval/index.html</loc>
-		<lastmod>2025-04-04T22:58:02+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_7802-Enhanced-NR-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>./behind-the-image/index.html</loc>
 		<lastmod>2025-04-10T18:47:17+00:00</lastmod>
-	</url>
-	<url>
-		<loc>./lekande-ravungar-print/index.html</loc>
-		<lastmod>2025-04-10T19:47:13+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/MG_9592WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/MG_9592WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-1_00003-1024x694.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-2_00003-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_1285WEB-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>./sjungande-blahake-print/index.html</loc>
-		<lastmod>2025-04-10T19:49:19+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/MG_9592WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/MG_9592WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-1_00014-1024x694.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-2_00014-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_6027-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>./skogens-nattinvanare-print/index.html</loc>
-		<lastmod>2025-04-10T19:49:47+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/MG_9592WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/MG_9592WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-1_00004-1024x694.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-2_00004-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_9112-Final-full-v2WEB-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>./sovande-bland-betongen-print/index.html</loc>
-		<lastmod>2025-04-10T19:50:11+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/MG_9592WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/MG_9592WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-1-addon-00001-1024x694.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-2-addon-00000_00001-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_4342raw-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>./synkroniserade-ravungar-print/index.html</loc>
-		<lastmod>2025-04-10T19:50:33+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/MG_9592WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/MG_9592WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-1_00017-1024x694.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-2_00017-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_7621-Enhanced-NRWEB-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>./ogonen-talar-tusen-ord-print/index.html</loc>
-		<lastmod>2025-04-10T19:51:24+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/MG_9592WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/MG_9592WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-1_00002-1024x694.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-2_00002-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_3920-v3WEB-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>./ravens-projektion-print/index.html</loc>
-		<lastmod>2025-04-10T19:52:28+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/MG_9592WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/MG_9592WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-1_00015-1024x694.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-2_00015-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_3443WEB-1024x683.jpg</image:loc>
-		</image:image>
 	</url>
 	<url>
 		<loc>./urban-wildlife/index.html</loc>
@@ -944,84 +769,6 @@
 		<lastmod>2025-04-11T20:00:02+00:00</lastmod>
 	</url>
 	<url>
-		<loc>./flockdynamik-print/index.html</loc>
-		<lastmod>2025-04-14T21:20:16+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-1_00025-1024x694.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-2_00025-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_2659-fake-adobergbWEB-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>./solnedgang-med-ladusvalorna-print/index.html</loc>
-		<lastmod>2025-04-14T21:24:43+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-1_00034-1024x694.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-2_00034-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_4092_V10WEB-1024x692.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>./utforskaren-print/index.html</loc>
-		<lastmod>2025-04-14T21:25:10+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-1_00013-1024x694.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-2_00013-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_8835-naturum-skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>./mustasch-av-smafisk-print/index.html</loc>
-		<lastmod>2025-04-14T21:30:24+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-1-addon-00003-1024x694.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-2-addon-00000_00003-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_8427_V4-1024x663.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>./jakt-vid-solnedgangen-print/index.html</loc>
-		<lastmod>2025-04-14T21:31:22+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-1_00028-1024x694.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-2_00028-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_3813-v2-1024x659.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>./rav-i-morgonljuset-print/index.html</loc>
-		<lastmod>2025-04-14T21:32:26+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-1_00022-1024x694.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-2_00022-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_6116WEB-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>./inte-morgonpigg-print/index.html</loc>
 		<lastmod>2025-04-14T21:34:51+00:00</lastmod>
 		<image:image>
@@ -1032,19 +779,6 @@
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/04/IMG_0602-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>./skrikande-raven-print/index.html</loc>
-		<lastmod>2025-04-14T21:37:09+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-1_00009-1024x694.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/Print-image-2_00009-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_5960-Enhanced-NR-1WEB-1024x683.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1129,19 +863,6 @@
 	<url>
 		<loc>./privacy-policy/index.html</loc>
 		<lastmod>2025-04-19T21:33:30+00:00</lastmod>
-	</url>
-	<url>
-		<loc>./suspekta-ravungen-print/index.html</loc>
-		<lastmod>2025-04-28T15:26:02+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/image-27_00000-0-00-00-03_1-1024x694.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/White-Umbrellas-On-Amalfi-Coast-Wall-Art-Print-black-frame-buffet-table_00003-0-00-00-03_1-1024x683.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_0799-1024x683.jpg</image:loc>
-		</image:image>
 	</url>
 	<url>
 		<loc>./bestallning-av-fotoprints/index.html</loc>
@@ -1589,145 +1310,8 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>./pine-marten-project/index.html</loc>
-		<lastmod>2025-06-17T12:20:32+00:00</lastmod>
-	</url>
-	<url>
 		<loc>./lynx-project/index.html</loc>
 		<lastmod>2025-06-17T12:22:28+00:00</lastmod>
-	</url>
-	<url>
-		<loc>./galleries/index.html</loc>
-		<lastmod>2025-06-18T14:03:41+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/IMG_6099-Bright-sRGBWEB-e1741887986691-uai-1440x960-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_4443-Copy-WEB1920x-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/501757259_1480496886442277_5430427133676875783_n-1-1-1024x773.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_7890_v3WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_3443v2-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_8728-Enhanced-NRWEB-1024x671.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/MG_9951WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_5969-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_6351-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_2659-fake-adobergbWEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_6027-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_9772-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_8779_7-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/MG_9951WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_5969-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_6351-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_2659-fake-adobergbWEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_6027-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_9772-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_8779_7-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-2-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/C12_Urban_Pine_MartenWv2-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/IMG_6099-Bright-sRGB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/501757259_1480496886442277_5430427133676875783_n-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/05/MG_5653-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_8728-Enhanced-NRWEB-1024x671.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_4443-Copy-naturum-skrylle-SRGBWEB-1920x-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_7802-enhanced-nr-1024x683.jpeg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_3748-Naturum-Skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_2177-Enhanced-NR-v20-STICK-FIXv3-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_3493-v10WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_5969-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_2659-fake-adobergbWEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_6333-naturum-skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_5155-v2WEB-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_7890_v3WEB-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_3493-v10WEB-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_6900-naturum-skrylle-sRGBWEB-1920x-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_1040-naturum-skrylle-sRGBWEB-1920x-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_1605-v3WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_5960-Enhanced-NR-1WEB-1024x683.jpg</image:loc>
-		</image:image>
 	</url>
 	<url>
 		<loc>./foxes/index.html</loc>
@@ -1888,22 +1472,6 @@
 		<lastmod>2025-06-18T14:10:52+00:00</lastmod>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/04/20250215_140507crop.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>./pine-marten/index.html</loc>
-		<lastmod>2025-06-18T14:17:00+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/501757259_1480496886442277_5430427133676875783_n.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/501757259_1480496886442277_5430427133676875783_n-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/C12_Urban_Pine_MartenWv2-1024x683.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -2077,9 +1645,6 @@
 			<image:loc>./wp-content/uploads/2025/04/denat-lahi-preview-1024x576.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/Snapchat-1157076603-768x1024.jpg</image:loc>
-		</image:image>
-		<image:image>
 			<image:loc>./wp-content/uploads/2025/06/491183328_1449316046227028_1774366690022219105_n-1024x768.jpg</image:loc>
 		</image:image>
 	</url>
@@ -2166,6 +1731,154 @@
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/04/491183328_1449316046227028_1774366690022219105_n-1024x768.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>./pine-marten-project/index.html</loc>
+		<lastmod>2025-06-21T22:19:03+00:00</lastmod>
+	</url>
+	<url>
+		<loc>./naturfotografering-i-skane/index.html</loc>
+		<lastmod>2025-06-21T22:28:00+00:00</lastmod>
+	</url>
+	<url>
+		<loc>./galleries/index.html</loc>
+		<lastmod>2025-07-01T10:55:56+00:00</lastmod>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/IMG_6099-Bright-sRGBWEB-e1741887986691-uai-1440x960-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_4443-Copy-WEB1920x-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-2-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_7890_v3WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_3443v2-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_8728-Enhanced-NRWEB-1024x671.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/MG_9951WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_5969-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_6351-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_2659-fake-adobergbWEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_6027-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_9772-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_8779_7-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/MG_9951WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_5969-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_6351-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_2659-fake-adobergbWEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_6027-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_9772-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_8779_7-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-2-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/C12_Urban_Pine_MartenWv2-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/IMG_6099-Bright-sRGB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/05/MG_5653-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_8728-Enhanced-NRWEB-1024x671.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_4443-Copy-naturum-skrylle-SRGBWEB-1920x-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_7802-enhanced-nr-1024x683.jpeg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_3748-Naturum-Skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_2177-Enhanced-NR-v20-STICK-FIXv3-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_3493-v10WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_5969-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_2659-fake-adobergbWEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_6333-naturum-skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_5155-v2WEB-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_7890_v3WEB-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_3493-v10WEB-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_6900-naturum-skrylle-sRGBWEB-1920x-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_1040-naturum-skrylle-sRGBWEB-1920x-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_1605-v3WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_5960-Enhanced-NR-1WEB-1024x683.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>./pine-marten/index.html</loc>
+		<lastmod>2025-07-01T10:56:32+00:00</lastmod>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/C12_Urban_Pine_MartenWv2-1024x683.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
