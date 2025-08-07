@@ -7,21 +7,19 @@
 <link rel="pingback" href="./../xmlrpc.php">
 <script type="text/javascript">document.addEventListener('contextmenu', function(event) {
   if (event.target.tagName === 'IMG') {
-    event.preventDefault(); // Prevent right-click on images
-  } else {
-    event.preventDefault(); // Prevent right-click elsewhere on the page
+    event.preventDefault(); // Bara högerklick på bilder blockeras
   }
-});
-
-document.querySelectorAll('img').forEach(img => {
-  img.addEventListener('dragstart', (e) => {
-    e.preventDefault(); // Prevent dragging images
-  });
 });
 
 document.addEventListener('touchstart', function(event) {
   if (event.target.tagName === 'IMG') {
-    event.preventDefault(); // Prevent touch-hold on images for mobile devices
+    event.preventDefault(); // Bara långtryck på bilder blockeras
+  }
+});
+
+document.addEventListener('dragstart', function(event) {
+  if (event.target.tagName === 'IMG') {
+    event.preventDefault(); // Bara drag av bilder blockeras
   }
 });
 
@@ -88,10 +86,12 @@ window.addEventListener('DOMContentLoaded', () => {
 	
 	<!-- This site is optimized with the Yoast SEO plugin v25.4 - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>Atlantic Puffins 2023 - Denat Lahi Wildlife photography</title>
+	<meta name="description" content="My name is Denat Lahi, I’m a 17-year-old wildlife photographer from Lund, Sweden. With my images, I want to show the rare and emotional behaviors of local wildlife in nature.">
 	<link rel="canonical" href="./index.html">
 	<meta property="og:locale" content="en_GB">
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="Atlantic Puffins 2023 - Denat Lahi Wildlife photography">
+	<meta property="og:description" content="My name is Denat Lahi, I’m a 17-year-old wildlife photographer from Lund, Sweden. With my images, I want to show the rare and emotional behaviors of local wildlife in nature.">
 	<meta property="og:url" content="./index.html">
 	<meta property="og:site_name" content="Denat Lahi Wildlife photography">
 	<meta property="article:publisher" content="https://www.facebook.com/denatlahi/">
@@ -116,6 +116,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	            },
 	            "datePublished": "2025-03-28T17:29:41+00:00",
 	            "dateModified": "2025-03-28T22:11:02+00:00",
+	            "description": "My name is Denat Lahi, I’m a 17-year-old wildlife photographer from Lund, Sweden. With my images, I want to show the rare and emotional behaviors of local wildlife in nature.",
 	            "breadcrumb": {
 	                "@id": ".//atlantic-puffins-2023/#breadcrumb"
 	            },
@@ -151,7 +152,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	            "@id": ".//#website",
 	            "url": ".//",
 	            "name": "Denat Lahi Wildlife Photography",
-	            "description": "Denat Lahi Wildlife photography",
+	            "description": "Denat Lahi Wildlife Photography",
 	            "publisher": {
 	                "@id": ".//#/schema/person/2365df74e16d98307e9dad015383501a"
 	            },
@@ -236,7 +237,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel="stylesheet" id="uncodefont-google-css" href="//fonts.googleapis.com/css?family=Lora%3Aregular%2Citalic%2C700%2C700italic%7CCormorant%3A300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%7CInter%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%7CJost%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CInter+Tight%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CLato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic%7CLibre+Franklin%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7COswald%3A200%2C300%2Cregular%2C500%2C600%2C700&#038;subset=vietnamese%2Ccyrillic%2Clatin%2Ccyrillic-ext%2Clatin-ext%2Cgreek%2Cgreek-ext&#038;ver=2.8.5" type="text/css" media="all">
 <link rel="stylesheet" id="trp-language-switcher-style-css" href="./../wp-content/plugins/translatepress-multilingual/assets/css/trp-language-switcher.css?ver=2.9.19" type="text/css" media="all">
 <link rel="stylesheet" id="uncode-gutenberg-frontend-css" href="./../wp-content/themes/uncode/core/inc/compatibility/gutenberg/assets/css/uncode-gutenberg-frontend.css?ver=2.8.5" type="text/css" media="all">
-<link rel="stylesheet" id="uncode-style-css" href="./../wp-content/themes/uncode/library/css/style.css?ver=514333114" type="text/css" media="all">
+<link rel="stylesheet" id="uncode-style-css" href="./../wp-content/themes/uncode/library/css/style.css?ver=871208337" type="text/css" media="all">
 <style id="uncode-style-inline-css" type="text/css">@media (max-width: 959px) { .navbar-brand > * { height: 26px !important;}}
 @media (min-width: 960px) { .limit-width { max-width: 1200px; margin: auto;}}
 body.menu-custom-padding .col-lg-0.logo-container, body.menu-custom-padding .col-lg-2.logo-container, body.menu-custom-padding .col-lg-12 .logo-container, body.menu-custom-padding .col-lg-4.logo-container { padding-top: 27px; padding-bottom: 27px; }
@@ -251,17 +252,17 @@ body.menu-custom-padding .col-lg-0.logo-container.shrinked, body.menu-custom-pad
 				width: calc( ( 100vw - 9px ) - 45px);
 			}
 		}</style>
-<link rel="stylesheet" id="uncode-icons-css" href="./../wp-content/themes/uncode/library/css/uncode-icons.css?ver=514333114" type="text/css" media="all">
-<link rel="stylesheet" id="uncode-custom-style-css" href="./../wp-content/themes/uncode/library/css/style-custom.css?ver=514333114" type="text/css" media="all">
+<link rel="stylesheet" id="uncode-icons-css" href="./../wp-content/themes/uncode/library/css/uncode-icons.css?ver=871208337" type="text/css" media="all">
+<link rel="stylesheet" id="uncode-custom-style-css" href="./../wp-content/themes/uncode/library/css/style-custom.css?ver=871208337" type="text/css" media="all">
 <style id="uncode-custom-style-inline-css" type="text/css">.style-back_color-168492-bg { background-color:#0f0f0f; }.text-text_color-195715-color { color:#e9e9e9 !important; fill:#e9e9e9 !important; }.style-back_color-883410-bg { background-color:#0f0f0f; }.text-text_color-119539-color { color:#e9e9e9 !important; fill:#e9e9e9 !important; }
- .menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a {padding-top:9px;padding-bottom:9px;}.menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner {vertical-align:middle;}.font-size-menu,.menu-container:not(.grid-filters) ul.menu-smart > li > a:not(.social-menu-link),.menu-container:not(.vmenu-container):not(.grid-filters) ul.menu-smart > li > a:not(.social-menu-link):not(.vc_control-btn),.menu-smart > li > a > div > div > div.btn,.burger-label,#masthead .overlay .overlay-search-wrapper .search-container {font-size:15px;}body[class*=hmenu-]:not(.hormenu-position-right) .navbar-nav-last > ul:last-child > li:last-child > a,body[class*=hmenu-]:not(.hormenu-position-right) .navbar-nav-last > ul:last-child > li:only-child > a {margin-right:0px;padding-right:0px !important;padding-left:5px !important;}@media (max-width:768px) { .menu-item-121880 {left:30px !important;position:relative !important;}}body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.active > a,body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li a.active,body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-parent > a,body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-ancestor > a,body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-item:not(.menu-item-type-custom) > a {color:rgba(255,255,255,.5)!important;}h4:not([class*="fontsize-"]), .h4:not([class*="fontsize-"]) {font-size:17px;}.text-lead, .text-lead > *, .nav-tabs .tab-excerpt.text-lead {font-size:19px;}.font-weight-100, .font-weight-100 *:not(strong):not(b), .btn-custom-typo.font-weight-100 {font-weight:200 !important;}body {position:relative;}.no-screenshot-overlay {position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(255, 0, 0, 0.5);color:white;font-size:3em;text-align:center;z-index:9999;display:none;justify-content:center;align-items:center;}body.screenshot-blocked .no-screenshot-overlay {display:flex;}img {user-drag:none; -webkit-user-drag:none; }.flag-image {display:block;margin-top:1px;max-width:100%;height:auto;}@media (max-width:958px) {.flag-image {transform:scale(1.5);transform-origin:center;}}@media (min-width:958px) {.flag-image {transform:scale(1.15);transform-origin:center;}}@media (max-width:958px) {.trp-flag-image.flag-image {margin-top:14px; margin-bottom:6px;}}</style>
+ .menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a {padding-top:9px;padding-bottom:9px;}.menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner {vertical-align:middle;}.font-size-menu,.menu-container:not(.grid-filters) ul.menu-smart > li > a:not(.social-menu-link),.menu-container:not(.vmenu-container):not(.grid-filters) ul.menu-smart > li > a:not(.social-menu-link):not(.vc_control-btn),.menu-smart > li > a > div > div > div.btn,.burger-label,#masthead .overlay .overlay-search-wrapper .search-container {font-size:15px;}body[class*=hmenu-]:not(.hormenu-position-right) .navbar-nav-last > ul:last-child > li:last-child > a,body[class*=hmenu-]:not(.hormenu-position-right) .navbar-nav-last > ul:last-child > li:only-child > a {margin-right:0px;padding-right:0px !important;padding-left:5px !important;}@media (max-width:768px) { .menu-item-121880 {left:30px !important;position:relative !important;}}body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.active > a,body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li a.active,body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-parent > a,body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-ancestor > a,body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-item:not(.menu-item-type-custom) > a {color:rgba(255,255,255,.5)!important;}h4:not([class*="fontsize-"]), .h4:not([class*="fontsize-"]) {font-size:17px;}.text-lead, .text-lead > *, .nav-tabs .tab-excerpt.text-lead {font-size:19px;}.font-weight-100, .font-weight-100 *:not(strong):not(b), .btn-custom-typo.font-weight-100 {font-weight:200 !important;}body {position:relative;}.no-screenshot-overlay {position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(255, 0, 0, 0.5);color:white;font-size:3em;text-align:center;z-index:9999;display:none;justify-content:center;align-items:center;}body.screenshot-blocked .no-screenshot-overlay {display:flex;}img {user-drag:none; -webkit-user-drag:none; }.flag-image {display:block;margin-top:1px;max-width:100%;height:auto;}@media (max-width:958px) {.flag-image {transform:scale(1.5);transform-origin:center;}}@media (min-width:958px) {.flag-image {transform:scale(1.15);transform-origin:center;}}@media (max-width:958px) {.trp-flag-image.flag-image {margin-top:14px; margin-bottom:6px;}}body {pointer-events:auto !important;}html, body {pointer-events:auto !important;}</style>
 <script type="text/javascript" src="./../wp-content/themes/uncode/library/js/ai-uncode.js&#039; id=&#039;uncodeAI&#039; data-home=&#039;/&#039; data-path=&#039;/&#039; data-breakpoints-images=&#039;1920,2064,2880" id="ai-uncode-js"></script>
 <script type="text/javascript" id="uncode-init-js-extra">
 /* <![CDATA[ */
-var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds":"seconds","constant_scroll":"on","scroll_speed":"12","parallax_factor":"0.1","loading":"Loading…","slide_name":"slide","slide_footer":"footer","ajax_url":".\/\/wp-admin\/admin-ajax.php","nonce_adaptive_images":"0a4564fe18","nonce_srcset_async":"0dda879b46","enable_debug":"","block_mobile_videos":"","is_frontend_editor":"","main_width":["1200","px"],"mobile_parallax_allowed":"","listen_for_screen_update":"1","wireframes_plugin_active":"1","sticky_elements":"on","lazyload_type":"","resize_quality":"70","register_metadata":"1","bg_changer_time":"1000","update_wc_fragments":"1","optimize_shortpixel_image":"","menu_mobile_offcanvas_gap":"45","custom_cursor_selector":"[href], .trigger-overlay, .owl-next, .owl-prev, .owl-dot, input[type=\"submit\"], input[type=\"checkbox\"], button[type=\"submit\"], a[class^=\"ilightbox\"], .ilightbox-thumbnail, .ilightbox-prev, .ilightbox-next, .overlay-close, .unmodal-close, .qty-inset > span, .share-button li, .uncode-post-titles .tmb.tmb-click-area, .btn-link, .tmb-click-row .t-inside, .lg-outer button, .lg-thumb img, a[data-lbox], .uncode-close-offcanvas-overlay","mobile_parallax_animation":"","lbox_enhanced":"1","native_media_player":"","vimeoPlayerParams":"?autoplay=0","ajax_filter_key_search":"key","ajax_filter_key_unfilter":"unfilter","index_pagination_scroll_to":"","uncode_wc_popup_cart_qty":"","uncode_adaptive":"1","ai_breakpoints":"1920,2064,2880"};
+var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds":"seconds","constant_scroll":"on","scroll_speed":"12","parallax_factor":"0.1","loading":"Loading…","slide_name":"slide","slide_footer":"footer","ajax_url":".\/\/wp-admin\/admin-ajax.php","nonce_adaptive_images":"df352f5a50","nonce_srcset_async":"a9de0a384f","enable_debug":"","block_mobile_videos":"","is_frontend_editor":"","main_width":["1200","px"],"mobile_parallax_allowed":"","listen_for_screen_update":"1","wireframes_plugin_active":"1","sticky_elements":"on","lazyload_type":"","resize_quality":"70","register_metadata":"1","bg_changer_time":"1000","update_wc_fragments":"1","optimize_shortpixel_image":"","menu_mobile_offcanvas_gap":"45","custom_cursor_selector":"[href], .trigger-overlay, .owl-next, .owl-prev, .owl-dot, input[type=\"submit\"], input[type=\"checkbox\"], button[type=\"submit\"], a[class^=\"ilightbox\"], .ilightbox-thumbnail, .ilightbox-prev, .ilightbox-next, .overlay-close, .unmodal-close, .qty-inset > span, .share-button li, .uncode-post-titles .tmb.tmb-click-area, .btn-link, .tmb-click-row .t-inside, .lg-outer button, .lg-thumb img, a[data-lbox], .uncode-close-offcanvas-overlay","mobile_parallax_animation":"","lbox_enhanced":"1","native_media_player":"","vimeoPlayerParams":"?autoplay=0","ajax_filter_key_search":"key","ajax_filter_key_unfilter":"unfilter","index_pagination_scroll_to":"","uncode_wc_popup_cart_qty":"","uncode_adaptive":"1","ai_breakpoints":"1920,2064,2880"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="./../wp-content/themes/uncode/library/js/init.js?ver=514333114" id="uncode-init-js"></script>
+<script type="text/javascript" src="./../wp-content/themes/uncode/library/js/init.js?ver=871208337" id="uncode-init-js"></script>
 <script type="text/javascript" src="./../wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script type="text/javascript" src="./../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <script data-type="vc_custom-js-" header>document.addEventListener("DOMContentLoaded", function() {
@@ -421,7 +422,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../wp-content/uploads/2025/03/IMG_8427_V4-2.jpg" class="pushed" data-notmb="1" data-counter="1" data-lbox="ilightbox_gallery-835410" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/03/IMG_8427_V4-2-150x150.jpg" data-lg-size="1500-971" data-lb-index="0"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123121" src="./../wp-content/uploads/2025/03/IMG_8427_V4-2-uai-1456x971.jpg" width="1456" height="971" alt="Denat Lahi" data-uniqueid="123121-517818" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_8427_V4-2.jpg" data-path="2025/03/IMG_8427_V4-2.jpg" data-width="1500" data-height="971" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
+<img decoding="async" class="adaptive-async wp-image-123121" src="./../wp-content/uploads/2025/03/IMG_8427_V4-2-uai-1456x971.jpg" width="1456" height="971" alt="Denat Lahi" data-uniqueid="123121-636857" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_8427_V4-2.jpg" data-path="2025/03/IMG_8427_V4-2.jpg" data-width="1500" data-height="971" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
 </div>
 					</div>
 				</div></div></div>
@@ -430,7 +431,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../wp-content/uploads/2025/03/IMG_8469_V3-1.jpg" class="pushed" data-notmb="1" data-counter="1" data-lbox="ilightbox_gallery-835410" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/03/IMG_8469_V3-1-150x150.jpg" data-lg-size="1500-967" data-lb-index="1"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123118" src="./../wp-content/uploads/2025/03/IMG_8469_V3-1-uai-1450x967.jpg" width="1450" height="967" alt="Denat Lahi" data-uniqueid="123118-304511" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_8469_V3-1.jpg" data-path="2025/03/IMG_8469_V3-1.jpg" data-width="1500" data-height="967" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
+<img decoding="async" class="adaptive-async wp-image-123118" src="./../wp-content/uploads/2025/03/IMG_8469_V3-1-uai-1450x967.jpg" width="1450" height="967" alt="Denat Lahi" data-uniqueid="123118-172511" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_8469_V3-1.jpg" data-path="2025/03/IMG_8469_V3-1.jpg" data-width="1500" data-height="967" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
 </div>
 					</div>
 				</div></div></div>
@@ -439,7 +440,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../wp-content/uploads/2025/03/2_scotland3.jpg" class="pushed" data-notmb="1" data-counter="1" data-lbox="ilightbox_gallery-835410" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/03/2_scotland3-150x150.jpg" data-lg-size="1500-1000" data-lb-index="2"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123119" src="./../wp-content/uploads/2025/03/2_scotland3.jpg" width="1500" height="1000" alt="Denat Lahi" data-uniqueid="123119-730193" data-guid="http://localhost:10086/wp-content/uploads/2025/03/2_scotland3.jpg" data-path="2025/03/2_scotland3.jpg" data-width="1500" data-height="1000" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
+<img decoding="async" class="adaptive-async wp-image-123119" src="./../wp-content/uploads/2025/03/2_scotland3.jpg" width="1500" height="1000" alt="Denat Lahi" data-uniqueid="123119-204952" data-guid="http://localhost:10086/wp-content/uploads/2025/03/2_scotland3.jpg" data-path="2025/03/2_scotland3.jpg" data-width="1500" data-height="1000" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
 </div>
 					</div>
 				</div></div></div>
@@ -448,7 +449,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../wp-content/uploads/2025/03/Edit-Group-2_scotland-1.jpg" class="pushed" data-notmb="1" data-counter="1" data-lbox="ilightbox_gallery-835410" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/03/Edit-Group-2_scotland-1-150x150.jpg" data-lg-size="1500-1000" data-lb-index="3"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123120" src="./../wp-content/uploads/2025/03/Edit-Group-2_scotland-1.jpg" width="1500" height="1000" alt="Denat Lahi" data-uniqueid="123120-143028" data-guid="http://localhost:10086/wp-content/uploads/2025/03/Edit-Group-2_scotland-1.jpg" data-path="2025/03/Edit-Group-2_scotland-1.jpg" data-width="1500" data-height="1000" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
+<img decoding="async" class="adaptive-async wp-image-123120" src="./../wp-content/uploads/2025/03/Edit-Group-2_scotland-1.jpg" width="1500" height="1000" alt="Denat Lahi" data-uniqueid="123120-326443" data-guid="http://localhost:10086/wp-content/uploads/2025/03/Edit-Group-2_scotland-1.jpg" data-path="2025/03/Edit-Group-2_scotland-1.jpg" data-width="1500" data-height="1000" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
 </div>
 					</div>
 				</div></div></div>
@@ -457,7 +458,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../wp-content/uploads/2025/03/IMG_8443_V4-1.jpg" class="pushed" data-notmb="1" data-counter="1" data-lbox="ilightbox_gallery-835410" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/03/IMG_8443_V4-1-150x150.jpg" data-lg-size="1500-1000" data-lb-index="4"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123122" src="./../wp-content/uploads/2025/03/IMG_8443_V4-1.jpg" width="1500" height="1000" alt="Denat Lahi" data-uniqueid="123122-145769" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_8443_V4-1.jpg" data-path="2025/03/IMG_8443_V4-1.jpg" data-width="1500" data-height="1000" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
+<img decoding="async" class="adaptive-async wp-image-123122" src="./../wp-content/uploads/2025/03/IMG_8443_V4-1.jpg" width="1500" height="1000" alt="Denat Lahi" data-uniqueid="123122-599787" data-guid="http://localhost:10086/wp-content/uploads/2025/03/IMG_8443_V4-1.jpg" data-path="2025/03/IMG_8443_V4-1.jpg" data-width="1500" data-height="1000" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
 </div>
 					</div>
 				</div></div></div>
@@ -466,7 +467,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../wp-content/uploads/2025/03/20230604_140536-scaled.jpg" class="pushed" data-notmb="1" data-counter="1" data-lbox="ilightbox_gallery-835410" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/03/20230604_140536-150x150.jpg" data-lg-size="2560-1440" data-lb-index="5"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123124" src="./../wp-content/uploads/2025/03/20230604_140536-scaled-uai-1920x1280.jpg" width="1920" height="1280" alt="" data-uniqueid="123124-704035" data-guid="http://localhost:10086/wp-content/uploads/2025/03/20230604_140536-scaled.jpg" data-path="2025/03/20230604_140536-scaled.jpg" data-width="2560" data-height="1440" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
+<img decoding="async" class="adaptive-async wp-image-123124" src="./../wp-content/uploads/2025/03/20230604_140536-scaled-uai-1920x1280.jpg" width="1920" height="1280" alt="" data-uniqueid="123124-212142" data-guid="http://localhost:10086/wp-content/uploads/2025/03/20230604_140536-scaled.jpg" data-path="2025/03/20230604_140536-scaled.jpg" data-width="2560" data-height="1440" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
 </div>
 					</div>
 				</div></div></div>
@@ -475,7 +476,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../wp-content/uploads/2025/03/20230604_141832-scaled.jpg" class="pushed" data-notmb="1" data-counter="1" data-lbox="ilightbox_gallery-835410" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/03/20230604_141832-150x150.jpg" data-lg-size="2560-1440" data-lb-index="6"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123125" src="./../wp-content/uploads/2025/03/20230604_141832-scaled-uai-1920x1280.jpg" width="1920" height="1280" alt="" data-uniqueid="123125-923031" data-guid="http://localhost:10086/wp-content/uploads/2025/03/20230604_141832-scaled.jpg" data-path="2025/03/20230604_141832-scaled.jpg" data-width="2560" data-height="1440" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
+<img decoding="async" class="adaptive-async wp-image-123125" src="./../wp-content/uploads/2025/03/20230604_141832-scaled-uai-1920x1280.jpg" width="1920" height="1280" alt="" data-uniqueid="123125-113208" data-guid="http://localhost:10086/wp-content/uploads/2025/03/20230604_141832-scaled.jpg" data-path="2025/03/20230604_141832-scaled.jpg" data-width="2560" data-height="1440" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
 </div>
 					</div>
 				</div></div></div>
@@ -484,7 +485,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="t-entry-visual-cont">
 <div class="dummy" style="padding-top: 66.7%;"></div>
 <a tabindex="-1" href="./../wp-content/uploads/2025/03/20230604_144350-scaled.jpg" class="pushed" data-notmb="1" data-counter="1" data-lbox="ilightbox_gallery-835410" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/03/20230604_144350-150x150.jpg" data-lg-size="2560-1440" data-lb-index="7"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div></div>
-<img decoding="async" class="adaptive-async wp-image-123126" src="./../wp-content/uploads/2025/03/20230604_144350-scaled-uai-1920x1280.jpg" width="1920" height="1280" alt="" data-uniqueid="123126-200454" data-guid="http://localhost:10086/wp-content/uploads/2025/03/20230604_144350-scaled.jpg" data-path="2025/03/20230604_144350-scaled.jpg" data-width="2560" data-height="1440" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
+<img decoding="async" class="adaptive-async wp-image-123126" src="./../wp-content/uploads/2025/03/20230604_144350-scaled-uai-1920x1280.jpg" width="1920" height="1280" alt="" data-uniqueid="123126-642868" data-guid="http://localhost:10086/wp-content/uploads/2025/03/20230604_144350-scaled.jpg" data-path="2025/03/20230604_144350-scaled.jpg" data-width="2560" data-height="1440" data-singlew="4" data-singleh="2.6666666666667" data-crop="1"></a>
 </div>
 					</div>
 				</div></div></div>						</div>
@@ -557,6 +558,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="uncode-vc-social">
 <div class="social-icon icon-box icon-box-top icon-inline"><a href="https://www.instagram.com/denatlahiphotos/" target="_blank"><i class="fa fa-instagram"></i></a></div>
 <div class="social-icon icon-box icon-box-top icon-inline"><a href="https://www.facebook.com/denatlahi/" target="_blank"><i class="fa fa-facebook1"></i></a></div>
+<div class="social-icon icon-box icon-box-top icon-inline"><a href="https://www.youtube.com/@DenatLahi/" target="_blank"><i class="fa fa-youtube-play"></i></a></div>
 <div class="social-icon icon-box icon-box-top icon-inline"><a href="http://www.denatlahi.com/" target="_blank"><i class="fa fa-globe"></i></a></div>
 </div>
 </div></div></div></div></div>
@@ -606,6 +608,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="uncode-vc-social">
 <div class="social-icon icon-box icon-box-top icon-inline"><a href="https://www.instagram.com/denatlahiphotos/" target="_blank"><i class="fa fa-instagram"></i></a></div>
 <div class="social-icon icon-box icon-box-top icon-inline"><a href="https://www.facebook.com/denatlahi/" target="_blank"><i class="fa fa-facebook1"></i></a></div>
+<div class="social-icon icon-box icon-box-top icon-inline"><a href="https://www.youtube.com/@DenatLahi/" target="_blank"><i class="fa fa-youtube-play"></i></a></div>
 <div class="social-icon icon-box icon-box-top icon-inline"><a href="http://www.denatlahi.com/" target="_blank"><i class="fa fa-globe"></i></a></div>
 </div>
 </div></div></div></div></div>
@@ -642,23 +645,22 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 	<template id="tp-language" data-tp-language="en_GB"></template><script type="speculationrules">{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/uncode\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}</script>
 <script type="text/javascript">document.addEventListener('contextmenu', function(event) {
   if (event.target.tagName === 'IMG') {
-    event.preventDefault(); // Prevent right-click on images
-  } else {
-    event.preventDefault(); // Prevent right-click elsewhere on the page
+    event.preventDefault(); // Bara högerklick på bilder blockeras
   }
 });
 
 document.addEventListener('touchstart', function(event) {
   if (event.target.tagName === 'IMG') {
-    event.preventDefault(); // Prevent touch-hold on images for mobile devices
+    event.preventDefault(); // Bara långtryck på bilder blockeras
   }
 });
 
 document.addEventListener('dragstart', function(event) {
   if (event.target.tagName === 'IMG') {
-    event.preventDefault(); // Prevent dragging images to a new tab
+    event.preventDefault(); // Bara drag av bilder blockeras
   }
 });
+
 
 let isScreenshotBlocked = false;
 
@@ -688,29 +690,21 @@ function removeDoubleSlashes(url) {
 let url = "https://denatlahi.com//path//to///page";
 console.log(removeDoubleSlashes(url)); // Outputs: "https://denatlahi.com/path/to/page"
 
-// Disable right-click context menu
-document.addEventListener('contextmenu', function(event) {
-  event.preventDefault();
-});
-
-// Disable right-click context menu on images
 document.addEventListener('contextmenu', function(event) {
   if (event.target.tagName === 'IMG') {
-    event.preventDefault();
+    event.preventDefault(); // Bara högerklick på bilder blockeras
   }
 });
 
-// Disable touch hold on images for mobile devices
 document.addEventListener('touchstart', function(event) {
   if (event.target.tagName === 'IMG') {
-    event.preventDefault();
+    event.preventDefault(); // Bara långtryck på bilder blockeras
   }
 });
 
-// Disable dragging images to a new tab
 document.addEventListener('dragstart', function(event) {
   if (event.target.tagName === 'IMG') {
-    event.preventDefault();
+    event.preventDefault(); // Bara drag av bilder blockeras
   }
 });
 // Detecting screenshot attempt by PrintScreen key press
@@ -764,7 +758,7 @@ style.innerHTML = `
     max-width: 100%;  /* Ensure flag width doesn't exceed container */
     height: auto;  /* Maintain aspect ratio *
   }</script><script type="text/html" id="wpb-modifications"> window.wpbCustomElement = 1; <script type="text/javascript" src="./../wp-content/plugins/mousewheel-smooth-scroll/js/lenis.min.js?ver=1.1.19" id="lenis-js"></script>
-<script type="text/javascript" src="./../wp-content/uploads/wpmss/lenis-init.min.js?ver=1751721738" id="lenis-init-js"></script>
+<script type="text/javascript" src="./../wp-content/uploads/wpmss/lenis-init.min.js?ver=1751808688" id="lenis-init-js"></script>
 <script type="text/javascript" id="mediaelement-core-js-before">
 /* <![CDATA[ */
 var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
@@ -778,8 +772,8 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 /* ]]> */
 </script>
 <script type="text/javascript" src="./../wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.8.1" id="wp-mediaelement-js"></script>
-<script type="text/javascript" src="./../wp-content/themes/uncode/library/js/plugins.js?ver=514333114" id="uncode-plugins-js"></script>
-<script type="text/javascript" src="./../wp-content/themes/uncode/library/js/app.js?ver=514333114" id="uncode-app-js"></script>
+<script type="text/javascript" src="./../wp-content/themes/uncode/library/js/plugins.js?ver=871208337" id="uncode-plugins-js"></script>
+<script type="text/javascript" src="./../wp-content/themes/uncode/library/js/app.js?ver=871208337" id="uncode-app-js"></script>
 <script></script>
 </body>
 </html>
