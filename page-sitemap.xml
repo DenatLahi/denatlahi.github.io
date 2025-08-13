@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>./index.html</loc>
-		<lastmod>2025-08-13T11:21:50+00:00</lastmod>
+		<lastmod>2025-08-13T14:09:39+00:00</lastmod>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg</image:loc>
 		</image:image>
@@ -31,7 +31,7 @@
 			<image:loc>./wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/IMG_6099-Bright-sRGBWEB-e1741887986691-uai-1440x960-1-1024x683.jpg</image:loc>
+			<image:loc>./wp-content/uploads/2025/06/IMG_6099-Bright-sRGB-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
@@ -43,7 +43,7 @@
 			<image:loc>./wp-content/uploads/2025/03/IMG_7890_v3WEB-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/IMG_6099-Bright-sRGBWEB-e1741887986691-uai-1440x960-1-1024x683.jpg</image:loc>
+			<image:loc>./wp-content/uploads/2025/06/IMG_6099-Bright-sRGB-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
@@ -1510,139 +1510,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>./galleries/index.html</loc>
-		<lastmod>2025-08-10T15:04:02+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/IMG_6099-Bright-sRGBWEB-e1741887986691-uai-1440x960-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_4443-Copy-WEB1920x-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_7890_v3WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_8728-Enhanced-NRWEB-1024x671.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_3443v2-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/MG_9951WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_5969-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_6351-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_2659-fake-adobergbWEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_6027-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_9772-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_8779_7-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/MG_9951WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_5969-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_6351-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_2659-fake-adobergbWEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_6027-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_9772-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_8779_7-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/IMG_6099-Bright-sRGB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_4443-Copy-naturum-skrylle-SRGBWEB-1920x-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-2-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/C12_Urban_Pine_MartenWv2-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/05/MG_5653-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_8728-Enhanced-NRWEB-1024x671.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_7802-enhanced-nr-1024x683.jpeg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_3748-Naturum-Skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_2177-Enhanced-NR-v20-STICK-FIXv3-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_3493-v10WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_5969-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_2659-fake-adobergbWEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_6333-naturum-skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_5155-v2WEB-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_7890_v3WEB-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_3493-v10WEB-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_6900-naturum-skrylle-sRGBWEB-1920x-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_1040-naturum-skrylle-sRGBWEB-1920x-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_1605-v3WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/IMG_5960-Enhanced-NR-1WEB-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>./pine-marten/index.html</loc>
 		<lastmod>2025-08-10T15:06:59+00:00</lastmod>
 		<image:image>
@@ -2358,6 +2225,139 @@
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-mardprojektet-1024x682.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>./galleries/index.html</loc>
+		<lastmod>2025-08-13T14:10:27+00:00</lastmod>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/IMG_6099-Bright-sRGB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_4443-Copy-WEB1920x-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_7890_v3WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_8728-Enhanced-NRWEB-1024x671.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_3443v2-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/MG_9951WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_5969-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_6351-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_2659-fake-adobergbWEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_6027-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_9772-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_8779_7-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/MG_9951WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_5969-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_6351-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_2659-fake-adobergbWEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_6027-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_9772-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_8779_7-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/IMG_6099-Bright-sRGB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_4443-Copy-naturum-skrylle-SRGBWEB-1920x-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-2-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/C12_Urban_Pine_MartenWv2-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/05/MG_5653-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_8728-Enhanced-NRWEB-1024x671.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_7802-enhanced-nr-1024x683.jpeg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_3748-Naturum-Skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_2177-Enhanced-NR-v20-STICK-FIXv3-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_3493-v10WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_5969-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_2659-fake-adobergbWEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_6333-naturum-skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_5155-v2WEB-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_7890_v3WEB-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_3493-v10WEB-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_6900-naturum-skrylle-sRGBWEB-1920x-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_1040-naturum-skrylle-sRGBWEB-1920x-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_1605-v3WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/IMG_5960-Enhanced-NR-1WEB-1024x683.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
