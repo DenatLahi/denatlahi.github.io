@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>./index.html</loc>
-		<lastmod>2025-08-13T14:09:39+00:00</lastmod>
+		<lastmod>2025-08-13T17:50:41+00:00</lastmod>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg</image:loc>
 		</image:image>
@@ -2167,69 +2167,8 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>./about/index.html</loc>
-		<lastmod>2025-08-13T11:22:52+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/svt-denat-lahi.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/svt-denat-lahi.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/5bdc33e470b88e3b68dd60493e63f30c6b7914cd1daa2f19b45b52b4f61c9d2c-e1755084157888.avif</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/5bdc33e470b88e3b68dd60493e63f30c6b7914cd1daa2f19b45b52b4f61c9d2c-e1755084157888.avif</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/denat-lahi-diy-camera-trap-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/Rav3-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/Denat-Lahi-p4-SR-radio-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/lunds-kommun-inlagg-1-1024x649.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/svt-denat-lahi.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/DenatLahi-1024x768.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/Denat-Lahi-image-1024x768.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/20250215_140507crop-892x1024.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/denat-lahi-preview-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-mardprojektet-1024x682.png</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>./galleries/index.html</loc>
-		<lastmod>2025-08-13T14:10:27+00:00</lastmod>
+		<lastmod>2025-08-13T17:43:15+00:00</lastmod>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/04/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg</image:loc>
 		</image:image>
@@ -2358,6 +2297,70 @@
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/03/IMG_5960-Enhanced-NR-1WEB-1024x683.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>./about/index.html</loc>
+		<lastmod>2025-08-13T17:49:13+00:00</lastmod>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/svt-denat-lahi.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/svt-denat-lahi.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/5bdc33e470b88e3b68dd60493e63f30c6b7914cd1daa2f19b45b52b4f61c9d2c-e1755084157888.avif</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/5bdc33e470b88e3b68dd60493e63f30c6b7914cd1daa2f19b45b52b4f61c9d2c-e1755084157888.avif</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/531849245_1538229627335669_806807198874686673_n-1024x638.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/denat-lahi-diy-camera-trap-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/Rav3-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/Denat-Lahi-p4-SR-radio-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/lunds-kommun-inlagg-1-1024x649.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/svt-denat-lahi.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/DenatLahi-1024x768.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/Denat-Lahi-image-1024x768.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/20250215_140507crop-892x1024.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/denat-lahi-preview-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-mardprojektet-1024x682.png</image:loc>
 		</image:image>
 	</url>
 </urlset>
