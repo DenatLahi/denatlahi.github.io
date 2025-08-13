@@ -5,23 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="./../xmlrpc.php">
-<script type="text/javascript">// Block right-click, long-press, and drag on images
-['contextmenu', 'touchstart', 'dragstart'].forEach(evt => {
-  document.addEventListener(evt, function(event) {
-    if (event.target.tagName === 'IMG') {
-      event.preventDefault();
-    }
-  });
+<script type="text/javascript">document.addEventListener('contextmenu', function(event) {
+  if (event.target.tagName === 'IMG') {
+    event.preventDefault(); // Bara högerklick på bilder blockeras
+  }
 });
 
-// Redirect index.html URLs to clean path
+document.addEventListener('touchstart', function(event) {
+  if (event.target.tagName === 'IMG') {
+    event.preventDefault(); // Bara långtryck på bilder blockeras
+  }
+});
+
+document.addEventListener('dragstart', function(event) {
+  if (event.target.tagName === 'IMG') {
+    event.preventDefault(); // Bara drag av bilder blockeras
+  }
+});
+
+document.addEventListener('dragstart', function(event) {
+  if (event.target.tagName === 'IMG') {
+    event.preventDefault(); // Prevent dragging images to a new tab
+  }
+});
+
 if (window.location.pathname.endsWith('/index.html') && !window.location.pathname.includes('/bestallning-av-fotoprints/')) {
   const newPath = window.location.pathname.replace(/\/index\.html$/, '/');
   const newUrl = window.location.origin + newPath + window.location.search + window.location.hash;
   window.location.replace(newUrl);
 }
 
-// Redirect Swedish users to /svenska, skip bots
 document.addEventListener("DOMContentLoaded", function () {
   const userLang = navigator.language || navigator.userLanguage;
   const hasRedirected = sessionStorage.getItem("langRedirectDone");
@@ -30,86 +43,91 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!hasRedirected && !isBot && userLang.startsWith('sv') && !window.location.pathname.startsWith('/svenska')) {
     sessionStorage.setItem("langRedirectDone", "true");
-    window.location.href = '/svenska' + window.location.pathname;
+    const newPath = '/svenska' + window.location.pathname;
+    window.location.href = newPath;
   }
 });
 
-// Add default title and alt to all images
+
 window.addEventListener('DOMContentLoaded', () => {
+  const excludedSrcs = [
+    "/wp-content/uploads/2025/07/image001-scaled-uai-1920x1440.jpg",
+  ];
+
   document.querySelectorAll('img').forEach(img => {
-    if (!img.title) img.title = '© Denat Lahi / www.denatlahi.com';
-    if (!img.alt) img.alt = '© Denat Lahi / www.denatlahi.com';
+    const srcPath = new URL(img.src, location.origin).pathname;
+    if (excludedSrcs.includes(srcPath)) return;
+
+    if (!img.title) {
+      img.title = '© Denat Lahi / www.denatlahi.com';
+    }
+    if (!img.alt) {
+      img.alt = '© Denat Lahi / www.denatlahi.com';
+    }
   });
+});
+window.onload = function() {
+    document.querySelector('div[data-uniqueid="123134-785896"]')
+        .style.backgroundImage = 'url("//wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg")';
+};
+window.addEventListener('DOMContentLoaded', () => {
+    const el = document.querySelector('div[data-uniqueid="123134-785896"]');
+    if (el && el.dataset.guid) {
+        el.style.backgroundImage = `url("${el.dataset.guid}")`;
+    }
 });
 </script><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
 	<!-- This site is optimized with the Yoast SEO plugin v25.7 - https://yoast.com/wordpress/plugins/seo/ -->
-	<title>Denat Lahi - Bilder</title>
-	<meta name="description" content="Upplev Denat Lahis bästa naturbilder – en ung naturfotograf i Lunds Kommun som fångar vilda djur och fåglar i vackra bilder.">
+	<title>404 Error - Denat Lahi Wildlife Photography</title>
+	<meta name="description" content="Denat Lahi is a 17-year-old wildlife photographer from Lund, Sweden. Through his images, he wants to showcase the rare and emotional behaviors of local wildlife in nature.">
 	<link rel="canonical" href="./index.html">
 	<meta property="og:locale" content="en_GB">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="Denat Lahi - Bilder">
-	<meta property="og:description" content="Upplev Denat Lahis bästa naturbilder – en ung naturfotograf i Lunds Kommun som fångar vilda djur och fåglar i vackra bilder.">
+	<meta property="og:title" content="404 Error - Denat Lahi Wildlife Photography">
+	<meta property="og:description" content="Denat Lahi is a 17-year-old wildlife photographer from Lund, Sweden. Through his images, he wants to showcase the rare and emotional behaviors of local wildlife in nature.">
 	<meta property="og:url" content="./index.html">
 	<meta property="og:site_name" content="Denat Lahi Wildlife Photography">
 	<meta property="article:publisher" content="https://www.facebook.com/denatlahi/">
-	<meta property="article:modified_time" content="2025-08-10T15:49:59+00:00">
-	<meta property="og:image" content="./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg">
-	<meta property="og:image:width" content="1920">
-	<meta property="og:image:height" content="1280">
+	<meta property="article:modified_time" content="2025-07-13T14:05:33+00:00">
+	<meta property="og:image" content="./../wp-content/uploads/2025/06/Snapchat-1157076603-1.jpg">
+	<meta property="og:image:width" content="1309">
+	<meta property="og:image:height" content="796">
 	<meta property="og:image:type" content="image/jpeg">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:label1" content="Estimated reading time">
-	<meta name="twitter:data1" content="2 minutes">
+	<meta name="twitter:data1" content="1 minute">
 	<script type="application/ld+json" class="yoast-schema-graph">{
 	    "@context": "https://schema.org",
 	    "@graph": [
 	        {
 	            "@type": "WebPage",
-	            "@id": "//denat-lahi/",
-	            "url": "//denat-lahi/",
-	            "name": "Denat Lahi - Bilder",
+	            "@id": "//404-error/",
+	            "url": "//404-error/",
+	            "name": "404 Error - Denat Lahi Wildlife Photography",
 	            "isPartOf": {
 	                "@id": "//#website"
 	            },
-	            "primaryImageOfPage": {
-	                "@id": "//denat-lahi/#primaryimage"
-	            },
-	            "image": {
-	                "@id": "//denat-lahi/#primaryimage"
-	            },
-	            "thumbnailUrl": "//wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg",
-	            "datePublished": "2025-07-05T10:04:39+00:00",
-	            "dateModified": "2025-08-10T15:49:59+00:00",
-	            "description": "Upplev Denat Lahis bästa naturbilder – en ung naturfotograf i Lunds Kommun som fångar vilda djur och fåglar i vackra bilder.",
+	            "datePublished": "2023-10-12T19:22:23+00:00",
+	            "dateModified": "2025-07-13T14:05:33+00:00",
+	            "description": "Denat Lahi is a 17-year-old wildlife photographer from Lund, Sweden. Through his images, he wants to showcase the rare and emotional behaviors of local wildlife in nature.",
 	            "breadcrumb": {
-	                "@id": "//denat-lahi/#breadcrumb"
+	                "@id": "//404-error/#breadcrumb"
 	            },
 	            "inLanguage": "en-GB",
 	            "potentialAction": [
 	                {
 	                    "@type": "ReadAction",
 	                    "target": [
-	                        "//denat-lahi/"
+	                        "//404-error/"
 	                    ]
 	                }
 	            ]
 	        },
 	        {
-	            "@type": "ImageObject",
-	            "inLanguage": "en-GB",
-	            "@id": "//denat-lahi/#primaryimage",
-	            "url": "//wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg",
-	            "contentUrl": "//wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg",
-	            "width": 1920,
-	            "height": 1280,
-	            "caption": "Denat Lahi"
-	        },
-	        {
 	            "@type": "BreadcrumbList",
-	            "@id": "//denat-lahi/#breadcrumb",
+	            "@id": "//404-error/#breadcrumb",
 	            "itemListElement": [
 	                {
 	                    "@type": "ListItem",
@@ -120,7 +138,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	                {
 	                    "@type": "ListItem",
 	                    "position": 2,
-	                    "name": "Denat Lahi"
+	                    "name": "404 Error"
 	                }
 	            ]
 	        },
@@ -186,6 +204,27 @@ window.addEventListener('DOMContentLoaded', () => {
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="Denat Lahi Wildlife Photography » Feed" href="./../feed/index.html">
 <link rel="alternate" type="application/rss+xml" title="Denat Lahi Wildlife Photography » Comments Feed" href="./../comments/feed/index.html">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\/\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.2"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
 <link rel="stylesheet" id="wp-block-library-css" href="./../wp-includes/css/dist/block-library/style.min.css?ver=6.8.2" type="text/css" media="all">
 <style id="classic-theme-styles-inline-css" type="text/css">
 /*! This file is auto-generated */
@@ -200,7 +239,7 @@ window.addEventListener('DOMContentLoaded', () => {
 <link rel="stylesheet" id="uncodefont-google-css" href="//fonts.googleapis.com/css?family=Lora%3Aregular%2Citalic%2C700%2C700italic%7CCormorant%3A300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%7CInter%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%7CJost%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CInter+Tight%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CLato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic%7CLibre+Franklin%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7COswald%3A200%2C300%2Cregular%2C500%2C600%2C700&amp;subset=vietnamese%2Ccyrillic%2Clatin%2Ccyrillic-ext%2Clatin-ext%2Cgreek%2Cgreek-ext&amp;ver=2.8.5" type="text/css" media="all">
 <link rel="stylesheet" id="trp-language-switcher-style-css" href="./../wp-content/plugins/translatepress-multilingual/assets/css/trp-language-switcher.css?ver=2.9.22" type="text/css" media="all">
 <link rel="stylesheet" id="uncode-gutenberg-frontend-css" href="./../wp-content/themes/uncode/core/inc/compatibility/gutenberg/assets/css/uncode-gutenberg-frontend.css?ver=2.8.5" type="text/css" media="all">
-<link rel="stylesheet" id="uncode-style-css" href="./../wp-content/themes/uncode/library/css/style.css?ver=423689970" type="text/css" media="all">
+<link rel="stylesheet" id="uncode-style-css" href="./../wp-content/themes/uncode/library/css/style.css?ver=2116273628" type="text/css" media="all">
 <style id="uncode-style-inline-css" type="text/css">
 
 @media (max-width: 959px) { .navbar-brand > * { height: 26px !important;}}
@@ -218,29 +257,30 @@ body.menu-custom-padding .col-lg-0.logo-container.shrinked, body.menu-custom-pad
 			}
 		}
 </style>
-<link rel="stylesheet" id="uncode-icons-css" href="./../wp-content/themes/uncode/library/css/uncode-icons.css?ver=423689970" type="text/css" media="all">
-<link rel="stylesheet" id="uncode-custom-style-css" href="./../wp-content/themes/uncode/library/css/style-custom.css?ver=423689970" type="text/css" media="all">
+<link rel="stylesheet" id="uncode-icons-css" href="./../wp-content/themes/uncode/library/css/uncode-icons.css?ver=2116273628" type="text/css" media="all">
+<link rel="stylesheet" id="uncode-custom-style-css" href="./../wp-content/themes/uncode/library/css/style-custom.css?ver=2116273628" type="text/css" media="all">
 <style id="uncode-custom-style-inline-css" type="text/css">
-.style-back_color-168492-bg { background-color:#0f0f0f; }.text-text_color-195715-color { color:#e9e9e9 !important; fill:#e9e9e9 !important; }.style-back_color-883410-bg { background-color:#0f0f0f; }.text-text_color-119539-color { color:#e9e9e9 !important; fill:#e9e9e9 !important; }
  .menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a {padding-top:9px;padding-bottom:9px;}.menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner {vertical-align:middle;}.font-size-menu,.menu-container:not(.grid-filters) ul.menu-smart > li > a:not(.social-menu-link),.menu-container:not(.vmenu-container):not(.grid-filters) ul.menu-smart > li > a:not(.social-menu-link):not(.vc_control-btn),.menu-smart > li > a > div > div > div.btn,.burger-label,#masthead .overlay .overlay-search-wrapper .search-container {font-size:15px;}body[class*=hmenu-]:not(.hormenu-position-right) .navbar-nav-last > ul:last-child > li:last-child > a,body[class*=hmenu-]:not(.hormenu-position-right) .navbar-nav-last > ul:last-child > li:only-child > a {margin-right:0px;padding-right:0px !important;padding-left:5px !important;}@media (max-width:768px) { .menu-item-121880 {left:30px !important;position:relative !important;}}h4:not([class*="fontsize-"]), .h4:not([class*="fontsize-"]) {font-size:17px;}.text-lead, .text-lead > *, .nav-tabs .tab-excerpt.text-lead {font-size:19px;}.font-weight-100, .font-weight-100 *:not(strong):not(b), .btn-custom-typo.font-weight-100 {font-weight:200 !important;}body {position:relative;}.no-screenshot-overlay {position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(255, 0, 0, 0.5);color:white;font-size:3em;text-align:center;z-index:9999;display:none;justify-content:center;align-items:center;}body.screenshot-blocked .no-screenshot-overlay {display:flex;}img {user-drag:none; -webkit-user-drag:none; }.flag-image {display:block;margin-top:1px;max-width:100%;height:auto;}@media (max-width:958px) {.flag-image {transform:scale(1.5);transform-origin:center;}}@media (min-width:958px) {.flag-image {transform:scale(1.15);transform-origin:center;}}@media (max-width:958px) {.trp-flag-image.flag-image {margin-top:14px; margin-bottom:6px;}}body {pointer-events:auto !important;}html, body {pointer-events:auto !important;}div[data-uniqueid="123134-607868"] {background-image:url("./../wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg") !important;}
 </style>
+<link rel="stylesheet" id="jquery-lazyloadxt-spinner-css-css" href="./../wp-content/plugins/a3-lazy-load/assets/css/jquery.lazyloadxt.spinner.css?ver=6.8.2" type="text/css" media="all">
+<script type="text/javascript" src="./../wp-content/themes/uncode/library/js/ai-uncode.js&#039; id=&#039;uncodeAI&#039; data-async=&#039;true&#039; data-home=&#039;/&#039; data-path=&#039;/&#039; data-breakpoints-images=&#039;1440,1600,1920" id="ai-uncode-js"></script>
 <script type="text/javascript" id="uncode-init-js-extra">
 /* <![CDATA[ */
-var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds":"seconds","constant_scroll":"on","scroll_speed":"12","parallax_factor":"0.1","loading":"Loading\u2026","slide_name":"slide","slide_footer":"footer","ajax_url":"\/\/wp-admin\/admin-ajax.php","nonce_adaptive_images":"446abd15fc","nonce_srcset_async":"505c43b2dc","enable_debug":"","block_mobile_videos":"","is_frontend_editor":"","main_width":["1200","px"],"mobile_parallax_allowed":"","listen_for_screen_update":"1","wireframes_plugin_active":"1","sticky_elements":"on","lazyload_type":"","resize_quality":"60","register_metadata":"","bg_changer_time":"1000","update_wc_fragments":"1","optimize_shortpixel_image":"","menu_mobile_offcanvas_gap":"45","custom_cursor_selector":"[href], .trigger-overlay, .owl-next, .owl-prev, .owl-dot, input[type=\"submit\"], input[type=\"checkbox\"], button[type=\"submit\"], a[class^=\"ilightbox\"], .ilightbox-thumbnail, .ilightbox-prev, .ilightbox-next, .overlay-close, .unmodal-close, .qty-inset > span, .share-button li, .uncode-post-titles .tmb.tmb-click-area, .btn-link, .tmb-click-row .t-inside, .lg-outer button, .lg-thumb img, a[data-lbox], .uncode-close-offcanvas-overlay","mobile_parallax_animation":"","lbox_enhanced":"1","native_media_player":"","vimeoPlayerParams":"?autoplay=0","ajax_filter_key_search":"key","ajax_filter_key_unfilter":"unfilter","index_pagination_scroll_to":"","uncode_wc_popup_cart_qty":""};
+var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds":"seconds","constant_scroll":"on","scroll_speed":"12","parallax_factor":"0.1","loading":"Loading\u2026","slide_name":"slide","slide_footer":"footer","ajax_url":"\/\/wp-admin\/admin-ajax.php","nonce_adaptive_images":"446abd15fc","nonce_srcset_async":"505c43b2dc","enable_debug":"","block_mobile_videos":"","is_frontend_editor":"","main_width":["1200","px"],"mobile_parallax_allowed":"","listen_for_screen_update":"1","wireframes_plugin_active":"1","sticky_elements":"on","lazyload_type":"","resize_quality":"60","register_metadata":"","bg_changer_time":"1000","update_wc_fragments":"1","optimize_shortpixel_image":"","menu_mobile_offcanvas_gap":"45","custom_cursor_selector":"[href], .trigger-overlay, .owl-next, .owl-prev, .owl-dot, input[type=\"submit\"], input[type=\"checkbox\"], button[type=\"submit\"], a[class^=\"ilightbox\"], .ilightbox-thumbnail, .ilightbox-prev, .ilightbox-next, .overlay-close, .unmodal-close, .qty-inset > span, .share-button li, .uncode-post-titles .tmb.tmb-click-area, .btn-link, .tmb-click-row .t-inside, .lg-outer button, .lg-thumb img, a[data-lbox], .uncode-close-offcanvas-overlay","mobile_parallax_animation":"","lbox_enhanced":"1","native_media_player":"","vimeoPlayerParams":"?autoplay=0","ajax_filter_key_search":"key","ajax_filter_key_unfilter":"unfilter","index_pagination_scroll_to":"","uncode_wc_popup_cart_qty":"","uncode_adaptive":"1","ai_breakpoints":"1440,1600,1920","uncode_adaptive_async":"1"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="./../wp-content/themes/uncode/library/js/init.js?ver=423689970" id="uncode-init-js"></script>
+<script type="text/javascript" src="./../wp-content/themes/uncode/library/js/init.js?ver=2116273628" id="uncode-init-js"></script>
 <script type="text/javascript" src="./../wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script type="text/javascript" src="./../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-<script></script><link rel="https://api.w.org/" href="./../wp-json/index.html"><link rel="alternate" title="JSON" type="application/json" href="./../wp-json/wp/v2/pages/125284/index.html"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../xmlrpc.php?rsd">
+<script></script><link rel="https://api.w.org/" href="./../wp-json/index.html"><link rel="alternate" title="JSON" type="application/json" href="./../wp-json/wp/v2/pages/119171/index.html"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../xmlrpc.php?rsd">
 <meta name="generator" content="WordPress 6.8.2">
-<link rel="shortlink" href="./../index.html?p=125284">
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="./../wp-json/oembed/1.0/embed/index.html?url=.%2F%2Fdenat-lahi%2F">
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="./../wp-json/oembed/1.0/embed/index.html?url=.%2F%2Fdenat-lahi%2F&amp;format=xml">
+<link rel="shortlink" href="./../index.html?p=119171">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="./../wp-json/oembed/1.0/embed/index.html?url=.%2F%2F404-error%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="./../wp-json/oembed/1.0/embed/index.html?url=.%2F%2F404-error%2F&amp;format=xml">
 <link rel="alternate" hreflang="en-GB" href="./index.html">
-<link rel="alternate" hreflang="sv-SE" href="./../svenska/denat-lahi/index.html">
+<link rel="alternate" hreflang="sv-SE" href="./../svenska/404-error/index.html">
 <link rel="alternate" hreflang="en" href="./index.html">
-<link rel="alternate" hreflang="sv" href="./../svenska/denat-lahi/index.html">
+<link rel="alternate" hreflang="sv" href="./../svenska/404-error/index.html">
 <link rel="icon" href="./../wp-content/uploads/2025/07/cropped-denatlahi-favicon-32x32.jpg" sizes="32x32">
 <link rel="icon" href="./../wp-content/uploads/2025/07/cropped-denatlahi-favicon-192x192.jpg" sizes="192x192">
 <link rel="apple-touch-icon" href="./../wp-content/uploads/2025/07/cropped-denatlahi-favicon-180x180.jpg">
@@ -296,7 +336,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
   "knowsAbout": ["Wildlife photography", "Swedish mammals", "Naturfotografi"]
 }
 </script><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
-<body class="wp-singular page-template-default page page-id-125284 wp-theme-uncode translatepress-en_GB hormenu-position-left megamenu-full-submenu hmenu hmenu-position-right header-full-width main-center-align menu-mobile-transparent menu-custom-padding menu-sticky-mobile menu-mobile-centered menu-mobile-off-canvas mobile-parallax-not-allowed ilb-no-bounce unreg qw-body-scroll-disabled megamenu-side-to-side menu-sticky-fix no-qty-fx wpb-js-composer js-comp-ver-7.0 vc_responsive" data-border="0">
+<body class="wp-singular page-template-default page page-id-119171 wp-theme-uncode translatepress-en_GB hormenu-position-left megamenu-full-submenu hmenu hmenu-position-right header-full-width main-center-align menu-mobile-transparent menu-custom-padding menu-sticky-mobile menu-mobile-centered menu-mobile-off-canvas mobile-parallax-not-allowed ilb-no-bounce unreg adaptive-images-async qw-body-scroll-disabled megamenu-side-to-side menu-sticky-fix no-qty-fx wpb-js-composer js-comp-ver-7.0 vc_responsive" data-border="0">
 		<div id="vh_layout_help"></div>
 		<div id="uncode-custom-cursor" class="basic-style link-only" data-cursor="" data-skin="light"><span></span><span></span></div>
 		<div id="uncode-custom-cursor-pilot" class="basic-style link-only" data-cursor="" data-skin="light"><span></span><span></span></div>
@@ -326,7 +366,7 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <li id="menu-item-125489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125489 menu-item-link"><a title="Behind the scenes" href="./../behind-the-scenes/index.html">Behind the scenes<i class="fa fa-angle-right fa-dropdown"></i></a></li>
 <li id="menu-item-121481" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-121481 menu-item-link"><a title="FAQs" href="./../faqs/index.html">FAQs<i class="fa fa-angle-right fa-dropdown"></i></a></li>
 <li id="menu-item-119817" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119817 menu-item-link"><a title="Contact" href="./../contact/index.html">Contact<i class="fa fa-angle-right fa-dropdown"></i></a></li>
-<li id="menu-item-121881" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-121881 menu-item-link"><a href="./../svenska/denat-lahi/index.html"><span data-no-translation><img decoding="async" class="trp-flag-image" src="./../wp-content/plugins/translatepress-multilingual/assets/images/flags/sv_SE.png" width="18" height="12" alt="sv_SE" title="Swedish"></span><i class="fa fa-angle-right fa-dropdown"></i></a></li>
+<li id="menu-item-121881" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-121881 menu-item-link"><a href="./../svenska/404-error/index.html"><span data-no-translation><img decoding="async" class="trp-flag-image" src="./../wp-content/plugins/translatepress-multilingual/assets/images/flags/sv_SE.png" width="18" height="12" alt="sv_SE" title="Swedish"></span><i class="fa fa-angle-right fa-dropdown"></i></a></li>
 <li id="menu-item-121880" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher current-language-menu-item menu-item-121880 menu-item-link"><a href="./index.html"><span data-no-translation><img decoding="async" class="trp-flag-image" src="./../wp-content/plugins/translatepress-multilingual/assets/images/flags/en_GB.png" width="18" height="12" alt="en_GB" title="English"></span><i class="fa fa-angle-right fa-dropdown"></i></a></li>
 </ul></div><div class="uncode-close-offcanvas-mobile lines-button close navbar-mobile-el"><span class="lines"></span></div></div>
 																		</div>
@@ -338,124 +378,127 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 			<div class="main-wrapper">
 				<div class="main-container">
 					<div class="page-wrapper">
-						<div class="sections-container"><div id="page-header"><div class="header-wrapper header-uncode-block">
-									<div class="header-content-block row-container  style-color-xsdn-bg style-light"><div class="header-content-block-inner limit-width row row-parent"></div><!-- /.header-content-block --></div><!-- /.header-content-block-inner --></div></div><script type="text/javascript">UNCODE.initHeader();</script><article id="post-125284" class="page-body style-color-xsdn-bg post-125284 page type-page status-publish has-post-thumbnail hentry">
+						<div class="sections-container">
+<div id="page-header"><div class="header-wrapper header-uncode-block">
+									<div data-parent="true" class="vc_row style-accent-bg vc_custom_1698179490683 row-container" style="margin-top: -200px ;z-index: 1;" id="row-unique-0"><div class="row limit-width row-parent row-header"><div class="wpb_row row-inner"><div class="wpb_column pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-dark"><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"></div></div></div></div></div><script id="script-row-unique-0" data-row="script-row-unique-0" type="text/javascript" class="vc_controls">UNCODE.initRow(document.getElementById("row-unique-0"));</script></div></div></div></div></div><script type="text/javascript">UNCODE.initHeader();</script><article id="post-119171" class="page-body style-color-xsdn-bg post-119171 page type-page status-publish hentry">
 						<div class="post-wrapper">
-							<div class="post-body"><div class="post-content un-no-sidebar-layout"><div data-parent="true" class="vc_row vc_custom_1751664924532 row-container" style="padding-top: 50px ;padding-bottom: 10px ;" id="row-unique-0"><div class="row single-top-padding single-bottom-padding single-h-padding limit-width row-parent"><div class="wpb_row row-inner"><div class="wpb_column pos-top pos-center align_left column_parent col-lg-8 half-internal-gutter"><div class="uncol style-light"><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="uncode-single-media  text-left"><div class="single-wrapper" style="max-width: 100%;"><div class="tmb tmb-light  tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg tmb-lightbox"><div class="t-inside"><div class="t-entry-visual"><div class="t-entry-visual-tc"><div class="uncode-single-media-wrapper"><div class="dummy" style="padding-top: 75%;"></div><a tabindex="-1" href="./../wp-content/uploads/2025/06/Snapchat-1157076603-1.jpg" class="pushed" data-active="1" data-lbox="ilightbox_single-462829" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/06/Snapchat-1157076603-1-150x150.jpg" data-lg-size="1309-796"><img decoding="async" class="wp-image-124977" src="./../wp-content/uploads/2025/06/Snapchat-1157076603-1-uai-1061x796.jpg" width="1061" height="796" alt="Denat Lahi"></a></div>
-					</div>
-				</div></div></div></div></div></div></div></div></div></div><div class="wpb_column pos-middle pos-center align_left column_parent col-lg-4 half-internal-gutter"><div class="uncol style-light"><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="vc_custom_heading_wrap "><div class="heading-text el-text"><h2 class="h1"><span>Denat Lahi</span></h2></div><div class="clear"></div></div><div class="vc_custom_heading_wrap "><div class="heading-text el-text"><h3 class="fontsize-959316 font-weight-300"><span><span class="font-339240">Naturfotograf</span></span></h3></div><div class="clear"></div></div><div class="uncode_text_column"><p>Mitt namn är Denat, jag bor i Lund och jag är 17 år. Under de senaste två åren har jag utvecklat ett stort intresse för naturfotografering, särskilt för att dokumentera livet hos lokala däggdjur.</p>
-</div><div class="uncode_text_column text-small"><table class="woocommerce-product-attributes shop_attributes" style="height: 165px;" width="394">
-<tbody>
-<tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_ålder" style="background-color: #f1f1f1;">
-<th class="woocommerce-product-attributes-item__label"><strong>Ålder</strong></th>
-<td class="woocommerce-product-attributes-item__value">17 år (11 Februari 2008)</td>
-</tr>
-<tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_plats">
-<th class="woocommerce-product-attributes-item__label"><strong>Plats</strong></th>
-<td class="woocommerce-product-attributes-item__value">Lund stad, Lunds Kommun</td>
-</tr>
-<tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_intresseområde" style="background-color: #f1f1f1;">
-<th class="woocommerce-product-attributes-item__label">Intresseområde</th>
-<td class="woocommerce-product-attributes-item__value">Däggdjur</td>
-</tr>
-</tbody>
-</table>
+							<div class="post-body"><div class="post-content un-no-sidebar-layout"><div data-parent="true" class="vc_row row-container with-zoomout" id="row-unique-1"><div class="row-background background-element">
+											<div class="background-wrapper">
+												<div class="background-inner adaptive-async" style="background-image: url(./../wp-content/uploads/2025/04/IMG_0799-uai-1440x960.jpg);background-repeat: no-repeat;background-position: center center;background-attachment: scroll;background-size: cover;" data-uniqueid="124739-888077" data-guid="http://localhost:10086/wp-content/uploads/2025/04/IMG_0799.jpg" data-path="2025/04/IMG_0799.jpg" data-width="1920" data-height="1280" data-singlew="12" data-singleh="null" data-crop=""></div>
+												<div class="block-bg-overlay style-color-jevc-bg" style="opacity: 0.41;"></div>
+											</div>
+										</div><div class="row limit-width row-parent" data-height-ratio="full" data-minheight="666"><div class="wpb_row row-inner"><div class="wpb_column pos-middle pos-center align_center column_parent col-lg-12 no-internal-gutter"><div class="uncol style-dark shift_y_neg_single"><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:41%;"><div class="vc_custom_heading_wrap mobile-hidden"><div class="heading-text el-text"><h2 class="fontsize-739966 font-weight-800"><span>404</span></h2></div><div class="clear"></div></div><div class="vc_custom_heading_wrap desktop-hidden tablet-hidden"><div class="heading-text el-text heading-bigtext"><h2 class="bigtext font-weight-800"><span>⠀404⠀</span></h2></div><div class="clear"></div></div><div class="empty-space empty-quart"><span class="empty-space-inner"></span></div>
+<div class="vc_custom_heading_wrap "><div class="heading-text el-text"><h2 class="h2"><span>Page not found!</span></h2></div><div class="clear"></div></div><div class="empty-space empty-half"><span class="empty-space-inner"></span></div>
+<div class="uncode_text_column"><div class="card col-12 col-lg">
+<div class="card-wrapper">
+<p class="mbr-text mbr-fonts-style display-5">The page you are requesting doesn’t exist or might have been removed.</p>
+</div>
+</div>
 <p>
-</p></div><div class="uncode_text_column"><p>Hemsida: <a style="color: #1a0dab;" href="https://www.denatlahi.com/">www.denatlahi.com</a></p>
-<p>Instagram: <a style="color: #1a0dab;" href="https://www.instagram.com/denatlahiphotos/">https://www.instagram.com/denatlahiphotos/</a></p>
-</div></div></div></div></div></div><script id="script-row-unique-0" data-row="script-row-unique-0" type="text/javascript" class="vc_controls">UNCODE.initRow(document.getElementById("row-unique-0"));</script></div></div></div><div data-parent="true" class="vc_row row-container" id="row-unique-1"><div class="row single-top-padding single-bottom-padding no-h-padding limit-width row-parent"><div class="wpb_row row-inner"><div class="wpb_column pos-middle pos-center align_center column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light"><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div id="gallery-835410" class="isotope-system isotope-general-light grid-general-light">
-				
-	<div class="isotope-wrapper grid-wrapper no-gutter">
-						<div class="isotope-container isotope-layout style-masonry" data-type="masonry" data-layout="masonry" data-lg="1000" data-md="600" data-sm="480">
-<div class="tmb tmb-iso-w4 tmb-iso-h4 tmb-light tmb-overlay-text-anim tmb-overlay-anim tmb-overlay-middle tmb-overlay-text-left tmb-image-anim tmb-bordered tmb-id-123131  tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg tmb-lightbox"><div class="t-inside"><div class="t-entry-visual"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.7%;"></div><a tabindex="-1" href="./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg" class="pushed" data-notmb="1" data-counter="1" data-lbox="ilightbox_gallery-835410" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-150x150.jpg" data-lg-size="1920-1280" data-lb-index="0"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.01;"></div></div><img decoding="async" class="wp-image-123131" src="./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg" width="1920" height="1280" alt="Denat Lahi" srcset="./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg 1920w, ./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-300x200.jpg 300w, ./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-1024x683.jpg 1024w, ./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-768x512.jpg 768w, ./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-1536x1024.jpg 1536w, ./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-18x12.jpg 18w, ./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-350x233.jpg 350w" sizes="(max-width: 1920px) 100vw, 1920px"></a></div>
-					</div>
-				</div></div></div><div class="tmb tmb-iso-w4 tmb-iso-h4 tmb-light tmb-overlay-text-anim tmb-overlay-anim tmb-overlay-middle tmb-overlay-text-left tmb-image-anim tmb-bordered tmb-id-126110  tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg tmb-lightbox"><div class="t-inside"><div class="t-entry-visual"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.7%;"></div><a tabindex="-1" href="./../wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB.jpg" class="pushed" data-notmb="1" data-counter="1" data-lbox="ilightbox_gallery-835410" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-150x150.jpg" data-lg-size="1920-1280" data-lb-index="1"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.01;"></div></div><img decoding="async" class="wp-image-126110" src="./../wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB.jpg" width="1920" height="1280" alt="Denat Lahi pine marten. Denat Lahi skogsmård. Denat lahi bästa bild" srcset="./../wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB.jpg 1920w, ./../wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-300x200.jpg 300w, ./../wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg 1024w, ./../wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-768x512.jpg 768w, ./../wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1536x1024.jpg 1536w, ./../wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-18x12.jpg 18w, ./../wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-350x233.jpg 350w" sizes="(max-width: 1920px) 100vw, 1920px"></a></div>
-					</div>
-				</div></div></div><div class="tmb tmb-iso-w4 tmb-iso-h4 tmb-light tmb-overlay-text-anim tmb-overlay-anim tmb-overlay-middle tmb-overlay-text-left tmb-image-anim tmb-bordered tmb-id-123134  tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg tmb-lightbox"><div class="t-inside"><div class="t-entry-visual"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.7%;"></div><a tabindex="-1" href="./../wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg" class="pushed" data-notmb="1" data-counter="1" data-lbox="ilightbox_gallery-835410" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x-150x150.jpg" data-lg-size="1920-1280" data-lb-index="2"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.01;"></div></div><img decoding="async" class="wp-image-123134" src="./../wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg" width="1920" height="1280" alt="Denat Lahi" srcset="./../wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg 1920w, ./../wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x-300x200.jpg 300w, ./../wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x-1024x683.jpg 1024w, ./../wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x-768x512.jpg 768w, ./../wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x-1536x1024.jpg 1536w, ./../wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x-18x12.jpg 18w, ./../wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x-350x233.jpg 350w" sizes="(max-width: 1920px) 100vw, 1920px"></a></div>
-					</div>
-				</div></div></div><div class="tmb tmb-iso-w4 tmb-iso-h4 tmb-light tmb-overlay-text-anim tmb-overlay-anim tmb-overlay-middle tmb-overlay-text-left tmb-image-anim tmb-bordered tmb-id-125279  tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg tmb-lightbox"><div class="t-inside"><div class="t-entry-visual"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.7%;"></div><a tabindex="-1" href="./../wp-content/uploads/2025/07/Rav1.jpg" class="pushed" data-notmb="1" data-counter="1" data-lbox="ilightbox_gallery-835410" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/07/Rav1-150x150.jpg" data-lg-size="1920-1280" data-lb-index="3"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.01;"></div></div><img decoding="async" class="wp-image-125279" src="./../wp-content/uploads/2025/07/Rav1.jpg" width="1920" height="1280" alt="© Denat Lahi" srcset="./../wp-content/uploads/2025/07/Rav1.jpg 1920w, ./../wp-content/uploads/2025/07/Rav1-300x200.jpg 300w, ./../wp-content/uploads/2025/07/Rav1-1024x683.jpg 1024w, ./../wp-content/uploads/2025/07/Rav1-768x512.jpg 768w, ./../wp-content/uploads/2025/07/Rav1-1536x1024.jpg 1536w, ./../wp-content/uploads/2025/07/Rav1-18x12.jpg 18w, ./../wp-content/uploads/2025/07/Rav1-350x233.jpg 350w" sizes="(max-width: 1920px) 100vw, 1920px"></a></div>
-					</div>
-				</div></div></div><div class="tmb tmb-iso-w4 tmb-iso-h4 tmb-light tmb-overlay-text-anim tmb-overlay-anim tmb-overlay-middle tmb-overlay-text-left tmb-image-anim tmb-bordered tmb-id-125077  tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg tmb-lightbox"><div class="t-inside"><div class="t-entry-visual"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.7%;"></div><a tabindex="-1" href="./../wp-content/uploads/2025/07/MG_1024FINAL.jpg" class="pushed" data-notmb="1" data-counter="1" data-lbox="ilightbox_gallery-835410" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/07/MG_1024FINAL-150x150.jpg" data-lg-size="1620-1080" data-lb-index="4"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.01;"></div></div><img decoding="async" class="wp-image-125077" src="./../wp-content/uploads/2025/07/MG_1024FINAL.jpg" width="1620" height="1080" alt="Denat Lahi. Pine Marten. Skogsmård. www.denatlahi.com" srcset="./../wp-content/uploads/2025/07/MG_1024FINAL.jpg 1620w, ./../wp-content/uploads/2025/07/MG_1024FINAL-300x200.jpg 300w, ./../wp-content/uploads/2025/07/MG_1024FINAL-1024x683.jpg 1024w, ./../wp-content/uploads/2025/07/MG_1024FINAL-768x512.jpg 768w, ./../wp-content/uploads/2025/07/MG_1024FINAL-1536x1024.jpg 1536w, ./../wp-content/uploads/2025/07/MG_1024FINAL-18x12.jpg 18w, ./../wp-content/uploads/2025/07/MG_1024FINAL-350x233.jpg 350w" sizes="(max-width: 1620px) 100vw, 1620px"></a></div>
-					</div>
-				</div></div></div><div class="tmb tmb-iso-w4 tmb-iso-h4 tmb-light tmb-overlay-text-anim tmb-overlay-anim tmb-overlay-middle tmb-overlay-text-left tmb-image-anim tmb-bordered tmb-id-124803  tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg tmb-lightbox"><div class="t-inside"><div class="t-entry-visual"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.7%;"></div><a tabindex="-1" href="./../wp-content/uploads/2025/06/C12_Pine_Marten_Visit-1.jpg" class="pushed" data-notmb="1" data-counter="1" data-lbox="ilightbox_gallery-835410" data-external-thumb-image="http://localhost:10086/wp-content/uploads/2025/06/C12_Pine_Marten_Visit-1-150x150.jpg" data-lg-size="1500-1000" data-lb-index="5"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.01;"></div></div><img decoding="async" class="wp-image-124803" src="./../wp-content/uploads/2025/06/C12_Pine_Marten_Visit-1.jpg" width="1500" height="1000" alt="Denat Lahi" srcset="./../wp-content/uploads/2025/06/C12_Pine_Marten_Visit-1.jpg 1500w, ./../wp-content/uploads/2025/06/C12_Pine_Marten_Visit-1-300x200.jpg 300w, ./../wp-content/uploads/2025/06/C12_Pine_Marten_Visit-1-1024x683.jpg 1024w, ./../wp-content/uploads/2025/06/C12_Pine_Marten_Visit-1-768x512.jpg 768w, ./../wp-content/uploads/2025/06/C12_Pine_Marten_Visit-1-18x12.jpg 18w, ./../wp-content/uploads/2025/06/C12_Pine_Marten_Visit-1-350x233.jpg 350w" sizes="(max-width: 1500px) 100vw, 1500px"></a></div>
-					</div>
-				</div></div></div>						</div>
-					</div>
-
-	
-	
-</div>
-
-<div class="uncode_text_column"><p>© Denat Lahi. Alla rättigheter förbehållna.</p>
-</div><div class="divider-wrapper ">
-    <hr class="separator-no-padding" style="border-top-width: 3px;">
-</div>
-<div class="uncode-single-media  text-left"><div class="single-wrapper" style="max-width: 100%;"><div class="tmb tmb-light  tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg"><div class="t-inside"><div class="t-entry-visual"><div class="t-entry-visual-tc"><div class="uncode-single-media-wrapper"><img decoding="async" class="wp-image-123131" src="./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg" width="1920" height="1280" alt="Denat Lahi" srcset="./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x.jpg 1920w, ./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-300x200.jpg 300w, ./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-1024x683.jpg 1024w, ./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-768x512.jpg 768w, ./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-1536x1024.jpg 1536w, ./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-18x12.jpg 18w, ./../wp-content/uploads/2025/03/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-350x233.jpg 350w" sizes="(max-width: 1920px) 100vw, 1920px"></div>
-					</div>
-				</div></div></div></div></div><div class="uncode_text_column"><p>Efter flera veckor av planering kom en vacker och lugna sommarmorgon. Jag visste vart rävungen skulle vara, men ögonblicket var uttöver det jag någonsin hade kunnat förvänta mig och denna bild är bland mina bästa naturfoton. © Denat Lahi</p>
-</div></div></div></div></div></div><script id="script-row-unique-1" data-row="script-row-unique-1" type="text/javascript" class="vc_controls">UNCODE.initRow(document.getElementById("row-unique-1"));</script></div></div></div><div data-parent="true" class="vc_row row-container" id="row-unique-2"><div class="row limit-width row-parent"><div class="wpb_row row-inner"><div class="wpb_column pos-top pos-center align_center column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light"><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><span class="btn-container"><a href="./../index.html" class="custom-link btn btn-lg border-width-0 btn-color-515157 btn-icon-left btn-ripple-in btn-border-animated" title="Home"><i class="fa fa-arrow-left2"></i>Gå till startsida - denatlahi.com</a></span></div></div></div></div></div><script id="script-row-unique-2" data-row="script-row-unique-2" type="text/javascript" class="vc_controls">UNCODE.initRow(document.getElementById("row-unique-2"));</script></div></div></div>
+</p></div><div class="empty-space empty-half"><span class="empty-space-inner"></span></div>
+<span class="btn-container animate_when_almost_visible bottom-t-top" data-delay="200" data-speed="500"><a href="./../index.html" class="custom-link btn btn-lg border-width-0 btn-accent btn-shadow btn-shadow-lg btn-icon-left btn-ripple-in btn-border-animated" title="Home"><i class="fa fa-arrow-left2"></i>Back Home</a></span><div class="empty-space empty-single"><span class="empty-space-inner"></span></div>
+</div></div></div></div></div><script id="script-row-unique-1" data-row="script-row-unique-1" type="text/javascript" class="vc_controls">UNCODE.initRow(document.getElementById("row-unique-1"));</script></div></div></div>
 </div></div>
 						</div>
 					</article>
 								</div><!-- sections container -->
 							</div><!-- page wrapper -->
-												<footer id="colophon" class="site-footer">
-							<div data-parent="true" class="vc_row style-color-gyho-bg vc_custom_1696196261483 row-container desktop-hidden" style="margin-top: -2px ;padding-top: 17px ;padding-bottom: 35px ;" id="row-unique-3"><div class="row limit-width row-parent"><div class="wpb_row row-inner"><div class="wpb_column pos-top pos-right align_left column_parent col-lg-4 one-internal-gutter"><div class="uncol style-light"><div class="uncoltable"><div class="uncell  vc_custom_1696195478638 no-block-padding" style="padding-bottom: 20px ;"><div class="uncont"><div class="vc_custom_heading_wrap "><div class="heading-text el-text"><h5 class="font-136269 h4"><span>Menu</span></h5></div><div class="clear"></div></div><div class="uncode_text_column vc_custom_1752968851898" style="margin-bottom: -39px ;padding-top: 7px ;"><ul>
-<li><a href="./../about/index.html">About</a></li>
-<li><a href="./../galleries/index.html">Galleries</a></li>
-<li><a href="./../prints/index.html">Prints</a></li>
-<li><a href="./../behind-the-scenes/index.html">Behind The Scenes</a></li>
-<li><a href="./../faqs/index.html">FAQs</a></li>
-</ul>
-</div></div></div></div></div></div><div class="wpb_column pos-top pos-center align_left column_parent col-lg-4 one-internal-gutter"><div class="uncol style-light"><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="vc_custom_heading_wrap "><div class="heading-text el-text"><h5 class="font-136269 h4"><span>Support &amp; Info</span></h5></div><div class="clear"></div></div><div class="uncode_text_column vc_custom_1743899256000" style="margin-bottom: -11px ;padding-top: 7px ;"><ul>
-<li><a href="./../contact/index.html">Contact</a></li>
-<li><a href="./../privacy-policy/index.html">Privacy Policy</a></li>
-<li><a href="./../terms-and-conditions/index.html">Terms &amp; Conditions</a></li>
-<li><a href="./../shipping-information/index.html">Shipping Information</a></li>
-</ul>
-</div></div></div></div></div></div><div class="wpb_column pos-top pos-center align_left column_parent col-lg-4 no-internal-gutter"><div class="uncol style-light"><div class="uncoltable"><div class="uncell  vc_custom_1698948731168 no-block-padding" style="padding-top: 11px ;"><div class="uncont"><div class="vc_custom_heading_wrap "><div class="heading-text el-text"><h5 class="font-136269 h4"><span>Contact Me</span></h5></div><div class="clear"></div></div><div class="empty-space empty-quart"><span class="empty-space-inner"></span></div>
-<div class="uncode_text_column"><p><a href="mailto:info@denatlahi.com">contact@denatlahi.com</a></p>
-</div><div class="empty-space empty-half"><span class="empty-space-inner"></span></div>
-<div class="uncode-vc-social"><div class="social-icon icon-box icon-box-top icon-inline"><a href="https://www.instagram.com/denatlahiphotos/" target="_blank"><i class="fa fa-instagram"></i></a></div><div class="social-icon icon-box icon-box-top icon-inline"><a href="https://www.facebook.com/denatlahi/" target="_blank"><i class="fa fa-facebook1"></i></a></div><div class="social-icon icon-box icon-box-top icon-inline"><a href="https://www.youtube.com/@DenatLahi/" target="_blank"><i class="fa fa-youtube-play"></i></a></div><div class="social-icon icon-box icon-box-top icon-inline"><a href="http://www.denatlahi.com/" target="_blank"><i class="fa fa-globe"></i></a></div></div></div></div></div></div></div><script id="script-row-unique-3" data-row="script-row-unique-3" type="text/javascript" class="vc_controls">UNCODE.initRow(document.getElementById("row-unique-3"));</script></div></div></div><div data-parent="true" class="vc_row style-color-lxmt-bg vc_custom_1730849795026 row-container tablet-hidden mobile-hidden" style="padding-left: 69px ;" id="row-unique-4"><div class="row col-double-gutter triple-top-padding double-bottom-padding single-h-padding limit-width row-parent"><div class="wpb_row row-inner"><div class="wpb_column pos-middle pos-center align_center column_parent col-lg-12 tablet-hidden mobile-hidden double-internal-gutter"><div class="uncol style-dark"><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:900px;"><div class="vc_row row-internal row-container"><div class="row col-double-gutter row-child"><div class="wpb_row row-inner"><div class="wpb_column pos-top pos-center align_left column_child col-lg-4 half-internal-gutter"><div class="uncol style-light"><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="vc_custom_heading_wrap "><div class="heading-text el-text"><h5 class="font-136269 h4"><span><span class="font-136269">Menu</span></span></h5></div><div class="clear"></div></div><div class="uncode-wrapper uncode-list">
-<ul>
- 	<li><a href="./../about/index.html">About</a></li>
- 	<li><a href="./../galleries/index.html">Galleries</a></li>
- 	<li><a href="./../prints/index.html">Prints</a></li>
- 	<li><a href="./../behind-the-scenes/index.html">Behind The Scenes</a></li>
- 	<li><a href="./../faqs/index.html">FAQs</a></li>
-</ul>
-</div></div></div></div></div></div><div class="wpb_column pos-top pos-center align_left column_child col-lg-4 half-internal-gutter"><div class="uncol style-light"><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="vc_custom_heading_wrap "><div class="heading-text el-text"><h5 class="font-136269 h4"><span>Support &amp; Info</span></h5></div><div class="clear"></div></div><div class="uncode_text_column"><ul>
-<li><a href="./../contact/index.html">Contact</a></li>
-<li><a href="./../privacy-policy/index.html">Privacy Policy</a></li>
-<li><a href="./../terms-and-conditions/index.html">Terms &amp; Conditions</a></li>
-<li><a href="./../shipping-information/index.html">Shipping Information</a></li>
-</ul>
-</div></div></div></div></div></div><div class="wpb_column pos-top pos-center align_left align_left_tablet align_left_mobile column_child col-lg-4 half-internal-gutter"><div class="uncol style-light"><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="vc_custom_heading_wrap "><div class="heading-text el-text"><h5 class="font-136269 h4"><span><span class="font-136269">Contact Me</span></span></h5></div><div class="clear"></div></div><div class="uncode_text_column"><p><a href="mailto:contact@denatlahi.com">contact@denatlahi.com</a></p>
-</div><div class="uncode-vc-social"><div class="social-icon icon-box icon-box-top icon-inline"><a href="https://www.instagram.com/denatlahiphotos/" target="_blank"><i class="fa fa-instagram"></i></a></div><div class="social-icon icon-box icon-box-top icon-inline"><a href="https://www.facebook.com/denatlahi/" target="_blank"><i class="fa fa-facebook1"></i></a></div><div class="social-icon icon-box icon-box-top icon-inline"><a href="https://www.youtube.com/@DenatLahi/" target="_blank"><i class="fa fa-youtube-play"></i></a></div><div class="social-icon icon-box icon-box-top icon-inline"><a href="http://www.denatlahi.com/" target="_blank"><i class="fa fa-globe"></i></a></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><script id="script-row-unique-4" data-row="script-row-unique-4" type="text/javascript" class="vc_controls">UNCODE.initRow(document.getElementById("row-unique-4"));</script></div></div></div><div data-parent="true" class="vc_row style-back_color-168492-bg row-container mobile-hidden" id="row-unique-5"><div class="row no-top-padding no-bottom-padding single-h-padding full-width row-parent" data-height-ratio="6"><div class="wpb_row row-inner"><div class="wpb_column pos-middle pos-center align_center column_parent col-lg-12 single-internal-gutter"><div class="uncol style-dark"><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="vc_custom_heading_wrap "><div class="heading-text el-text"><h1 class="fontsize-173443 font-weight-200 text-text_color-195715-color"><span>© 2025 Denat Lahi. All Rights Reserved. | <a class="text-primary" href="./../privacy-policy/index.html"><span style="color: #84adff;">Privacy Policy</span></a></span></h1></div><div class="clear"></div></div></div></div></div></div></div><script id="script-row-unique-5" data-row="script-row-unique-5" type="text/javascript" class="vc_controls">UNCODE.initRow(document.getElementById("row-unique-5"));</script></div></div></div><div data-parent="true" class="vc_row style-back_color-883410-bg row-container desktop-hidden tablet-hidden" id="row-unique-6"><div class="row one-top-padding one-bottom-padding single-h-padding full-width row-parent" data-height-ratio="1"><div class="wpb_row row-inner"><div class="wpb_column pos-middle pos-center align_center column_parent col-lg-12 single-internal-gutter"><div class="uncol style-dark"><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="vc_custom_heading_wrap "><div class="heading-text el-text"><h1 class="h6 font-weight-200 text-text_color-119539-color"><span><p class="elementor-heading-title elementor-size-medium">© 2025 Denat Lahi. All Rights Reserved. | <a class="text-primary" href="./../privacy-policy/index.html"><span style="color: #84adff;">Privacy Policy</span></a></p></span></h1></div><div class="clear"></div></div></div></div></div></div></div><script id="script-row-unique-6" data-row="script-row-unique-6" type="text/javascript" class="vc_controls">UNCODE.initRow(document.getElementById("row-unique-6"));</script></div></div></div>						</footer>
 												<div class="overlay-menu-focus style-dark-bg "></div>					</div><!-- main container -->
 				</div><!-- main wrapper -->
 							</div><!-- box container -->
 					</div><!-- box wrapper -->
-		<div class="style-light footer-scroll-top footer-scroll-higher"><a href="#" class="scroll-top"><i class="fa fa-angle-up fa-stack btn-default btn-hover-nobg"></i></a></div>
+		
 		
 	<template id="tp-language" data-tp-language="en_GB"></template><script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/uncode\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
-<script type="text/javascript">// Block right-click, long-press, and drag on images
-['contextmenu', 'touchstart', 'dragstart'].forEach(evt => {
-  document.addEventListener(evt, function(event) {
-    if (event.target.tagName === 'IMG') {
-      event.preventDefault();
-    }
-  });
+<script type="text/javascript">document.addEventListener('contextmenu', function(event) {
+  if (event.target.tagName === 'IMG') {
+    event.preventDefault(); // Bara högerklick på bilder blockeras
+  }
 });
 
-// Remove double slashes in URLs
-function removeDoubleSlashes(url) {
-  return url.replace(/\/{2,}/g, '/');
+document.addEventListener('touchstart', function(event) {
+  if (event.target.tagName === 'IMG') {
+    event.preventDefault(); // Bara långtryck på bilder blockeras
+  }
+});
+
+document.addEventListener('dragstart', function(event) {
+  if (event.target.tagName === 'IMG') {
+    event.preventDefault(); // Bara drag av bilder blockeras
+  }
+});
+
+
+let isScreenshotBlocked = false;
+
+function showScreenshotWarning() {
+  if (!isScreenshotBlocked) {
+    document.body.classList.add('screenshot-blocked');
+    setTimeout(function() {
+      document.body.classList.remove('screenshot-blocked');
+    }, 1000);
+    isScreenshotBlocked = true;
+  }
 }
-console.log(removeDoubleSlashes("https://denatlahi.com//path//to///page"));
-</script><script type="text/html" id="wpb-modifications"> window.wpbCustomElement = 1; </script><script type="text/javascript" src="./../wp-content/plugins/mousewheel-smooth-scroll/js/lenis.min.js?ver=1.1.19" id="lenis-js"></script>
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === "PrintScreen") {
+    event.preventDefault();
+    showScreenshotWarning(); // Handle screenshot attempt
+  }
+});
+
+});
+function removeDoubleSlashes(url) {
+    return url.replace(/\/{2,}/g, '/');
+}
+
+// Example usage (can be removed later or adjusted for your needs)
+let url = "https://denatlahi.com//path//to///page";
+console.log(removeDoubleSlashes(url)); // Outputs: "https://denatlahi.com/path/to/page"
+
+document.addEventListener('contextmenu', function(event) {
+  if (event.target.tagName === 'IMG') {
+    event.preventDefault(); // Bara högerklick på bilder blockeras
+  }
+});
+
+document.addEventListener('touchstart', function(event) {
+  if (event.target.tagName === 'IMG') {
+    event.preventDefault(); // Bara långtryck på bilder blockeras
+  }
+});
+
+document.addEventListener('dragstart', function(event) {
+  if (event.target.tagName === 'IMG') {
+    event.preventDefault(); // Bara drag av bilder blockeras
+  }
+  
+// Add CSS for resizing flags on mobile and desktop
+const style = document.createElement('style');
+style.innerHTML = `
+  .flag-image {
+    display: block;
+    margin-top: 1px;  /* Adds 1px padding to the top of flags */
+    max-width: 100%;  /* Ensure flag width doesn't exceed container */
+    height: auto;  /* Maintain aspect ratio *
+  }
+window.onload = function() {
+    document.querySelector('div[data-uniqueid="123134-785896"]')
+        .style.backgroundImage = 'url("//wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg")';
+};
+</script><script type="text/javascript">window.onload = function() {
+    document.querySelector('div[data-uniqueid="123134-785896"]')
+        .style.backgroundImage = 'url("//wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg")';
+};
+window.addEventListener('DOMContentLoaded', () => {
+    const el = document.querySelector('div[data-uniqueid="123134-785896"]');
+    if (el && el.dataset.guid) {
+        el.style.backgroundImage = `url("${el.dataset.guid}")`;
+    }
+});</script><script type="text/html" id="wpb-modifications"> window.wpbCustomElement = 1; </script><script type="text/javascript" src="./../wp-content/plugins/mousewheel-smooth-scroll/js/lenis.min.js?ver=1.1.19" id="lenis-js"></script>
 <script type="text/javascript" src="./../wp-content/uploads/wpmss/lenis-init.min.js?ver=1751808688" id="lenis-init-js"></script>
 <script type="text/javascript" id="mediaelement-core-js-before">
 /* <![CDATA[ */
@@ -470,7 +513,20 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 /* ]]> */
 </script>
 <script type="text/javascript" src="./../wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.8.2" id="wp-mediaelement-js"></script>
-<script type="text/javascript" src="./../wp-content/themes/uncode/library/js/plugins.js?ver=423689970" id="uncode-plugins-js"></script>
-<script type="text/javascript" src="./../wp-content/themes/uncode/library/js/app.js?ver=423689970" id="uncode-app-js"></script>
+<script type="text/javascript" src="./../wp-content/themes/uncode/library/js/plugins.js?ver=2116273628" id="uncode-plugins-js"></script>
+<script type="text/javascript" src="./../wp-content/themes/uncode/library/js/app.js?ver=2116273628" id="uncode-app-js"></script>
+<script type="text/javascript" id="jquery-lazyloadxt-js-extra">
+/* <![CDATA[ */
+var a3_lazyload_params = {"apply_images":"1","apply_videos":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./../wp-content/plugins/a3-lazy-load/assets/js/jquery.lazyloadxt.extra.min.js?ver=2.7.5" id="jquery-lazyloadxt-js"></script>
+<script type="text/javascript" src="./../wp-content/plugins/a3-lazy-load/assets/js/jquery.lazyloadxt.srcset.min.js?ver=2.7.5" id="jquery-lazyloadxt-srcset-js"></script>
+<script type="text/javascript" id="jquery-lazyloadxt-extend-js-extra">
+/* <![CDATA[ */
+var a3_lazyload_extend_params = {"edgeY":"0","horizontal_container_classnames":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./../wp-content/plugins/a3-lazy-load/assets/js/jquery.lazyloadxt.extend.js?ver=2.7.5" id="jquery-lazyloadxt-extend-js"></script>
 <script></script></body>
 </html>
