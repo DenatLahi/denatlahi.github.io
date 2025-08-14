@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>./index.html</loc>
-		<lastmod>2025-08-13T22:18:11+00:00</lastmod>
+		<lastmod>2025-08-14T21:02:00+00:00</lastmod>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg</image:loc>
 		</image:image>
@@ -1313,22 +1313,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>./bestallning-av-prints-med-rabatt/index.html</loc>
-		<lastmod>2025-08-10T14:43:14+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/05/495371653_1466900017801964_4742202708697832448_n-1024x882.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/05/495371653_1466900017801964_4742202708697832448_n-1024x882.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>./livet-bortom-skogen-print/index.html</loc>
 		<lastmod>2025-08-10T14:43:46+00:00</lastmod>
 		<image:image>
@@ -2300,16 +2284,32 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>./bestallning-av-prints-med-rabatt/index.html</loc>
+		<lastmod>2025-08-13T23:14:54+00:00</lastmod>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/05/495371653_1466900017801964_4742202708697832448_n-1024x882.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/05/495371653_1466900017801964_4742202708697832448_n-1024x882.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc>./about/index.html</loc>
-		<lastmod>2025-08-13T22:14:29+00:00</lastmod>
+		<lastmod>2025-08-14T21:06:46+00:00</lastmod>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
+		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/06/Denat-Lahi-image-1024x768.jpg</image:loc>
@@ -2318,7 +2318,10 @@
 			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/Mard4-1024x683.jpg</image:loc>
+			<image:loc>./wp-content/uploads/2025/06/Denat-Lahi-image-1024x768.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/08/531849245_1538229627335669_806807198874686673_n-1024x638.jpg</image:loc>
@@ -2337,6 +2340,9 @@
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
