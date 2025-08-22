@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>./index.html</loc>
-		<lastmod>2025-08-14T21:02:00+00:00</lastmod>
+		<lastmod>2025-08-22T16:28:15+00:00</lastmod>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg</image:loc>
 		</image:image>
@@ -22,7 +22,7 @@
 			<image:loc>./wp-content/uploads/2025/04/IMG_0550WEB-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/Raw-Photo3-1024x683.jpg</image:loc>
+			<image:loc>./wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
@@ -1869,34 +1869,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>./behind-the-scenes/index.html</loc>
-		<lastmod>2025-08-10T15:33:15+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/20250709_015752-scaled.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/20250709_015752-768x1024.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/behindtheimage-topaz2-enhance-sharpen-2web-1024x543.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/20250630_165135-780x1024.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/20250119_115731v2-1024x615.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/05/497890915_1470287880796511_4731250106947431613_n.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>./terms-and-conditions/index.html</loc>
 		<lastmod>2025-08-10T15:48:04+00:00</lastmod>
 	</url>
@@ -2024,130 +1996,6 @@
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/04/IMG_0550WEB-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>./pine-marten-project/index.html</loc>
-		<lastmod>2025-08-13T11:15:31+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/formobile.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/20250209_153544-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/pinemarten4-1024x467.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-2-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/07849002-b936-4776-b9d2-f1428a3b800d-768x1024.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/20250526_001758-1024x768.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/2025-05-17T07_29_c5bbd318-06ea-4996-bb86-c1fd28b44fac_640x480.jpeg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_0946-1024x684.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_1024FINAL-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/05/497890915_1470287880796511_4731250106947431613_n.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_8996-1024x640.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/20250630_165135-780x1024.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_1024FINAL-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_0342raw_1-1024x684.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_4251V2-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_2251-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/Mard4-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_9282-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_1024FINAL-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-2-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/20250630_165135-780x1024.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_0342raw_1-1024x684.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_9282-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_2251-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/05/497890915_1470287880796511_4731250106947431613_n.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/Mard4-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_4251V2-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/behindtheimage-topaz2-enhance-sharpen-2web-1024x543.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/2025-05-17T07_29_c5bbd318-06ea-4996-bb86-c1fd28b44fac_640x480.jpeg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/pinemarten4-1024x467.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/07849002-b936-4776-b9d2-f1428a3b800d-768x1024.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/20250209_153544-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_0946-1024x684.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_8996-1024x640.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -2300,8 +2148,160 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>./behind-the-scenes/index.html</loc>
+		<lastmod>2025-08-22T16:07:24+00:00</lastmod>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/20250709_015752-scaled.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/20250709_015752-768x1024.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/behindtheimage-topaz2-enhance-sharpen-2web-1024x543.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/20250630_165135-780x1024.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/20250119_115731v2-1024x615.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/05/497890915_1470287880796511_4731250106947431613_n.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>./pine-marten-project/index.html</loc>
+		<lastmod>2025-08-22T16:12:21+00:00</lastmod>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/formobile.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/20250209_153544-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/pinemarten4-1024x467.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-2-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/07849002-b936-4776-b9d2-f1428a3b800d-768x1024.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/20250526_001758-1024x768.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/2025-05-17T07_29_c5bbd318-06ea-4996-bb86-c1fd28b44fac_640x480.jpeg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/Skogsmard-bakom-kulisserna-kodar-kameran-1024x764.jpeg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_1024FINAL-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/05/497890915_1470287880796511_4731250106947431613_n.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_8996-1024x640.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/20250630_165135-780x1024.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_1024FINAL-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_0342raw_1-1024x684.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_4251V2-1024x682.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_2251-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/Mard4-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_9282-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_1024FINAL-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/06/C12_Pine_Marten_Visit-2-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/20250630_165135-780x1024.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_0342raw_1-1024x684.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_9282-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_2251-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/05/497890915_1470287880796511_4731250106947431613_n.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/Mard4-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_4251V2-1024x682.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/behindtheimage-topaz2-enhance-sharpen-2web-1024x543.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/2025-05-17T07_29_c5bbd318-06ea-4996-bb86-c1fd28b44fac_640x480.jpeg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/pinemarten4-1024x467.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/07849002-b936-4776-b9d2-f1428a3b800d-768x1024.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/20250209_153544-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_0946-1024x684.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_8996-1024x640.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc>./about/index.html</loc>
-		<lastmod>2025-08-14T21:06:46+00:00</lastmod>
+		<lastmod>2025-08-22T16:27:41+00:00</lastmod>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
 		</image:image>
@@ -2321,10 +2321,13 @@
 			<image:loc>./wp-content/uploads/2025/06/Denat-Lahi-image-1024x768.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
+			<image:loc>./wp-content/uploads/2025/07/MG_1024FINAL-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/531849245_1538229627335669_806807198874686673_n-1024x638.jpg</image:loc>
+			<image:loc>./wp-content/uploads/2025/08/Skogsmard-bakom-kulisserna-kodar-kameran-1024x764.jpeg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/08/denat-lahi-diy-camera-trap-1024x576.jpg</image:loc>
