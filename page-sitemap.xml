@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="./wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="./main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>./index.html</loc>
-		<lastmod>2025-08-22T16:28:15+00:00</lastmod>
+		<lastmod>2025-08-28T18:46:39+00:00</lastmod>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x.jpg</image:loc>
 		</image:image>
@@ -22,7 +22,7 @@
 			<image:loc>./wp-content/uploads/2025/04/IMG_0550WEB-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
+			<image:loc>./wp-content/uploads/2025/08/539250116_1549632799528685_4403539118545916307_n-1024x768.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
@@ -1962,43 +1962,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>./faqs/index.html</loc>
-		<lastmod>2025-08-10T19:52:08+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/05/497890915_1470287880796511_4731250106947431613_n.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_1024FINAL-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/20250119_115731v2-1024x615.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_0545WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/POOP-COMPRESS-1024x768.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/05/497890915_1470287880796511_4731250106947431613_n.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_5960-Enhanced-NR-1WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/03/NO-DENOISE-IMG_5960-1024x684.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/05/497890915_1470287880796511_4731250106947431613_n.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/04/IMG_0550WEB-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>./galleries/index.html</loc>
 		<lastmod>2025-08-13T17:43:15+00:00</lastmod>
 		<image:image>
@@ -2301,7 +2264,7 @@
 	</url>
 	<url>
 		<loc>./about/index.html</loc>
-		<lastmod>2025-08-22T16:27:41+00:00</lastmod>
+		<lastmod>2025-08-28T18:45:11+00:00</lastmod>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
 		</image:image>
@@ -2318,16 +2281,19 @@
 			<image:loc>./wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/06/Denat-Lahi-image-1024x768.jpg</image:loc>
+			<image:loc>./wp-content/uploads/2025/08/Skogsmard-bakom-kulisserna-kodar-kameran-1024x764.jpeg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/539250116_1549632799528685_4403539118545916307_n-1024x768.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/07/MG_1024FINAL-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/Skogsmard-bakom-kulisserna-kodar-kameran-1024x764.jpeg</image:loc>
+			<image:loc>./wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
+			<image:loc>./wp-content/uploads/2025/08/Skogsmard-bakom-kulisserna-kodar-kameran-1024x764.jpeg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/08/denat-lahi-diy-camera-trap-1024x576.jpg</image:loc>
@@ -2364,6 +2330,43 @@
 		</image:image>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-mardprojektet-1024x682.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>./faqs/index.html</loc>
+		<lastmod>2025-08-28T18:58:23+00:00</lastmod>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/05/497890915_1470287880796511_4731250106947431613_n.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/MG_1024FINAL-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/07/20250119_115731v2-1024x615.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_0545WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/POOP-COMPRESS-1024x768.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/05/497890915_1470287880796511_4731250106947431613_n.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_5960-Enhanced-NR-1WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/03/NO-DENOISE-IMG_5960-1024x684.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/05/497890915_1470287880796511_4731250106947431613_n.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/04/IMG_0550WEB-1024x683.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
