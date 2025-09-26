@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>./index.html</loc>
-		<lastmod>2025-09-21T17:55:45+00:00</lastmod>
+		<lastmod>2025-09-26T18:43:23+00:00</lastmod>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/07/Rav1.jpg</image:loc>
 		</image:image>
@@ -1707,13 +1707,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>./newsletter/index.html</loc>
-		<lastmod>2025-09-21T17:49:50+00:00</lastmod>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/07/MG_9282-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>./faqs/index.html</loc>
 		<lastmod>2025-09-21T18:20:33+00:00</lastmod>
 		<image:image>
@@ -1872,8 +1865,24 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>./bestallning-av-prints-med-rabatt/index.html</loc>
+		<lastmod>2025-09-21T19:13:19+00:00</lastmod>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/05/495371653_1466900017801964_4742202708697832448_n-1024x882.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>./wp-content/uploads/2025/05/495371653_1466900017801964_4742202708697832448_n-1024x882.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc>./bestallning-av-fotoprints/index.html</loc>
-		<lastmod>2025-09-21T19:13:15+00:00</lastmod>
+		<lastmod>2025-09-26T18:24:06+00:00</lastmod>
 		<image:image>
 			<image:loc>./wp-content/uploads/2025/04/IMG_0545WEB-1024x683.jpg</image:loc>
 		</image:image>
@@ -1888,19 +1897,10 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>./bestallning-av-prints-med-rabatt/index.html</loc>
-		<lastmod>2025-09-21T19:13:19+00:00</lastmod>
+		<loc>./newsletter/index.html</loc>
+		<lastmod>2025-09-26T18:33:13+00:00</lastmod>
 		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/08/Denat-Lahi-Pine-Marten-Best-WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/05/495371653_1466900017801964_4742202708697832448_n-1024x882.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>./wp-content/uploads/2025/05/495371653_1466900017801964_4742202708697832448_n-1024x882.jpg</image:loc>
+			<image:loc>./wp-content/uploads/2025/09/MG_3243raw-1024x683.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
