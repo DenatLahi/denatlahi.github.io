@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://denatlahi.com/</loc>
-		<lastmod>2026-03-19T21:44:07+00:00</lastmod>
+		<lastmod>2026-04-02T12:38:17+00:00</lastmod>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/07/Rav1.jpg</image:loc>
 		</image:image>
@@ -43,7 +43,13 @@
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_6099-Naturum-skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_7674-naturum-skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/09/Skogsmard1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_5155-v2WEB-1-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/09/Skogsmard2-1024x683.jpg</image:loc>
@@ -55,16 +61,10 @@
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_3748-Naturum-Skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_5155-v2WEB-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/613035434_17989504361920195_6444004092574806014_n-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/04/IMG_8728-Enhanced-NRWEB-1024x671.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_7674-naturum-skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_6900-naturum-skrylle-sRGBWEB-1920x-1-1024x683.jpg</image:loc>
@@ -115,13 +115,13 @@
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEBUSETHISMETADATA_MG_5822-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/20251227_151642-1024x768.jpg</image:loc>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/2Denat-lahi-Forelasning-1024x621.png</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/09/Skogsmard1-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/IMG_6099-Bright-sRGB-1024x683.jpg</image:loc>
@@ -139,19 +139,13 @@
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/Denat_Lahi_Lodjur_bakom_kulisserna-2-1024x769.jpg</image:loc>
 		</image:image>
 		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/20251227_151642-1024x768.jpg</image:loc>
+		</image:image>
+		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_7890_v3WEB-1-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_3493-v10WEB-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_3748-Naturum-Skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_8728-Enhanced-NRWEB-1-1024x671.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/498b3e73-d1f6-4f68-adc8-1f7afd4f2e67.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/539250116_1549632799528685_4403539118545916307_n-1024x768.jpg</image:loc>
@@ -1550,91 +1544,8 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://denatlahi.com/contact/</loc>
-		<lastmod>2026-03-13T22:33:56+00:00</lastmod>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/32Denat-lahi-Forelasning-1024x896.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/20251227_151642-1024x768.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/2Denat-lahi-Forelasning-1024x621.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://denatlahi.com/about/</loc>
-		<lastmod>2026-03-13T22:44:56+00:00</lastmod>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/539250116_1549632799528685_4403539118545916307_n-1024x768.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/539250116_1549632799528685_4403539118545916307_n-1024x768.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/20251227_151642-1024x768.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/2Denat-lahi-Forelasning-1024x621.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/Denat_Lahi_Lodjur_bakom_kulisserna-2-1024x769.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WWFMagasin2025-41000060673-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/32Denat-lahi-Forelasning-1024x896.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat-Lahi-Forelasning.4.image_-1024x479.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/Denat_Lahi_Lodjur_bakom_kulisserna-2-1024x769.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/539250116_1549632799528685_4403539118545916307_n-1024x768.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/20251227_151642-1024x768.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/07/portratt2WEB-1024x576.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://denatlahi.com/lectures/</loc>
-		<lastmod>2026-03-19T21:43:20+00:00</lastmod>
+		<lastmod>2026-04-02T12:17:42+00:00</lastmod>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/32Denat-lahi-Forelasning.png</image:loc>
 		</image:image>
@@ -1646,6 +1557,9 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEBUSETHISMETADATA_MG_5822-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/2Denat-lahi-Forelasning-1024x621.png</image:loc>
@@ -1663,6 +1577,9 @@
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEBUSETHISMETADATA_MG_5822-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
@@ -1670,9 +1587,6 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat-Lahi-Forelasning.4.image_-1024x479.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/560923611_18534253105062153_6898734220389349519_n-1024x732.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/IMG_6099-Bright-sRGB-1024x683.jpg</image:loc>
@@ -1684,25 +1598,114 @@
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/09/Skogsmard1-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/09/MG_9207-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/07/07849002-b936-4776-b9d2-f1428a3b800d-768x1024.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/05/497890915_1470287880796511_4731250106947431613_n.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/32Denat-lahi-Forelasning-1024x896.png</image:loc>
-		</image:image>
-		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/2Denat-lahi-Forelasning-1024x621.png</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat-Lahi-Forelasning.4.image_-1024x479.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat-lahi-Forelasning.3-1024x622.png</image:loc>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEB_MG_0905-1024x683.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://denatlahi.com/contact/</loc>
+		<lastmod>2026-04-02T12:21:45+00:00</lastmod>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/32Denat-lahi-Forelasning-1024x896.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/20251227_151642-1024x768.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/2Denat-lahi-Forelasning-1024x621.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/32Denat-lahi-Forelasning-1024x896.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/20251227_151642-1024x768.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://denatlahi.com/about/</loc>
+		<lastmod>2026-04-02T12:56:14+00:00</lastmod>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/naturfotograf-denat-lahi-forelasning-1024x621.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/539250116_1549632799528685_4403539118545916307_n-1024x768.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/naturfotograf-denat-lahi-forelasning-1024x621.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/539250116_1549632799528685_4403539118545916307_n-1024x768.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/naturfotograf-denat-lahi-forelasning-1024x621.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/IMG_2344-2-01-40-08_1-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/naturfotograf-denat-lahi-forelasning-1024x621.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/539250116_1549632799528685_4403539118545916307_n-1024x768.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat-Lahi-Forelasning.4.image_-1024x479.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/20251227_151642-1024x768.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
