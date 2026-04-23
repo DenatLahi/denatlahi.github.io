@@ -1208,19 +1208,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://denatlahi.com/lynx/</loc>
-		<lastmod>2026-03-13T21:10:44+00:00</lastmod>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEB_MG_0905.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEB_MG_0905-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEB_MG_0905-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://denatlahi.com/pine-marten/</loc>
 		<lastmod>2026-03-13T21:12:21+00:00</lastmod>
 		<image:image>
@@ -1648,8 +1635,24 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://denatlahi.com/lynx/</loc>
+		<lastmod>2026-04-22T14:09:05+00:00</lastmod>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEB_MG_0905.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEB_MG_0905-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/Denat_Lahi_Lodjur-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEB_MG_0905-1024x683.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://denatlahi.com/about/</loc>
-		<lastmod>2026-04-09T22:29:52+00:00</lastmod>
+		<lastmod>2026-04-22T14:20:43+00:00</lastmod>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
 		</image:image>
