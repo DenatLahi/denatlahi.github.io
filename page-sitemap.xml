@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://denatlahi.com/</loc>
-		<lastmod>2026-04-03T18:19:06+00:00</lastmod>
+		<lastmod>2026-04-26T19:30:25+00:00</lastmod>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/07/Rav1.jpg</image:loc>
 		</image:image>
@@ -74,6 +74,9 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/C12_Pine_Marten_Visit-2-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/Denat_Lahi_Lodjur-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_8835-naturum-skrylle-sRGBWEB-1920x-1-1024x683.jpg</image:loc>
@@ -448,37 +451,6 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/07/MG_1024FINAL-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://denatlahi.com/naturfotografering-i-skane-och-lunds-kommun/</loc>
-		<lastmod>2025-08-10T15:21:01+00:00</lastmod>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/04/IMG_5960-Enhanced-NR-1WEB.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/IMG_6099-Bright-sRGB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/07/MG_1024FINAL-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/04/IMG_7890_v3WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/04/IMG_3114-Naturum-skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/04/IMG_4443-Copy-naturum-skrylle-SRGBWEB-1920x-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/C12_Pine_Marten_Visit-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/04/IMG_8728-Enhanced-NRWEB-1024x671.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/04/IMG_2177-Enhanced-NR-v20-STICK-FIXv3-1024x683.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1539,8 +1511,34 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://denatlahi.com/sveriges-unga-naturfotografer/</loc>
+		<lastmod>2026-04-09T21:58:09+00:00</lastmod>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/Sveriges-Unga-Naturfotografer-logga-icon-hemsida-GRON.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/Sveriges-Unga-Naturfotografer-logga-icon-hemsida-GRON-1024x704.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/Sveriges-Unga-Naturfotografer-logga-icon-hemsida-GRON-1024x704.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://denatlahi.com/lahi-systems/</loc>
+		<lastmod>2026-04-09T22:00:21+00:00</lastmod>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/Lahi-Systems-Logo.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/Lahi-Systems-Logo-1024x683.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/Lahi-Systems-Logo-1024x683.png</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://denatlahi.com/lectures/</loc>
-		<lastmod>2026-04-03T18:15:35+00:00</lastmod>
+		<lastmod>2026-04-26T19:29:12+00:00</lastmod>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/32Denat-lahi-Forelasning.png</image:loc>
 		</image:image>
@@ -1609,34 +1607,8 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://denatlahi.com/sveriges-unga-naturfotografer/</loc>
-		<lastmod>2026-04-09T21:58:09+00:00</lastmod>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/Sveriges-Unga-Naturfotografer-logga-icon-hemsida-GRON.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/Sveriges-Unga-Naturfotografer-logga-icon-hemsida-GRON-1024x704.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/Sveriges-Unga-Naturfotografer-logga-icon-hemsida-GRON-1024x704.png</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://denatlahi.com/lahi-systems/</loc>
-		<lastmod>2026-04-09T22:00:21+00:00</lastmod>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/Lahi-Systems-Logo.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/Lahi-Systems-Logo-1024x683.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/Lahi-Systems-Logo-1024x683.png</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://denatlahi.com/lynx/</loc>
-		<lastmod>2026-04-22T14:09:05+00:00</lastmod>
+		<lastmod>2026-04-26T19:50:14+00:00</lastmod>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEB_MG_0905.jpg</image:loc>
 		</image:image>
@@ -1652,7 +1624,7 @@
 	</url>
 	<url>
 		<loc>https://denatlahi.com/about/</loc>
-		<lastmod>2026-04-22T14:20:43+00:00</lastmod>
+		<lastmod>2026-04-26T20:02:49+00:00</lastmod>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
 		</image:image>
@@ -1660,7 +1632,7 @@
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEB_MG_0905-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
