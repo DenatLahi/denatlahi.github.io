@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://denatlahi.com/</loc>
-		<lastmod>2026-05-28T19:24:20+00:00</lastmod>
+		<lastmod>2026-05-30T17:23:07+00:00</lastmod>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/07/Rav1.jpg</image:loc>
 		</image:image>
@@ -29,6 +29,9 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEB_MG_0905-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-Wildlife-Photographer-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/07/Rav1-1024x683.jpg</image:loc>
@@ -121,6 +124,9 @@
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEBUSETHISMETADATA_MG_5822-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-Wildlife-Photographer-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/naturfotograf-denat-lahi-forelasning-1024x621.jpg</image:loc>
 		</image:image>
 		<image:image>
@@ -143,9 +149,6 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/C12_Pine_Marten_Visit-2-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_7890_v3WEB-1-1024x683.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_3748-Naturum-Skrylle-sRGBWEB-1920x-1024x683.jpg</image:loc>
@@ -757,136 +760,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://denatlahi.com/birds/</loc>
-		<lastmod>2026-03-13T21:17:27+00:00</lastmod>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_3493-v10-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WPY_JPG_MG_1205-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_7890_v3-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/495043857_1460475748444391_6474669200554895379_n-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WPY_JPG_MG_4664-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/MG_9951WEB-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_2659-Copy-full.crop_-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/574039993_1604768154015149_1406054868934518608_n-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_4092_V10-1024x692.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_30-1024x681.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_36-2-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_7184-Enhanced-NR-1024x693.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_9491_V3x2FINALCROP_BW-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/p19v1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_3813-v2-1024x659.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_9445-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_8728-Enhanced-NRWEB-1-1024x671.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_6027-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_9772-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_83-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_8427_V4-1-1024x663.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_53-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_9723-v3-1-1024x692.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_3345V12-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/501755604_1479550606536905_37215709396740355_n-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_60-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_1204_V11WEB-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/558905532_1584406776051287_870670414345486558_n-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/MG_4658WEB-1024x682.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_8779_7-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/MG_9522WEB-1024x674.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_2129-v4-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_7051-Enhanced-NR-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_7436-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_6005-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_8443_V4-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/571109012_1601639110994720_3786942723462502899_n-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/494667026_1458569771968322_4889496497664799481_n-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_14-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_44-1-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_64-1024x671.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_65-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://denatlahi.com/sveriges-unga-naturfotografer/</loc>
 		<lastmod>2026-04-09T21:58:09+00:00</lastmod>
 		<image:image>
@@ -1311,40 +1184,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://denatlahi.com/contact/</loc>
-		<lastmod>2026-05-17T18:05:53+00:00</lastmod>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/2Denat-lahi-Forelasning-1024x621.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/2Denat-lahi-Forelasning-1024x621.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/naturfotograf-denat-lahi-forelasning-1024x621.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/IMG_2344-2-01-40-08_1-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://denatlahi.com/lectures/</loc>
 		<lastmod>2026-05-28T19:23:56+00:00</lastmod>
 		<image:image>
@@ -1412,73 +1251,6 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEB_MG_0905-1024x683.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://denatlahi.com/about/</loc>
-		<lastmod>2026-05-28T19:33:52+00:00</lastmod>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEB_MG_0905-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/naturfotograf-denat-lahi-forelasning-1024x621.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/539250116_1549632799528685_4403539118545916307_n-1024x768.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/naturfotograf-denat-lahi-forelasning-1024x621.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/539250116_1549632799528685_4403539118545916307_n-1024x768.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/naturfotograf-denat-lahi-forelasning-1024x621.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/IMG_2344-2-01-40-08_1-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/naturfotograf-denat-lahi-forelasning-1024x621.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/539250116_1549632799528685_4403539118545916307_n-1024x768.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat-Lahi-Forelasning.4.image_-1024x479.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1750,6 +1522,237 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2025/05/495371653_1466900017801964_4742202708697832448_n-1024x882.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://denatlahi.com/birds/</loc>
+		<lastmod>2026-05-30T17:25:26+00:00</lastmod>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_3493-v10-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WPY_JPG_MG_1205-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_7890_v3-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/495043857_1460475748444391_6474669200554895379_n-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WPY_JPG_MG_4664-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/MG_9951WEB-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_2659-Copy-full.crop_-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/MG_4067Denat-Lahi-1024x682.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/574039993_1604768154015149_1406054868934518608_n-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_4092_V10-1024x692.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_30-1024x681.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_36-2-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_7184-Enhanced-NR-1024x693.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_9491_V3x2FINALCROP_BW-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/p19v1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_3813-v2-1024x659.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_9445-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_8728-Enhanced-NRWEB-1-1024x671.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_6027-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_9772-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_83-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_8427_V4-1-1024x663.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_53-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_9723-v3-1-1024x692.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_3345V12-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/501755604_1479550606536905_37215709396740355_n-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_60-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_1204_V11WEB-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/558905532_1584406776051287_870670414345486558_n-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/MG_4658WEB-1024x682.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_8779_7-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/MG_9522WEB-1024x674.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_2129-v4-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_7051-Enhanced-NR-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_7436-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_6005-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/03/IMG_8443_V4-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/571109012_1601639110994720_3786942723462502899_n-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/494667026_1458569771968322_4889496497664799481_n-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_14-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_44-1-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_64-1024x671.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat_Lahi_65-1024x683.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://denatlahi.com/contact/</loc>
+		<lastmod>2026-05-30T18:16:14+00:00</lastmod>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-Wildlife-Photographer.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-Wildlife-Photographer-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/2Denat-lahi-Forelasning-1024x621.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-Wildlife-Photographer-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-Wildlife-Photographer-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/naturfotograf-denat-lahi-forelasning-1024x621.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/IMG_2344-2-01-40-08_1-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://denatlahi.com/about/</loc>
+		<lastmod>2026-05-30T18:20:02+00:00</lastmod>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-Wildlife-Photographer.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/01/WEB_MG_0905-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/naturfotograf-denat-lahi-forelasning-1024x621.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Denat-Lahi-image-1.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/naturfotograf-denat-lahi-forelasning-1024x621.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/FlOLiw-WQAAKAHc-1024x512.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/7a8b7e138141373.6217e2dad373f-1024x432.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/b33305138141373.627c0913566c3-1024x432.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-Wildlife-Photographer-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/IMG_2344-2-01-40-08_1-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/06/Snapchat-1157076603-1-1024x623.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/naturfotograf-denat-lahi-forelasning-1024x621.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2025/08/539250116_1549632799528685_4403539118545916307_n-1024x768.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat-Lahi-Forelasning.4.image_-1024x479.png</image:loc>
 		</image:image>
 	</url>
 </urlset>
