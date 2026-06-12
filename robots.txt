@@ -1,8 +1,7 @@
 # START YOAST BLOCK
 # ---------------------------
 User-agent: *
-Disallow: /wp-content/uploads/2026/06/2_MG_0905MIDQUALITY.jpg
-Disallow: /wp-content/uploads/2026/06/MG_0905MIDQUALITY.jpg
+Disallow:
 
 Sitemap: https://denatlahi.com/sitemap_index.xml
 # ---------------------------
