@@ -21,17 +21,13 @@ document.addEventListener("DOMContentLoaded", async function () {
   const ua = navigator.userAgent.toLowerCase();
   const isBot = /bot|crawl|spider|slurp|mediapartners/i.test(ua);
 
-  // If they are on the Swedish side, explicitly mark that they've seen the localized version
   if (window.location.pathname.startsWith('/svenska')) {
     sessionStorage.setItem("langRedirectDone", "true");
-    // Clear the English flag if they manually navigate back to Swedish content
     sessionStorage.removeItem("userWantsEnglish");
   }
 
-  // Intercept the language switch button dynamically if it exists on the page
-  // This ensures that clicking the English button sets the override flag
   document.addEventListener('click', function(e) {
-    const langBtn = e.target.closest('a'); // Adjust selector if your button isn't a standard link
+    const langBtn = e.target.closest('a');
     if (langBtn && (langBtn.getAttribute('href') === '/' || langBtn.getAttribute('href') === 'https://denatlahi.com/')) {
       if (window.location.pathname.startsWith('/svenska')) {
         sessionStorage.setItem("userWantsEnglish", "true");
@@ -39,16 +35,13 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
   });
 
-  // Only run automatic detection if it's a fresh visit, not a bot, not already in Swedish, and they haven't chosen English
   if (!hasRedirected && !userWantsEnglish && !isBot && !window.location.pathname.startsWith('/svenska')) {
     let isSweden = false;
 
-    // Check browser language first
     const userLang = navigator.language || navigator.userLanguage;
     if (userLang.startsWith('sv')) {
       isSweden = true;
     } else {
-      // IP-based check
       try {
         const res = await fetch('https://ipapi.co/json/');
         const data = await res.json();
@@ -66,14 +59,12 @@ document.addEventListener("DOMContentLoaded", async function () {
 });
 
 
-// Redirect index.html URLs to clean path
 if (window.location.pathname.endsWith('/index.html') && !window.location.pathname.includes('/bestallning-av-fotoprints/')) {
   const newPath = window.location.pathname.replace(/\/index\.html$/, '/');
   const newUrl = window.location.origin + newPath + window.location.search + window.location.hash;
   window.location.replace(newUrl);
 }
 
-// Add default title and alt to all images
 window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('img').forEach(img => {
     if (!img.title) img.title = '© Denat Lahi / www.denatlahi.com';
@@ -81,11 +72,11 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Redirect to 404 page if page fails to load properly
 window.addEventListener("load", async function () {
-  // Determine correct 404 path based on current language directory
   const isSwedishPath = window.location.pathname.startsWith('/svenska');
-  const errorPage = isSwedishPath ? 'https://denatlahi.com/svenska/404-error' : 'https://denatlahi.com/404-error';
+  const errorPage = isSwedishPath
+    ? 'https://denatlahi.com/svenska/404-error'
+    : 'https://denatlahi.com/404-error';
 
   try {
     const res = await fetch(window.location.href, { method: 'HEAD' });
@@ -95,7 +86,14 @@ window.addEventListener("load", async function () {
   } catch (e) {
     window.location.replace(errorPage);
   }
-});</script><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+});
+
+// GoatCounter tracking
+const goat = document.createElement('script');
+goat.async = true;
+goat.src = 'https://gc.zgo.at/count.js';
+goat.setAttribute('data-goatcounter', 'https://stats.denatlahi.com/count');
+document.head.appendChild(goat);</script><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
 	<!-- This site is optimized with the Yoast SEO plugin v27.7 - https://yoast.com/product/yoast-seo-wordpress/ -->
 	<title>Privacy Policy - Denat Lahi Wildlife Photography</title>
@@ -108,7 +106,7 @@ window.addEventListener("load", async function () {
 	<meta property="og:url" content="https://denatlahi.com/svenska/privacy-policy/">
 	<meta property="og:site_name" content="Denat Lahi Wildlife Photography">
 	<meta property="article:publisher" content="https://www.facebook.com/denatlahi/">
-	<meta property="article:modified_time" content="2026-06-12T12:12:28+00:00">
+	<meta property="article:modified_time" content="2026-06-25T15:05:47+00:00">
 	<meta property="og:image" content="https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-Wildlife-Photographer.jpg">
 	<meta property="og:image:width" content="1920">
 	<meta property="og:image:height" content="1280">
@@ -128,7 +126,7 @@ window.addEventListener("load", async function () {
 	                "@id": "https:\/\/denatlahi.com\/svenska\/#website"
 	            },
 	            "datePublished": "2023-09-30T18:54:50+00:00",
-	            "dateModified": "2026-06-12T12:12:28+00:00",
+	            "dateModified": "2026-06-25T15:05:47+00:00",
 	            "description": "Denat Lahi is an 18-year-old wildlife photographer from Lund, Sweden. With his images, he wants to show the rare and emotional behaviors of local wildlife in nature.",
 	            "breadcrumb": {
 	                "@id": "https:\/\/denatlahi.com\/svenska\/privacy-policy\/#breadcrumb"
@@ -247,7 +245,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link rel="stylesheet" id="uncodefont-google-css" href="//fonts.googleapis.com/css?family=Lora:regular,italic,700,700italic%7CCormorant:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic%7CInter:100,200,300,regular,500,600,700,800,900%7CJost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic%7CInter+Tight:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic%7CLato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic%7CLibre+Franklin:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic%7COswald:200,300,regular,500,600,700&amp;subset=vietnamese,cyrillic,latin,cyrillic-ext,latin-ext,greek,greek-ext&amp;ver=2.8.5" media="all">
 <link rel="stylesheet" id="uncode-gutenberg-frontend-css" href="https://denatlahi.com/wp-content/themes/uncode/core/inc/compatibility/gutenberg/assets/css/uncode-gutenberg-frontend.css?ver=2.8.5" media="all">
 <link rel="stylesheet" id="trp-language-switcher-v2-css" href="https://denatlahi.com/wp-content/plugins/translatepress-multilingual/assets/css/trp-language-switcher-v2.css?ver=3.2.1" media="all">
-<link rel="stylesheet" id="uncode-style-css" href="https://denatlahi.com/wp-content/themes/uncode/library/css/style.css?ver=1194598930" media="all">
+<link rel="stylesheet" id="uncode-style-css" href="https://denatlahi.com/wp-content/themes/uncode/library/css/style.css?ver=2004450729" media="all">
 <style id="uncode-style-inline-css">
 
 @media (max-width: 959px) { .navbar-brand > * { height: 26px !important;}}
@@ -266,8 +264,8 @@ body.menu-custom-padding .col-lg-0.logo-container.shrinked, body.menu-custom-pad
 		}
 /*# sourceURL=uncode-style-inline-css */
 </style>
-<link rel="stylesheet" id="uncode-icons-css" href="https://denatlahi.com/wp-content/themes/uncode/library/css/uncode-icons.css?ver=1194598930" media="all">
-<link rel="stylesheet" id="uncode-custom-style-css" href="https://denatlahi.com/wp-content/themes/uncode/library/css/style-custom.css?ver=1194598930" media="all">
+<link rel="stylesheet" id="uncode-icons-css" href="https://denatlahi.com/wp-content/themes/uncode/library/css/uncode-icons.css?ver=2004450729" media="all">
+<link rel="stylesheet" id="uncode-custom-style-css" href="https://denatlahi.com/wp-content/themes/uncode/library/css/style-custom.css?ver=2004450729" media="all">
 <style id="uncode-custom-style-inline-css">
 .btn-button_color-176075 { color:#ffffff !important; background-color:#c4ac5e !important; border-color:#c4ac5e !important; }.btn-button_color-176075:not(.btn-hover-nobg):not(.icon-animated):hover, .btn-button_color-176075:not(.btn-hover-nobg):not(.icon-animated):focus, .btn-button_color-176075:not(.btn-hover-nobg):not(.icon-animated):active { background-color:transparent !important; border-color:#c4ac5e !important;}.btn-button_color-176075.btn-flat:not(.btn-hover-nobg):hover, .btn-button_color-176075.btn-flat:not(.btn-hover-nobg):focus, .btn-button_color-176075.btn-flat:active { background-color:#b79f51 !important; border-color:#b79f51 !important;}.btn-button_color-176075:not(.btn-flat):not(.btn-hover-nobg):not(.icon-animated):not(.btn-text-skin):hover, .btn-button_color-176075:not(.btn-flat):not(.btn-hover-nobg):not(.icon-animated):not(.btn-text-skin):focus, .btn-button_color-176075:not(.btn-flat):not(.btn-hover-nobg):not(.icon-animated):not(.btn-text-skin):active { color:#c4ac5e !important; }.btn-button_color-176075.btn-outline { background-color:transparent !important; border-color:#c4ac5e !important; }.btn-button_color-176075.btn-outline:not(.btn-text-skin) { color:#c4ac5e !important; }.btn-button_color-176075.btn-outline:not(.btn-hover-nobg):hover, .btn-button_color-176075.btn-outline:not(.btn-hover-nobg):focus, btn-button_color-176075.btn-outline:active { background-color:#c4ac5e !important; border-color:#c4ac5e !important; }.btn-button_color-176075.btn-outline:not(.btn-hover-nobg):not(.btn-text-skin):not(.icon-animated):hover, .btn-button_color-176075.btn-outline:not(.btn-hover-nobg):not(.btn-text-skin):not(.icon-animated):focus, btn-button_color-176075.btn-outline:active { color:#ffffff !important; }.style-light .btn-button_color-176075.btn-text-skin.btn-outline, .style-light .btn-button_color-176075.btn-text-skin:not(.btn-outline):hover, .style-light .btn-button_color-176075.btn-text-skin:not(.btn-outline):focus, .style-light .btn-button_color-176075.btn-text-skin:not(.btn-outline):active { color:#303133 !important; }.style-light .btn-button_color-176075.btn-text-skin.btn-outline:hover, .style-light .btn-button_color-176075.btn-text-skin.btn-outline:focus, .style-light .btn-button_color-176075.btn-text-skin.btn-outline:active { color:#ffffff !important; }.style-light .style-dark .btn-button_color-176075.btn-text-skin.btn-outline, .style-light .style-dark .btn-button_color-176075.btn-text-skin:not(.btn-outline):hover, .style-light .style-dark .btn-button_color-176075.btn-text-skin:not(.btn-outline):focus, .style-light .style-dark .btn-button_color-176075.btn-text-skin:not(.btn-outline):active { color:#ffffff !important; }.style-light .style-dark .btn-button_color-176075.btn-text-skin.btn-outline:hover, .style-light .style-dark .btn-button_color-176075.btn-text-skin.btn-outline:focus, .style-light .style-dark .btn-button_color-176075.btn-text-skin.btn-outline:active { color:#303133 !important; }.text-button_color-176075-color { color:#c4ac5e !important; fill:#c4ac5e !important; }.style-back_color-168492-bg { background-color:#0f0f0f; }.text-text_color-565418-color { color:#e9e9e9 !important; fill:#e9e9e9 !important; }.style-back_color-883410-bg { background-color:#0f0f0f; }.text-text_color-104092-color { color:#e9e9e9 !important; fill:#e9e9e9 !important; }
 .menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner {vertical-align:middle;}img {user-drag:none; -webkit-user-drag:none; }body {pointer-events:auto !important;}html, body {pointer-events:auto !important;}.font-weight-menu,.menu-container:not(.grid-filters) ul.menu-smart > li > a:not(.social-menu-link),.top-menu.top-menu-enhanced ul.menu-smart > li > a:not(.social-menu-link),.menu-container:not(.grid-filters) ul.menu-smart li.dropdown > a,.top-menu.top-menu-enhanced ul.menu-smart li.dropdown > a,.menu-container:not(.grid-filters) ul.menu-smart li.mega-menu > a,.top-menu.top-menu-enhanced ul.menu-smart li.mega-menu > a,.menu-container:not(.vmenu-container):not(.grid-filters) ul.menu-smart > li > a:not(.social-menu-link):not(.vc_control-btn),.menu-smart i.fa-dropdown,.vmenu-container a {font-weight:500;letter-spacing:-.02emem;padding-left:25px}.menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item:not(.uncode-cart) > a,.menu-mobile-centered.menu-mobile-off-canvas .main-menu-container .menu-horizontal .menu-horizontal-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a,.menu-mobile-centered.menu-mobile-off-canvas .vmenu-container .vmenu-row-wrapper .vmenu-wrap-cell ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a,.menu-mobile-centered.menu-mobile-off-canvas .overlay-menu .navbar-main .menu-sidebar-inner ul.menu-smart:not(.mobile-secondary-menu):not(.menu-smart-social):not(.menu-social) li.menu-item-link > a {padding-top:10px;padding-bottom:5px;}.trp-language-switcher {background-color:transparent !important;}.trp-language-switcher .trp-shortcode-arrow path {stroke:#ffffff !important;}.flag-image {display:block;margin-top:1px;max-width:100%;height:auto;}.trp-ls-dropdown.is-open .trp-switcher-dropdown-list,.trp-ls-dropdown[aria-expanded="true"] .trp-switcher-dropdown-list,.trp-shortcode-switcher.trp-open-on-hover.is-open .trp-switcher-dropdown-list,.trp-shortcode-switcher[aria-expanded="true"] .trp-switcher-dropdown-list {padding-top:15px;}#intlPopup {position:fixed;bottom:20px;right:20px;background-color:#ccc;border:1px solid #333;padding:20px;border-radius:5px;max-width:390px; box-shadow:0 2px 6px rgba(0,0,0,0.2);font-family:Arial, sans-serif;font-size:18px; color:#000;z-index:1000;}#intlPopup a.popupLink {color:blue;text-decoration:underline;}#intlPopup button.closePopupBtn {margin-top:12px;padding:5px 10px;font-size:14px;cursor:pointer;}
@@ -275,10 +273,10 @@ body.menu-custom-padding .col-lg-0.logo-container.shrinked, body.menu-custom-pad
 </style>
 <script id="trp-language-switcher-js-v2-js" src="https://denatlahi.com/wp-content/plugins/translatepress-multilingual/assets/js/trp-frontend-language-switcher.js?ver=3.2.1"></script>
 <script id="uncode-init-js-extra">
-var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds":"seconds","constant_scroll":"on","scroll_speed":"12","parallax_factor":"0.1","loading":"Loading\u2026","slide_name":"slide","slide_footer":"footer","ajax_url":"https://denatlahi.com/wp-admin/admin-ajax.php","nonce_adaptive_images":"9e5ee2ab57","nonce_srcset_async":"e866e50158","enable_debug":"","block_mobile_videos":"","is_frontend_editor":"","main_width":["1200","px"],"mobile_parallax_allowed":"","listen_for_screen_update":"1","wireframes_plugin_active":"1","sticky_elements":"on","lazyload_type":"","resize_quality":"60","register_metadata":"","bg_changer_time":"1000","update_wc_fragments":"1","optimize_shortpixel_image":"","menu_mobile_offcanvas_gap":"45","custom_cursor_selector":"[href], .trigger-overlay, .owl-next, .owl-prev, .owl-dot, input[type=\"submit\"], input[type=\"checkbox\"], button[type=\"submit\"], a[class^=\"ilightbox\"], .ilightbox-thumbnail, .ilightbox-prev, .ilightbox-next, .overlay-close, .unmodal-close, .qty-inset \u003E span, .share-button li, .uncode-post-titles .tmb.tmb-click-area, .btn-link, .tmb-click-row .t-inside, .lg-outer button, .lg-thumb img, a[data-lbox], .uncode-close-offcanvas-overlay","mobile_parallax_animation":"","lbox_enhanced":"1","native_media_player":"","vimeoPlayerParams":"?autoplay=0","ajax_filter_key_search":"key","ajax_filter_key_unfilter":"unfilter","index_pagination_scroll_to":"","uncode_wc_popup_cart_qty":""};
+var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds":"seconds","constant_scroll":"on","scroll_speed":"12","parallax_factor":"0.1","loading":"Loading\u2026","slide_name":"slide","slide_footer":"footer","ajax_url":"https://denatlahi.com/wp-admin/admin-ajax.php","nonce_adaptive_images":"7a53b931e6","nonce_srcset_async":"95cd2fe168","enable_debug":"","block_mobile_videos":"","is_frontend_editor":"","main_width":["1200","px"],"mobile_parallax_allowed":"","listen_for_screen_update":"1","wireframes_plugin_active":"1","sticky_elements":"on","lazyload_type":"","resize_quality":"60","register_metadata":"","bg_changer_time":"1000","update_wc_fragments":"1","optimize_shortpixel_image":"","menu_mobile_offcanvas_gap":"45","custom_cursor_selector":"[href], .trigger-overlay, .owl-next, .owl-prev, .owl-dot, input[type=\"submit\"], input[type=\"checkbox\"], button[type=\"submit\"], a[class^=\"ilightbox\"], .ilightbox-thumbnail, .ilightbox-prev, .ilightbox-next, .overlay-close, .unmodal-close, .qty-inset \u003E span, .share-button li, .uncode-post-titles .tmb.tmb-click-area, .btn-link, .tmb-click-row .t-inside, .lg-outer button, .lg-thumb img, a[data-lbox], .uncode-close-offcanvas-overlay","mobile_parallax_animation":"","lbox_enhanced":"1","native_media_player":"","vimeoPlayerParams":"?autoplay=0","ajax_filter_key_search":"key","ajax_filter_key_unfilter":"unfilter","index_pagination_scroll_to":"","uncode_wc_popup_cart_qty":""};
 //# sourceURL=uncode-init-js-extra
 </script>
-<script id="uncode-init-js" src="https://denatlahi.com/wp-content/themes/uncode/library/js/init.js?ver=1194598930"></script>
+<script id="uncode-init-js" src="https://denatlahi.com/wp-content/themes/uncode/library/js/init.js?ver=2004450729"></script>
 <script id="jquery-core-js" src="https://denatlahi.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
 <script id="jquery-migrate-js" src="https://denatlahi.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
 <script></script><link rel="https://api.w.org/" href="https://denatlahi.com/svenska/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://denatlahi.com/svenska/wp-json/wp/v2/pages/118575"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://denatlahi.com/xmlrpc.php?rsd">
@@ -407,138 +405,152 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 						<div class="post-wrapper">
 							<div class="post-body"><div class="post-content un-no-sidebar-layout"><div data-parent="true" class="vc_row row-container" id="row-unique-0"><div class="row limit-width row-parent"><div class="wpb_row row-inner"><div class="wpb_column pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light"><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="empty-space empty-half tablet-hidden mobile-hidden"><span class="empty-space-inner"></span></div>
 <div class="uncode-tabs wpb_content_element" data-interval="" data-target=""><div class="uncode-wrapper tab-container"><div class="vc_tta-tabs-container"><ul class="nav nav-tabs wpb_tabs_nav ui-tabs-nav vc_tta-tabs-list text-center"><li data-tab-id="tab-1696156282-1-83" data-tab-o-id="1696156282-1-83" class="vc_tta-tab active"><a href="#tab-1696156282-1-83" data-toggle="tab"><span><span><span class="">EN</span></span></span></a></li><li data-tab-id="tab-1696156282-2-15" data-tab-o-id="1696156282-2-15" class="vc_tta-tab"><a href="#tab-1696156282-2-15" data-toggle="tab"><span><span><span class="">SE</span></span></span></a></li></ul></div><div class="tab-content wpb_wrapper"><div id="tab-1696156282-1-83" class="tab-pane in active fade half-internal-gutter single-block-padding"><div>
-				<div class="uncode_text_column"><h1 data-section-id="1dp7kw" data-start="147" data-end="163">Integritetspolicy</h1>
-<p data-start="165" data-end="236"><strong data-start="165" data-end="182">Last Updated:</strong> 12 June 2026<br data-start="195" data-end="198"><strong data-start="198" data-end="210">Website:</strong> <a class="decorated-link" href="https://www.denatlahi.com/" target="_new" rel="noopener" data-start="211" data-end="236">https://www.denatlahi.com</a></p>
-<p data-start="238" data-end="401">This Privacy Policy explains how personal data is collected and processed when you use this website. By using this website, you agree to the terms described below.</p>
-<hr data-start="403" data-end="406">
-<h2 data-section-id="12z0689" data-start="408" data-end="435">1. Information Collected</h2>
-<h3 data-section-id="1eeq5os" data-start="437" data-end="477">1.1 Information you provide directly</h3>
-<p data-start="479" data-end="526">You may voluntarily provide personal data when:</p>
-<ul data-start="527" data-end="656">
-<li data-section-id="1n1h6sb" data-start="527" data-end="552">contacting me via forms</li>
-<li data-section-id="1tyhd70" data-start="553" data-end="586">placing print or product orders</li>
-<li data-section-id="15a91r7" data-start="587" data-end="626">subscribing to updates or newsletters</li>
-<li data-section-id="zx9i5t" data-start="627" data-end="656">sending emails or inquiries</li>
+				<div class="uncode_text_column"><h2 class="PDq2pG_selectionAnchorContainer" data-section-id="1ij7vfn" data-start="190" data-end="207">Integritetspolicy</h2>
+<p data-start="209" data-end="282"><strong data-start="209" data-end="226">Last Updated:</strong> 25 June 2026<br data-start="239" data-end="242"><strong data-start="242" data-end="254">Website:</strong> <a class="decorated-link" href="https://www.denatlahi.com/" target="_new" rel="noopener" data-start="255" data-end="280">https://www.denatlahi.com</a></p>
+<p data-start="284" data-end="447">This Privacy Policy explains how personal data is collected and processed when you use this website. By using this website, you agree to the terms described below.</p>
+<hr data-start="449" data-end="452">
+<h3 data-section-id="1bjeh62" data-start="454" data-end="482">1. Information Collected</h3>
+<h4 data-start="484" data-end="525">1.1 Information you provide directly</h4>
+<p data-start="527" data-end="574">You may voluntarily provide personal data when:</p>
+<ul data-start="576" data-end="713">
+<li data-section-id="cq0lqz" data-start="576" data-end="603">contacting me via forms</li>
+<li data-section-id="fugoi4" data-start="604" data-end="639">placing print or product orders</li>
+<li data-section-id="1vkjg2r" data-start="640" data-end="681">subscribing to updates or newsletters</li>
+<li data-section-id="1i8k81d" data-start="682" data-end="713">sending emails or inquiries</li>
 </ul>
-<p data-start="658" data-end="675">This may include:</p>
-<ul data-start="676" data-end="759">
-<li data-section-id="1j3bszz" data-start="676" data-end="682">name</li>
-<li data-section-id="okl7hu" data-start="683" data-end="698">email address</li>
-<li data-section-id="1ujv496" data-start="699" data-end="716">message content</li>
-<li data-section-id="1ql2yvv" data-start="717" data-end="759">shipping address (if you place an order)</li>
+<p data-start="715" data-end="732">This may include:</p>
+<ul data-start="734" data-end="825">
+<li data-section-id="19l1w5r" data-start="734" data-end="742">name</li>
+<li data-section-id="1f772ya" data-start="743" data-end="760">email address</li>
+<li data-section-id="ndfr9m" data-start="761" data-end="780">message content</li>
+<li data-section-id="113smmz" data-start="781" data-end="825">shipping address (if you place an order)</li>
 </ul>
-<hr data-start="761" data-end="764">
-<h3 data-section-id="ctk3vo" data-start="766" data-end="808">1.2 Automatically collected usage data</h3>
-<p data-start="810" data-end="942">When you visit this website, limited usage data is collected for analytics purposes using a server-side system (Cloudflare Workers).</p>
-<p data-start="944" data-end="958">This includes:</p>
-<ul data-start="959" data-end="1070">
-<li data-section-id="ya6z98" data-start="959" data-end="995">page path (for example <code data-start="984" data-end="994">/svenska</code>)</li>
-<li data-section-id="1ypa5sc" data-start="996" data-end="1049">referrer (for example Instagram or another website)</li>
-<li data-section-id="bkx4e6" data-start="1050" data-end="1070">timestamp of visit</li>
+<hr data-start="827" data-end="830">
+<h4 data-start="832" data-end="875">1.2 Automatically collected usage data</h4>
+<p data-start="877" data-end="1017">When you visit this website, limited usage data is collected for analytics purposes using GoatCounter (a privacy-focused analytics service).</p>
+<p data-start="1019" data-end="1061">The following information may be recorded:</p>
+<ul data-start="1063" data-end="1434">
+<li data-section-id="1snj27w" data-start="1063" data-end="1099">page path (for example /svenska)</li>
+<li data-section-id="1wbdnm4" data-start="1100" data-end="1155">referrer (for example Instagram or another website)</li>
+<li data-section-id="13d064e" data-start="1156" data-end="1178">timestamp of visit</li>
+<li data-section-id="1fanysz" data-start="1179" data-end="1239">user agent (browser and device type, in anonymized form)</li>
+<li data-section-id="1ou2ezl" data-start="1240" data-end="1255">screen size</li>
+<li data-section-id="1udpcew" data-start="1256" data-end="1293">country (based on IP geolocation)</li>
+<li data-section-id="gpm89z" data-start="1294" data-end="1319">region (if available)</li>
+<li data-section-id="udjxhg" data-start="1320" data-end="1356">language (from browser settings)</li>
+<li data-section-id="g06d54" data-start="1357" data-end="1434">session information (used to distinguish unique visitors for up to 8 hours)</li>
 </ul>
-<p data-start="1072" data-end="1161">This data is used solely to understand website usage and improve content and performance.</p>
-<p data-start="1163" data-end="1247">No names, emails, or direct identifiers are collected through this analytics system.</p>
-<hr data-start="1249" data-end="1252">
-<h3 data-section-id="1r034o2" data-start="1254" data-end="1288">1.3 Hosting and technical data</h3>
-<p data-start="1290" data-end="1508">This website is hosted on Cloudflare infrastructure. When you access the website, Cloudflare may automatically process technical data such as IP address, device information, browser type, and security-related metadata.</p>
-<p data-start="1510" data-end="1606">This processing is performed by Cloudflare as the hosting and security provider and is used for:</p>
-<ul data-start="1607" data-end="1706">
-<li data-section-id="g3f0z7" data-start="1607" data-end="1638">security and abuse prevention</li>
-<li data-section-id="w6t7lk" data-start="1639" data-end="1685">network routing and performance optimization</li>
-<li data-section-id="xu7199" data-start="1686" data-end="1706">system reliability</li>
+<p data-start="1436" data-end="1531">This data is used solely to understand website usage, improve content, and monitor performance.</p>
+<p data-start="1533" data-end="1630">No names, email addresses, or directly identifying personal data are collected through analytics.</p>
+<p data-start="1632" data-end="1759">GoatCounter is configured to operate without cookies by default, and does not use advertising tracking or cross-site profiling.</p>
+<hr data-start="1761" data-end="1764">
+<h4 data-start="1766" data-end="1801">1.3 Hosting and technical data</h4>
+<p data-start="1803" data-end="2021">This website is hosted on Cloudflare infrastructure. When you access the website, Cloudflare may automatically process technical data such as IP address, device information, browser type, and security-related metadata.</p>
+<p data-start="2023" data-end="2119">This processing is performed by Cloudflare as the hosting and security provider and is used for:</p>
+<ul data-start="2121" data-end="2226">
+<li data-section-id="1hrv3jn" data-start="2121" data-end="2154">security and abuse prevention</li>
+<li data-section-id="zt3sfs" data-start="2155" data-end="2203">network routing and performance optimization</li>
+<li data-section-id="1kegkrh" data-start="2204" data-end="2226">system reliability</li>
 </ul>
-<p data-start="1708" data-end="1799">This data is not accessed or used by this website for personal identification or profiling.</p>
-<hr data-start="1801" data-end="1804">
-<h2 data-section-id="1ol47jw" data-start="1806" data-end="1831">2. Cookies and Storage</h2>
-<p data-start="1833" data-end="1936">This website may use essential cookies or browser storage for basic functionality and session handling.</p>
-<p data-start="1938" data-end="2055">You can control or disable cookies through your browser settings. Disabling cookies may affect website functionality.</p>
-<hr data-start="2057" data-end="2060">
-<h2 data-section-id="stg25m" data-start="2062" data-end="2090">3. Analytics and Tracking</h2>
-<p data-start="2092" data-end="2205">This website uses a lightweight analytics system implemented through server-side processing (Cloudflare Workers).</p>
-<p data-start="2207" data-end="2226">The system records:</p>
-<ul data-start="2227" data-end="2275">
-<li data-section-id="1ikis8b" data-start="2227" data-end="2241">page visited</li>
-<li data-section-id="184zjue" data-start="2242" data-end="2259">referrer source</li>
-<li data-section-id="3kuw11" data-start="2260" data-end="2275">time of visit</li>
+<p data-start="2228" data-end="2319">This data is not accessed or used by this website for personal identification or profiling.</p>
+<hr data-start="2321" data-end="2324">
+<h3 data-section-id="x25r33" data-start="2326" data-end="2352">2. Cookies and Storage</h3>
+<p data-start="2354" data-end="2400">This website does not use advertising cookies.</p>
+<p data-start="2402" data-end="2562">GoatCounter analytics may use minimal technical mechanisms to distinguish sessions (up to 8 hours) to avoid counting repeated page reloads as separate visitors.</p>
+<p data-start="2564" data-end="2709">The website also uses browser storage (sessionStorage) for basic functionality such as language preference handling and user navigation behavior.</p>
+<p data-start="2711" data-end="2847">You can control or disable cookies and storage through your browser settings. Disabling these features may affect website functionality.</p>
+<hr data-start="2849" data-end="2852">
+<h3 data-section-id="k8o10p" data-start="2854" data-end="2883">3. Analytics and Tracking</h3>
+<p data-start="2885" data-end="2945">This website uses GoatCounter for privacy-focused analytics.</p>
+<p data-start="2947" data-end="2971">GoatCounter may collect:</p>
+<ul data-start="2973" data-end="3130">
+<li data-section-id="18y24q3" data-start="2973" data-end="2989">page visited</li>
+<li data-section-id="1dza65y" data-start="2990" data-end="3009">referrer source</li>
+<li data-section-id="1qabx9h" data-start="3010" data-end="3027">time of visit</li>
+<li data-section-id="1buuq6b" data-start="3028" data-end="3062">approximate country and region</li>
+<li data-section-id="1odoxgv" data-start="3063" data-end="3090">browser and device type</li>
+<li data-section-id="1ou2ezl" data-start="3091" data-end="3106">screen size</li>
+<li data-section-id="16w0i4h" data-start="3107" data-end="3130">language preference</li>
 </ul>
-<p data-start="2277" data-end="2383">No persistent identifiers, tracking cookies, or personal identifiers are intentionally used for analytics.</p>
-<hr data-start="2385" data-end="2388">
-<h2 data-section-id="1lw8dlp" data-start="2390" data-end="2421">4. Web3Forms (Contact Forms)</h2>
-<p data-start="2423" data-end="2479">This website uses Web3Forms to process form submissions.</p>
-<p data-start="2481" data-end="2554">When you submit a form, the following data may be processed by Web3Forms:</p>
-<ul data-start="2555" data-end="2643">
-<li data-section-id="1j3bszz" data-start="2555" data-end="2561">name</li>
-<li data-section-id="okl7hu" data-start="2562" data-end="2577">email address</li>
-<li data-section-id="1ujv496" data-start="2578" data-end="2595">message content</li>
-<li data-section-id="17g4q2p" data-start="2596" data-end="2643">any other information you include in the form</li>
+<p data-start="3132" data-end="3260">GoatCounter is designed to avoid invasive tracking and does not use advertising cookies, fingerprinting, or cross-site tracking.</p>
+<p data-start="3262" data-end="3315">More information: <a class="decorated-link" href="https://www.goatcounter.com/privacy" target="_new" rel="noopener" data-start="3280" data-end="3315">https://www.goatcounter.com/privacy</a></p>
+<hr data-start="3317" data-end="3320">
+<h3 data-section-id="1rqwywu" data-start="3322" data-end="3354">4. Web3Forms (Contact Forms)</h3>
+<p data-start="3356" data-end="3412">This website uses Web3Forms to process form submissions.</p>
+<p data-start="3414" data-end="3474">When you submit a form, the following data may be processed:</p>
+<ul data-start="3476" data-end="3572">
+<li data-section-id="19l1w5r" data-start="3476" data-end="3484">name</li>
+<li data-section-id="1f772ya" data-start="3485" data-end="3502">email address</li>
+<li data-section-id="ndfr9m" data-start="3503" data-end="3522">message content</li>
+<li data-section-id="8dw741" data-start="3523" data-end="3572">any other information you include in the form</li>
 </ul>
-<p data-start="2645" data-end="2731">Web3Forms processes this data on its own servers to deliver form submissions securely.</p>
-<p data-start="2733" data-end="2873">By submitting a form on this website, you acknowledge that your data will be processed by Web3Forms in accordance with their privacy policy:</p>
-<p data-start="2875" data-end="2904"><a class="decorated-link" href="https://web3forms.com/privacy" target="_new" rel="noopener" data-start="2875" data-end="2904">https://web3forms.com/privacy</a></p>
-<hr data-start="2906" data-end="2909">
-<h2 data-section-id="y2xen7" data-start="2911" data-end="2933">5. How Data Is Used</h2>
-<p data-start="2935" data-end="2952">Data is used for:</p>
-<ul data-start="2953" data-end="3122">
-<li data-section-id="1pp557a" data-start="2953" data-end="2991">responding to messages and inquiries</li>
-<li data-section-id="13d4er1" data-start="2992" data-end="3034">providing services and processing orders</li>
-<li data-section-id="1exq92u" data-start="3035" data-end="3078">improving website content and performance</li>
-<li data-section-id="1rqefk2" data-start="3079" data-end="3122">maintaining security and preventing abuse</li>
+<p data-start="3574" data-end="3660">Web3Forms processes this data on its own servers to deliver form submissions securely.</p>
+<p data-start="3662" data-end="3820">By submitting a form, you acknowledge that your data will be processed by Web3Forms in accordance with their privacy policy:<br data-start="3786" data-end="3789"><a class="decorated-link" href="https://web3forms.com/privacy" target="_new" rel="noopener" data-start="3789" data-end="3818">https://web3forms.com/privacy</a></p>
+<hr data-start="3822" data-end="3825">
+<h3 data-section-id="1vrkrj4" data-start="3827" data-end="3850">5. How Data Is Used</h3>
+<p data-start="3852" data-end="3869">Data is used for:</p>
+<ul data-start="3871" data-end="4048">
+<li data-section-id="1td6j9y" data-start="3871" data-end="3911">responding to messages and inquiries</li>
+<li data-section-id="10bh5bh" data-start="3912" data-end="3956">providing services and processing orders</li>
+<li data-section-id="1u79t6e" data-start="3957" data-end="4002">improving website content and performance</li>
+<li data-section-id="8fj0le" data-start="4003" data-end="4048">maintaining security and preventing abuse</li>
 </ul>
-<hr data-start="3124" data-end="3127">
-<h2 data-section-id="1vqz82c" data-start="3129" data-end="3153">6. Legal Basis (GDPR)</h2>
-<p data-start="3155" data-end="3225">If you are located in the European Union, data processing is based on:</p>
-<ul data-start="3226" data-end="3420">
-<li data-section-id="1h5oend" data-start="3226" data-end="3302">legitimate interest (website analytics, security, and basic functionality)</li>
-<li data-section-id="1n3k7xw" data-start="3303" data-end="3353">contract (order processing and service delivery)</li>
-<li data-section-id="1sge6kg" data-start="3354" data-end="3420">consent (contact forms, newsletters, or optional communications)</li>
+<hr data-start="4050" data-end="4053">
+<h3 data-section-id="ylqobb" data-start="4055" data-end="4080">6. Legal Basis (GDPR)</h3>
+<p data-start="4082" data-end="4152">If you are located in the European Union, data processing is based on:</p>
+<ul data-start="4154" data-end="4354">
+<li data-section-id="1xlmhm1" data-start="4154" data-end="4232">legitimate interest (website analytics, security, and basic functionality)</li>
+<li data-section-id="4qmhpw" data-start="4233" data-end="4285">contract (order processing and service delivery)</li>
+<li data-section-id="ddqhmo" data-start="4286" data-end="4354">consent (contact forms, newsletters, or optional communications)</li>
 </ul>
-<hr data-start="3422" data-end="3425">
-<h2 data-section-id="kjvbge" data-start="3427" data-end="3451">7. Your Rights (GDPR)</h2>
-<p data-start="3453" data-end="3475">You have the right to:</p>
-<ul data-start="3476" data-end="3671">
-<li data-section-id="1s3oolb" data-start="3476" data-end="3514">request access to your personal data</li>
-<li data-section-id="1e20fta" data-start="3515" data-end="3560">request correction or deletion of your data</li>
-<li data-section-id="11d8x0l" data-start="3561" data-end="3596">object to processing of your data</li>
-<li data-section-id="1ofs0k2" data-start="3597" data-end="3627">withdraw consent at any time</li>
-<li data-section-id="9qmrqq" data-start="3628" data-end="3671">request data portability where applicable</li>
+<hr data-start="4356" data-end="4359">
+<h3 data-section-id="2mf519" data-start="4361" data-end="4386">7. Your Rights (GDPR)</h3>
+<p data-start="4388" data-end="4410">You have the right to:</p>
+<ul data-start="4412" data-end="4617">
+<li data-section-id="1j521kv" data-start="4412" data-end="4452">request access to your personal data</li>
+<li data-section-id="u5wadq" data-start="4453" data-end="4500">request correction or deletion of your data</li>
+<li data-section-id="1s2bdlx" data-start="4501" data-end="4538">object to processing of your data</li>
+<li data-section-id="16o62c2" data-start="4539" data-end="4571">withdraw consent at any time</li>
+<li data-section-id="n1108i" data-start="4572" data-end="4617">request data portability where applicable</li>
 </ul>
-<p data-start="3673" data-end="3708">Requests can be made by contacting:</p>
-<p data-start="3710" data-end="3732"><strong data-start="3710" data-end="3732"><a class="decorated-link cursor-pointer" rel="noopener" data-start="3712" data-end="3730">info@denatlahi.com</a></strong></p>
-<hr data-start="3734" data-end="3737">
-<h2 data-section-id="6qfb2v" data-start="3739" data-end="3759">8. Data Retention</h2>
-<ul data-start="3761" data-end="4065">
-<li data-section-id="11x1z44" data-start="3761" data-end="3862">Analytics data (page path, referrer, timestamp) may be stored indefinitely for historical analysis.</li>
-<li data-section-id="11uslnk" data-start="3863" data-end="3965">Contact form submissions are retained only as long as necessary to respond and manage communication.</li>
-<li data-section-id="15b9svb" data-start="3966" data-end="4065">Order and transaction-related data may be retained as required for legal and accounting purposes.</li>
+<p data-start="4619" data-end="4654">Requests can be made by contacting:</p>
+<p data-start="4656" data-end="4676"><a class="decorated-link cursor-pointer" rel="noopener" data-start="4656" data-end="4674">info@denatlahi.com</a></p>
+<hr data-start="4678" data-end="4681">
+<h3 data-section-id="1mo79jo" data-start="4683" data-end="4704">8. Data Retention</h3>
+<ul data-start="4706" data-end="5041">
+<li data-section-id="wjzfa6" data-start="4706" data-end="4834">Analytics data (page path, referrer, timestamp, and associated metadata) may be stored indefinitely for historical analysis.</li>
+<li data-section-id="qlv734" data-start="4835" data-end="4939">Contact form submissions are retained only as long as necessary to respond and manage communication.</li>
+<li data-section-id="rf7lgn" data-start="4940" data-end="5041">Order and transaction-related data may be retained as required for legal and accounting purposes.</li>
 </ul>
-<hr data-start="4067" data-end="4070">
-<h2 data-section-id="wezzsa" data-start="4072" data-end="4090">9. Data Sharing</h2>
-<p data-start="4092" data-end="4128">Personal data is not sold or rented.</p>
-<p data-start="4130" data-end="4221">Data may be shared only with service providers necessary to operate the website, including:</p>
-<ul data-start="4222" data-end="4300">
-<li data-section-id="77r0u1" data-start="4222" data-end="4257">Cloudflare (hosting and security)</li>
-<li data-section-id="1mxshad" data-start="4258" data-end="4300">Web3Forms (form processing and delivery)</li>
+<hr data-start="5043" data-end="5046">
+<h3 data-section-id="8lumll" data-start="5048" data-end="5067">9. Data Sharing</h3>
+<p data-start="5069" data-end="5105">Personal data is not sold or rented.</p>
+<p data-start="5107" data-end="5198">Data may be shared only with service providers necessary to operate the website, including:</p>
+<ul data-start="5200" data-end="5310">
+<li data-section-id="18227w9" data-start="5200" data-end="5237">Cloudflare (hosting and security)</li>
+<li data-section-id="1hajva" data-start="5238" data-end="5265">GoatCounter (analytics)</li>
+<li data-section-id="179tdvp" data-start="5266" data-end="5310">Web3Forms (form processing and delivery)</li>
 </ul>
-<p data-start="4302" data-end="4364">These providers process data under their own privacy policies.</p>
-<hr data-start="4366" data-end="4369">
-<h2 data-section-id="13vljvw" data-start="4371" data-end="4391">10. Data Security</h2>
-<p data-start="4393" data-end="4516">Reasonable technical and organizational measures are used to protect data against unauthorized access, alteration, or loss.</p>
-<p data-start="4518" data-end="4592">However, no method of transmission over the internet is completely secure.</p>
-<hr data-start="4594" data-end="4597">
-<h2 data-section-id="1kk34x5" data-start="4599" data-end="4629">11. International Transfers</h2>
-<p data-start="4631" data-end="4825">Your data may be processed outside your country of residence, including outside the European Economic Area (EEA), depending on the location of service providers such as Cloudflare and Web3Forms.</p>
-<p data-start="4827" data-end="4912">Appropriate safeguards are used where required under applicable data protection laws.</p>
-<hr data-start="4914" data-end="4917">
-<h2 data-section-id="1olyzs0" data-start="4919" data-end="4948">12. Changes to This Policy</h2>
-<p data-start="4950" data-end="5075">This Privacy Policy may be updated from time to time. Updates will be posted on this page with a revised “Last Updated” date.</p>
-<hr data-start="5077" data-end="5080">
-<h2 data-section-id="1w844a1" data-start="5082" data-end="5096">13. Contact</h2>
-<p data-start="5098" data-end="5140">For privacy-related questions or requests:</p>
-<p data-start="5142" data-end="5212"><strong data-start="5142" data-end="5152">E-post:</strong> <a class="decorated-link cursor-pointer" rel="noopener" data-start="5153" data-end="5171">info@denatlahi.com</a><br data-start="5171" data-end="5174"><strong data-start="5174" data-end="5186">Website:</strong> <a class="decorated-link" href="https://www.denatlahi.com/" target="_new" rel="noopener" data-start="5187" data-end="5212">https://www.denatlahi.com</a></p>
-<hr data-start="5214" data-end="5217">
-<h2 data-section-id="n8xjc0" data-start="5219" data-end="5231">Copyright</h2>
-<p data-start="5233" data-end="5383">All content on this website, including photographs and text, is protected by copyright and may not be used, copied, or distributed without permission.</p>
-<p data-start="5385" data-end="5424">© 2026 Denat Lahi. All rights reserved.</p>
+<p data-start="5312" data-end="5374">These providers process data under their own privacy policies.</p>
+<hr data-start="5376" data-end="5379">
+<h3 data-section-id="186iycv" data-start="5381" data-end="5402">10. Data Security</h3>
+<p data-start="5404" data-end="5527">Reasonable technical and organizational measures are used to protect data against unauthorized access, alteration, or loss.</p>
+<p data-start="5529" data-end="5603">However, no method of transmission over the internet is completely secure.</p>
+<hr data-start="5605" data-end="5608">
+<h3 data-section-id="1myu8h6" data-start="5610" data-end="5641">11. International Transfers</h3>
+<p data-start="5643" data-end="5851">Your data may be processed outside your country of residence, including outside the European Economic Area (EEA), depending on the location of service providers such as Cloudflare, GoatCounter, and Web3Forms.</p>
+<p data-start="5853" data-end="5938">Appropriate safeguards are used where required under applicable data protection laws.</p>
+<hr data-start="5940" data-end="5943">
+<h3 data-section-id="1ixf22r" data-start="5945" data-end="5975">12. Changes to This Policy</h3>
+<p data-start="5977" data-end="6102">This Privacy Policy may be updated from time to time. Updates will be posted on this page with a revised “Last Updated” date.</p>
+<hr data-start="6104" data-end="6107">
+<h3 data-section-id="onq8iy" data-start="6109" data-end="6124">13. Contact</h3>
+<p data-start="6126" data-end="6168">For privacy-related questions or requests:</p>
+<p data-start="6170" data-end="6234">E-post: <a class="decorated-link cursor-pointer" rel="noopener" data-start="6177" data-end="6195">info@denatlahi.com</a><br data-start="6195" data-end="6198">Website: <a class="decorated-link" href="https://www.denatlahi.com/" target="_new" rel="noopener" data-start="6207" data-end="6232">https://www.denatlahi.com</a></p>
+<hr data-start="6236" data-end="6239">
+<h3 data-section-id="du06xv" data-start="6241" data-end="6254">Copyright</h3>
+<p data-start="6256" data-end="6406">All content on this website, including photographs and text, is protected by copyright and may not be used, copied, or distributed without permission.</p>
+<p data-start="6408" data-end="6447" data-is-last-node="" data-is-only-node="">© 2026 Denat Lahi. All rights reserved.</p>
 <p>
 </p></div></div></div><div id="tab-1696156282-2-15" class="tab-pane fade half-internal-gutter single-block-padding"><div>
 				<div class="uncode_text_column"><div class="qMYqUG_convSearchResultHighlightRoot">
@@ -550,136 +562,151 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
 <div class="min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal outline-none keyboard-focused:focus-ring [.text-message+&amp;]:mt-1" dir="auto" tabindex="0" data-message-author-role="assistant" data-message-id="caf2353e-1d04-4411-9d3b-bf6bfabc5a55" data-message-model-slug="gpt-5-3-mini" data-turn-start-message="true">
 <div class="flex w-full flex-col gap-1 empty:hidden">
 <div class="markdown prose dark:prose-invert wrap-break-word w-full dark markdown-new-styling">
-<h1 data-section-id="14ctyka" data-start="137" data-end="156">Integritetspolicy</h1>
-<p data-start="158" data-end="236"><strong data-start="158" data-end="180">Senast uppdaterad:</strong> 12 juni 2026<br data-start="193" data-end="196"><strong data-start="196" data-end="210">Webbplats:</strong> <a class="decorated-link" href="https://www.denatlahi.com/" target="_new" rel="noopener" data-start="211" data-end="236">https://www.denatlahi.com</a></p>
-<p data-start="238" data-end="408">Denna integritetspolicy beskriver hur personuppgifter samlas in och behandlas när du använder denna webbplats. Genom att använda webbplatsen godkänner du villkoren nedan.</p>
-<hr data-start="410" data-end="413">
-<h2 data-section-id="1xxj9yf" data-start="415" data-end="441">1. Insamlad information</h2>
-<h3 data-section-id="9riw4q" data-start="443" data-end="478">1.1 Information du själv lämnar</h3>
-<p data-start="480" data-end="527">Du kan frivilligt lämna personuppgifter när du:</p>
-<ul data-start="528" data-end="663">
-<li data-section-id="sun8f1" data-start="528" data-end="569">kontaktar mig via formulär eller e-post</li>
-<li data-section-id="17igkep" data-start="570" data-end="614">gör beställningar av prints eller tjänster</li>
-<li data-section-id="1e9le6r" data-start="615" data-end="663">prenumererar på uppdateringar eller nyhetsbrev</li>
+<h2 class="PDq2pG_selectionAnchorContainer" data-section-id="1b8fsgp" data-start="0" data-end="20">Integritetspolicy</h2>
+<p data-start="22" data-end="102"><strong data-start="22" data-end="44">Senast uppdaterad:</strong> 25 juni 2026<br data-start="57" data-end="60"><strong data-start="60" data-end="74">Webbplats:</strong> <a class="decorated-link" href="https://www.denatlahi.com/" target="_new" rel="noopener" data-start="75" data-end="100">https://www.denatlahi.com</a></p>
+<p data-start="104" data-end="274">Denna integritetspolicy förklarar hur personuppgifter samlas in och behandlas när du använder denna webbplats. Genom att använda webbplatsen godkänner du villkoren nedan.</p>
+<hr data-start="276" data-end="279">
+<h3 data-section-id="16xxqw4" data-start="281" data-end="308">1. Insamlad information</h3>
+<h4 data-start="310" data-end="346">1.1 Information du själv lämnar</h4>
+<p data-start="348" data-end="395">Du kan frivilligt lämna personuppgifter när du:</p>
+<ul data-start="397" data-end="565">
+<li data-section-id="q3nm7z" data-start="397" data-end="427">kontaktar mig via formulär</li>
+<li data-section-id="emdp6p" data-start="428" data-end="475">gör beställningar av prints eller produkter</li>
+<li data-section-id="1affwcz" data-start="476" data-end="526">prenumererar på uppdateringar eller nyhetsbrev</li>
+<li data-section-id="1klbr1l" data-start="527" data-end="565">skickar e-post eller förfrågningar</li>
 </ul>
-<p data-start="665" data-end="685">Detta kan inkludera:</p>
-<ul data-start="686" data-end="757">
-<li data-section-id="1j3bszo" data-start="686" data-end="692">namn</li>
-<li data-section-id="k2xcve" data-start="693" data-end="707">e-postadress</li>
-<li data-section-id="9vgqdj" data-start="708" data-end="720">meddelande</li>
-<li data-section-id="pnmerx" data-start="721" data-end="757">leveransadress (vid beställningar)</li>
+<p data-start="567" data-end="587">Detta kan inkludera:</p>
+<ul data-start="589" data-end="676">
+<li data-section-id="19l1ojo" data-start="589" data-end="597">namn</li>
+<li data-section-id="1q1hiay" data-start="598" data-end="614">e-postadress</li>
+<li data-section-id="4bdzza" data-start="615" data-end="637">meddelandeinnehåll</li>
+<li data-section-id="ofndcd" data-start="638" data-end="676">leveransadress (vid beställningar)</li>
 </ul>
-<hr data-start="759" data-end="762">
-<h3 data-section-id="122ox24" data-start="764" data-end="805">1.2 Automatiskt insamlad användardata</h3>
-<p data-start="807" data-end="954">När du besöker webbplatsen samlas begränsad användardata in för statistik och förbättring av webbplatsen via ett serversystem (Cloudflare Workers).</p>
-<p data-start="956" data-end="985">Denna information inkluderar:</p>
-<ul data-start="986" data-end="1100">
-<li data-section-id="6wgjy2" data-start="986" data-end="1018">besökt sida (t.ex. <code data-start="1007" data-end="1017">/svenska</code>)</li>
-<li data-section-id="1nxttky" data-start="1019" data-end="1077">hänvisande källa (t.ex. Instagram eller annan webbplats)</li>
-<li data-section-id="jxd5hb" data-start="1078" data-end="1100">tidpunkt för besöket</li>
+<hr data-start="678" data-end="681">
+<h4 data-start="683" data-end="725">1.2 Automatiskt insamlad användardata</h4>
+<p data-start="727" data-end="850">När du besöker webbplatsen samlas begränsad användardata in för analys via GoatCounter (en integritetsvänlig analystjänst).</p>
+<p data-start="852" data-end="889">Följande information kan registreras:</p>
+<ul data-start="891" data-end="1278">
+<li data-section-id="1nnrcib" data-start="891" data-end="918">sidväg (t.ex. /svenska)</li>
+<li data-section-id="1vxpi0y" data-start="919" data-end="979">hänvisande källa (t.ex. Instagram eller annan webbplats)</li>
+<li data-section-id="6mh6kv" data-start="980" data-end="1007">tidsstämpel för besöket</li>
+<li data-section-id="1vml336" data-start="1008" data-end="1070">webbläsare och enhetstyp (anonymiserad användaragentsdata)</li>
+<li data-section-id="1d6wbrn" data-start="1071" data-end="1087">skärmstorlek</li>
+<li data-section-id="1vsgvx4" data-start="1088" data-end="1128">land (baserat på IP-geolokalisering)</li>
+<li data-section-id="1jegk8i" data-start="1129" data-end="1157">region (om tillgängligt)</li>
+<li data-section-id="nnnzma" data-start="1158" data-end="1201">språk (från webbläsarens inställningar)</li>
+<li data-section-id="yc0ta9" data-start="1202" data-end="1278">sessionsinformation (för att särskilja unika besökare upp till 8 timmar)</li>
 </ul>
-<p data-start="1102" data-end="1212">Ingen information som direkt kan identifiera dig, såsom namn eller e-postadress, samlas in genom detta system.</p>
-<hr data-start="1214" data-end="1217">
-<h3 data-section-id="170nmqc" data-start="1219" data-end="1257">1.3 Tekniska uppgifter och hosting</h3>
-<p data-start="1259" data-end="1431">Webbplatsen är hostad via Cloudflare. När du besöker sidan kan Cloudflare automatiskt behandla teknisk information såsom IP-adress, enhetstyp, webbläsare och säkerhetsdata.</p>
-<p data-start="1433" data-end="1508">Denna behandling sker av Cloudflare som teknisk leverantör och används för:</p>
-<ul data-start="1509" data-end="1582">
-<li data-section-id="ze30hv" data-start="1509" data-end="1542">säkerhet och skydd mot missbruk</li>
-<li data-section-id="kg4g2z" data-start="1543" data-end="1564">drift och prestanda</li>
-<li data-section-id="1xe20er" data-start="1565" data-end="1582">nätverksrouting</li>
+<p data-start="1280" data-end="1391">Uppgifterna används endast för att förstå hur webbplatsen används och för att förbättra innehåll och prestanda.</p>
+<p data-start="1393" data-end="1489">Ingen information som namn, e-post eller direkt identifierande uppgifter samlas in via analysen.</p>
+<hr data-start="1491" data-end="1494">
+<h4 data-start="1496" data-end="1529">1.3 Hosting och teknisk data</h4>
+<p data-start="1531" data-end="1733">Webbplatsen är hostad på Cloudflare-infrastruktur. När du besöker sidan kan Cloudflare automatiskt behandla teknisk data såsom IP-adress, enhetsinformation, webbläsartyp och säkerhetsrelaterad metadata.</p>
+<p data-start="1735" data-end="1761">Denna behandling sker för:</p>
+<ul data-start="1763" data-end="1853">
+<li data-section-id="16a48ub" data-start="1763" data-end="1798">säkerhet och skydd mot missbruk</li>
+<li data-section-id="bhzx6l" data-start="1799" data-end="1832">nätverksrouting och prestanda</li>
+<li data-section-id="3juxcw" data-start="1833" data-end="1853">systemstabilitet</li>
 </ul>
-<p data-start="1584" data-end="1688">Denna information används inte av webbplatsen för identifiering eller profilering av enskilda användare.</p>
-<hr data-start="1690" data-end="1693">
-<h2 data-section-id="qcr7n6" data-start="1695" data-end="1720">2. Cookies och lagring</h2>
-<p data-start="1722" data-end="1835">Webbplatsen kan använda nödvändiga cookies eller webbläsarlagring för grundläggande funktionalitet och sessioner.</p>
-<p data-start="1837" data-end="1933">Du kan själv stänga av cookies i din webbläsare, men detta kan påverka hur webbplatsen fungerar.</p>
-<hr data-start="1935" data-end="1938">
-<h2 data-section-id="sgreum" data-start="1940" data-end="1965">3. Analys och spårning</h2>
-<p data-start="1967" data-end="2059">Webbplatsen använder ett enkelt analyssystem som körs på serversidan via Cloudflare Workers.</p>
-<p data-start="2061" data-end="2082">Systemet registrerar:</p>
-<ul data-start="2083" data-end="2136">
-<li data-section-id="ggucui" data-start="2083" data-end="2096">besökt sida</li>
-<li data-section-id="oyx946" data-start="2097" data-end="2115">hänvisande källa</li>
-<li data-section-id="1i7ycge" data-start="2116" data-end="2136">tidpunkt för besök</li>
+<p data-start="1855" data-end="1930">Denna data används inte av webbplatsen för identifiering eller profilering.</p>
+<hr data-start="1932" data-end="1935">
+<h3 data-section-id="1k8b18x" data-start="1937" data-end="1963">2. Cookies och lagring</h3>
+<p data-start="1965" data-end="2014">Webbplatsen använder inte marknadsföringscookies.</p>
+<p data-start="2016" data-end="2176">GoatCounter kan använda minimala tekniska mekanismer för att skilja sessioner (upp till 8 timmar) så att upprepade sidladdningar inte räknas som separata besök.</p>
+<p data-start="2178" data-end="2301">Webbplatsen använder även webbläsarens lagring (sessionStorage) för funktioner som språkinställningar och navigationsflöde.</p>
+<p data-start="2303" data-end="2414">Du kan själv hantera eller inaktivera cookies och lagring i din webbläsare. Detta kan påverka vissa funktioner.</p>
+<hr data-start="2416" data-end="2419">
+<h3 data-section-id="3jq1ot" data-start="2421" data-end="2447">3. Analys och spårning</h3>
+<p data-start="2449" data-end="2524">Denna webbplats använder GoatCounter för integritetsanpassad webbstatistik.</p>
+<p data-start="2526" data-end="2551">GoatCounter kan samla in:</p>
+<ul data-start="2553" data-end="2711">
+<li data-section-id="1yk2qrb" data-start="2553" data-end="2570">besökta sidor</li>
+<li data-section-id="1mmvrom" data-start="2571" data-end="2591">hänvisande källa</li>
+<li data-section-id="jxd72m" data-start="2592" data-end="2614">tidpunkt för besök</li>
+<li data-section-id="2jvwgc" data-start="2615" data-end="2646">ungefärligt land och region</li>
+<li data-section-id="13mr8fj" data-start="2647" data-end="2675">webbläsare och enhetstyp</li>
+<li data-section-id="1d6wbrn" data-start="2676" data-end="2692">skärmstorlek</li>
+<li data-section-id="f1nol5" data-start="2693" data-end="2711">språkpreferens</li>
 </ul>
-<p data-start="2138" data-end="2232">Inga spårningscookies eller permanenta identifierare används för att följa enskilda användare.</p>
-<hr data-start="2234" data-end="2237">
-<h2 data-section-id="ih6v4x" data-start="2239" data-end="2272">4. Web3Forms (kontaktformulär)</h2>
-<p data-start="2274" data-end="2341">Denna webbplats använder Web3Forms för att hantera kontaktformulär.</p>
-<p data-start="2343" data-end="2420">När du skickar in ett formulär kan följande uppgifter behandlas av Web3Forms:</p>
-<ul data-start="2421" data-end="2490">
-<li data-section-id="1j3bszo" data-start="2421" data-end="2427">namn</li>
-<li data-section-id="k2xcve" data-start="2428" data-end="2442">e-postadress</li>
-<li data-section-id="9vgqdj" data-start="2443" data-end="2455">meddelande</li>
-<li data-section-id="ux1fyb" data-start="2456" data-end="2490">annan information du själv anger</li>
+<p data-start="2713" data-end="2811">GoatCounter använder inte annonscookies, cross-site tracking eller fingeravtrycksbaserad spårning.</p>
+<p data-start="2813" data-end="2867">Mer information: <a class="decorated-link" href="https://www.goatcounter.com/privacy" target="_new" rel="noopener" data-start="2830" data-end="2865">https://www.goatcounter.com/privacy</a></p>
+<hr data-start="2869" data-end="2872">
+<h3 data-section-id="bbf7pe" data-start="2874" data-end="2908">4. Web3Forms (kontaktformulär)</h3>
+<p data-start="2910" data-end="2973">Webbplatsen använder Web3Forms för att hantera kontaktformulär.</p>
+<p data-start="2975" data-end="3036">När du skickar ett formulär kan följande uppgifter behandlas:</p>
+<ul data-start="3038" data-end="3115">
+<li data-section-id="19l1ojo" data-start="3038" data-end="3046">namn</li>
+<li data-section-id="1q1hiay" data-start="3047" data-end="3063">e-postadress</li>
+<li data-section-id="r55k3r" data-start="3064" data-end="3078">meddelande</li>
+<li data-section-id="jsl2xd" data-start="3079" data-end="3115">övrig information du själv anger</li>
 </ul>
-<p data-start="2492" data-end="2582">Web3Forms behandlar denna information på sina servrar för att leverera meddelanden säkert.</p>
-<p data-start="2584" data-end="2699">Genom att använda formuläret godkänner du att dina uppgifter behandlas av Web3Forms enligt deras integritetspolicy:</p>
-<p data-start="2701" data-end="2730"><a class="decorated-link" href="https://web3forms.com/privacy" target="_new" rel="noopener" data-start="2701" data-end="2730">https://web3forms.com/privacy</a></p>
-<hr data-start="2732" data-end="2735">
-<h2 data-section-id="10g5i7t" data-start="2737" data-end="2766">5. Hur information används</h2>
-<p data-start="2768" data-end="2796">Information används för att:</p>
-<ul data-start="2797" data-end="2962">
-<li data-section-id="l378ti" data-start="2797" data-end="2837">svara på meddelanden och förfrågningar</li>
-<li data-section-id="7p6z1w" data-start="2838" data-end="2874">hantera beställningar och tjänster</li>
-<li data-section-id="i2pnxc" data-start="2875" data-end="2921">förbättra webbplatsens innehåll och funktion</li>
-<li data-section-id="gp6v6b" data-start="2922" data-end="2962">säkerställa säker drift av webbplatsen</li>
+<p data-start="3117" data-end="3205">Web3Forms behandlar denna data på sina egna servrar för att leverera meddelanden säkert.</p>
+<p data-start="3207" data-end="3344">Genom att skicka ett formulär godkänner du att dina uppgifter behandlas enligt deras integritetspolicy:<br data-start="3310" data-end="3313"><a class="decorated-link" href="https://web3forms.com/privacy" target="_new" rel="noopener" data-start="3313" data-end="3342">https://web3forms.com/privacy</a></p>
+<hr data-start="3346" data-end="3349">
+<h3 data-section-id="1jjlpqe" data-start="3351" data-end="3374">5. Hur data används</h3>
+<p data-start="3376" data-end="3402">Uppgifter används för att:</p>
+<ul data-start="3404" data-end="3598">
+<li data-section-id="mus1k6" data-start="3404" data-end="3446">svara på meddelanden och förfrågningar</li>
+<li data-section-id="1c06f1j" data-start="3447" data-end="3500">tillhandahålla tjänster och hantera beställningar</li>
+<li data-section-id="8i5jds" data-start="3501" data-end="3549">förbättra webbplatsens innehåll och funktion</li>
+<li data-section-id="bfo1z5" data-start="3550" data-end="3598">upprätthålla säkerhet och förhindra missbruk</li>
 </ul>
-<hr data-start="2964" data-end="2967">
-<h2 data-section-id="6xw6pc" data-start="2969" data-end="2996">6. Rättslig grund (GDPR)</h2>
-<p data-start="2998" data-end="3061">Om du befinner dig inom EU behandlas dina uppgifter baserat på:</p>
-<ul data-start="3062" data-end="3206">
-<li data-section-id="69ykaz" data-start="3062" data-end="3115">berättigat intresse (statistik, säkerhet och drift)</li>
-<li data-section-id="mtg69x" data-start="3116" data-end="3156">avtal (vid beställningar och tjänster)</li>
-<li data-section-id="w3ep2w" data-start="3157" data-end="3206">samtycke (vid kontaktformulär eller nyhetsbrev)</li>
+<hr data-start="3600" data-end="3603">
+<h3 data-section-id="14qqo0j" data-start="3605" data-end="3633">6. Rättslig grund (GDPR)</h3>
+<p data-start="3635" data-end="3703">Om du befinner dig inom EU/EES behandlas personuppgifter baserat på:</p>
+<ul data-start="3705" data-end="3894">
+<li data-section-id="ww4rp" data-start="3705" data-end="3783">berättigat intresse (webbstatistik, säkerhet och grundläggande funktioner)</li>
+<li data-section-id="13f9alq" data-start="3784" data-end="3835">avtal (orderhantering och leverans av tjänster)</li>
+<li data-section-id="1wswq5j" data-start="3836" data-end="3894">samtycke (kontaktformulär och frivillig kommunikation)</li>
 </ul>
-<hr data-start="3208" data-end="3211">
-<h2 data-section-id="mrcl7s" data-start="3213" data-end="3235">7. Dina rättigheter</h2>
-<p data-start="3237" data-end="3253">Du har rätt att:</p>
-<ul data-start="3254" data-end="3425">
-<li data-section-id="qjpuhp" data-start="3254" data-end="3297">begära tillgång till dina personuppgifter</li>
-<li data-section-id="11d8284" data-start="3298" data-end="3330">begära rättelse eller radering</li>
-<li data-section-id="px6qmg" data-start="3331" data-end="3355">invända mot behandling</li>
-<li data-section-id="ljytq2" data-start="3356" data-end="3376">återkalla samtycke</li>
-<li data-section-id="1kzufkv" data-start="3377" data-end="3425">begära dataportabilitet där det är tillämpligt</li>
+<hr data-start="3896" data-end="3899">
+<h3 data-section-id="3jjp0r" data-start="3901" data-end="3931">7. Dina rättigheter (GDPR)</h3>
+<p data-start="3933" data-end="3949">Du har rätt att:</p>
+<ul data-start="3951" data-end="4132">
+<li data-section-id="w10gt" data-start="3951" data-end="3996">begära tillgång till dina personuppgifter</li>
+<li data-section-id="1rcfy9w" data-start="3997" data-end="4031">begära rättelse eller radering</li>
+<li data-section-id="tn5ljc" data-start="4032" data-end="4058">invända mot behandling</li>
+<li data-section-id="wtb0je" data-start="4059" data-end="4081">återkalla samtycke</li>
+<li data-section-id="1mc9crj" data-start="4082" data-end="4132">begära dataportabilitet där det är tillämpligt</li>
 </ul>
-<p data-start="3427" data-end="3443">Kontakta mig på:</p>
-<p data-start="3445" data-end="3467"><strong data-start="3445" data-end="3467"><a class="decorated-link cursor-pointer" rel="noopener" data-start="3447" data-end="3465">info@denatlahi.com</a></strong></p>
-<hr data-start="3469" data-end="3472">
-<h2 data-section-id="1341rj5" data-start="3474" data-end="3491">8. Lagringstid</h2>
-<ul data-start="3493" data-end="3701">
-<li data-section-id="bq4g67" data-start="3493" data-end="3563">Analysdata (sida, referrer, tid) kan sparas obegränsat för statistik</li>
-<li data-section-id="1vc1w39" data-start="3564" data-end="3639">Kontaktformulär sparas endast så länge det behövs för att hantera ärenden</li>
-<li data-section-id="1cusaf6" data-start="3640" data-end="3701">Beställningsdata sparas enligt lagkrav och bokföringsregler</li>
+<p data-start="4134" data-end="4165">Förfrågningar kan skickas till:</p>
+<p data-start="4167" data-end="4187"><a class="decorated-link cursor-pointer" rel="noopener" data-start="4167" data-end="4185">info@denatlahi.com</a></p>
+<hr data-start="4189" data-end="4192">
+<h3 data-section-id="kcmgci" data-start="4194" data-end="4212">8. Lagringstid</h3>
+<ul data-start="4214" data-end="4507">
+<li data-section-id="vx99mb" data-start="4214" data-end="4339">Analysdata (sidväg, hänvisning, tidsstämpel och relaterad metadata) kan lagras utan tidsbegränsning för historisk analys.</li>
+<li data-section-id="1ta1du1" data-start="4340" data-end="4424">Kontaktformulär sparas endast så länge det behövs för att hantera kommunikation.</li>
+<li data-section-id="1charcd" data-start="4425" data-end="4507">Order- och transaktionsdata lagras enligt krav för bokföring och lagstiftning.</li>
 </ul>
-<hr data-start="3703" data-end="3706">
-<h2 data-section-id="hs7yh6" data-start="3708" data-end="3736">9. Delning av information</h2>
-<p data-start="3738" data-end="3767">Personuppgifter säljs aldrig.</p>
-<p data-start="3769" data-end="3849">Uppgifter kan delas med tjänsteleverantörer som behövs för drift av webbplatsen:</p>
-<ul data-start="3850" data-end="3921">
-<li data-section-id="a9toky" data-start="3850" data-end="3885">Cloudflare (hosting och säkerhet)</li>
-<li data-section-id="ooi4zp" data-start="3886" data-end="3921">Web3Forms (hantering av formulär)</li>
+<hr data-start="4509" data-end="4512">
+<h3 data-section-id="cqi9x1" data-start="4514" data-end="4536">9. Delning av data</h3>
+<p data-start="4538" data-end="4598">Personuppgifter säljs eller delas inte i kommersiellt syfte.</p>
+<p data-start="4600" data-end="4650">Data kan delas med nödvändiga tjänsteleverantörer:</p>
+<ul data-start="4652" data-end="4755">
+<li data-section-id="zc7ynm" data-start="4652" data-end="4689">Cloudflare (hosting och säkerhet)</li>
+<li data-section-id="1x2xua4" data-start="4690" data-end="4721">GoatCounter (webbstatistik)</li>
+<li data-section-id="tvz0ya" data-start="4722" data-end="4755">Web3Forms (formulärhantering)</li>
 </ul>
-<p data-start="3923" data-end="3988">Dessa aktörer behandlar data enligt sina egna integritetspolicys.</p>
-<hr data-start="3990" data-end="3993">
-<h2 data-section-id="69tqjc" data-start="3995" data-end="4010">10. Säkerhet</h2>
-<p data-start="4012" data-end="4138">Lämpliga tekniska och organisatoriska åtgärder används för att skydda information mot obehörig åtkomst, ändring eller förlust.</p>
-<p data-start="4140" data-end="4189">Ingen överföring via internet är dock helt säker.</p>
-<hr data-start="4191" data-end="4194">
-<h2 data-section-id="ull5vi" data-start="4196" data-end="4231">11. Internationella överföringar</h2>
-<p data-start="4233" data-end="4351">Dina uppgifter kan behandlas utanför EU/EES beroende på var leverantörer som Cloudflare och Web3Forms har sina system.</p>
-<p data-start="4353" data-end="4424">Lämpliga skyddsåtgärder används enligt gällande dataskyddslagstiftning.</p>
-<hr data-start="4426" data-end="4429">
-<h2 data-section-id="j33ydc" data-start="4431" data-end="4457">12. Ändringar i policyn</h2>
-<p data-start="4459" data-end="4559">Denna integritetspolicy kan uppdateras vid behov. Ändringar publiceras på denna sida med nytt datum.</p>
-<hr data-start="4561" data-end="4564">
-<h2 data-section-id="1dglbxl" data-start="4566" data-end="4580">13. Kontakt</h2>
-<p data-start="4582" data-end="4629">För frågor om integritet eller personuppgifter:</p>
-<p data-start="4631" data-end="4704"><strong data-start="4631" data-end="4642">E-post:</strong> <a class="decorated-link cursor-pointer" rel="noopener" data-start="4643" data-end="4661">info@denatlahi.com</a><br data-start="4661" data-end="4664"><strong data-start="4664" data-end="4678">Webbplats:</strong> <a class="decorated-link" href="https://www.denatlahi.com/" target="_new" rel="noopener" data-start="4679" data-end="4704">https://www.denatlahi.com</a></p>
-<hr data-start="4706" data-end="4709">
-<h2 data-section-id="170vfr8" data-start="4711" data-end="4725">Upphovsrätt</h2>
-<p data-start="4727" data-end="4869">Allt innehåll på webbplatsen, inklusive fotografier och texter, är skyddat av upphovsrätt och får inte kopieras eller användas utan tillstånd.</p>
-<p data-start="4871" data-end="4919" data-is-last-node="" data-is-only-node="">© 2026 Denat Lahi. Alla rättigheter förbehållna.</p>
+<p data-start="4757" data-end="4822">Dessa aktörer behandlar data enligt sina egna integritetspolicys.</p>
+<hr data-start="4824" data-end="4827">
+<h3 data-section-id="4ypy2j" data-start="4829" data-end="4845">10. Säkerhet</h3>
+<p data-start="4847" data-end="4966">Lämpliga tekniska och organisatoriska åtgärder används för att skydda data mot obehörig åtkomst, ändring eller förlust.</p>
+<p data-start="4968" data-end="5018">Ingen överföring över internet är dock helt säker.</p>
+<hr data-start="5020" data-end="5023">
+<h3 data-section-id="1943s2l" data-start="5025" data-end="5061">11. Internationella överföringar</h3>
+<p data-start="5063" data-end="5230">Dina uppgifter kan behandlas utanför ditt hemland, inklusive utanför EU/EES, beroende på var tjänsteleverantörer som Cloudflare, GoatCounter och Web3Forms är baserade.</p>
+<p data-start="5232" data-end="5303">Lämpliga skyddsåtgärder används enligt gällande dataskyddslagstiftning.</p>
+<hr data-start="5305" data-end="5308">
+<h3 data-section-id="2ddlz7" data-start="5310" data-end="5337">12. Ändringar i policyn</h3>
+<p data-start="5339" data-end="5445">Denna integritetspolicy kan uppdateras vid behov. Ändringar publiceras på denna sida med uppdaterat datum.</p>
+<hr data-start="5447" data-end="5450">
+<h3 data-section-id="5w7g6i" data-start="5452" data-end="5467">13. Kontakt</h3>
+<p data-start="5469" data-end="5494">För frågor om integritet:</p>
+<p data-start="5496" data-end="5563">E-post: <a class="decorated-link cursor-pointer" rel="noopener" data-start="5504" data-end="5522">info@denatlahi.com</a><br data-start="5522" data-end="5525">Webbplats: <a class="decorated-link" href="https://www.denatlahi.com/" target="_new" rel="noopener" data-start="5536" data-end="5561">https://www.denatlahi.com</a></p>
+<hr data-start="5565" data-end="5568">
+<h3 data-section-id="jizy6f" data-start="5570" data-end="5585">Upphovsrätt</h3>
+<p data-start="5587" data-end="5744">Allt innehåll på denna webbplats, inklusive fotografier och texter, skyddas av upphovsrätt och får inte användas, kopieras eller distribueras utan tillstånd.</p>
+<p data-start="5746" data-end="5794" data-is-last-node="" data-is-only-node="">© 2026 Denat Lahi. Alla rättigheter förbehållna.</p>
 </div>
 </div>
 </div>
@@ -754,12 +781,12 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
         <!-- OVERLAY (positioned; interactive surface) -->
         <div class="trp-language-switcher trp-ls-dropdown trp-shortcode-switcher trp-shortcode-overlay trp-open-on-hover" role="navigation" aria-label="Webbplatsens språkväljare" data-no-translation>
                 <div class="trp-current-language-item__wrapper">
-        <div class="trp-language-item trp-language-item__default trp-language-item__current" data-no-translation role="button" aria-expanded="false" tabindex="0" aria-label="Byt språk" aria-controls="trp-shortcode-dropdown-6a2c080605270"><img decoding="async" src="https://denatlahi.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/sv_SE.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy"><span class="trp-language-item-name">Swedish</span></div>                    <svg class="trp-shortcode-arrow" width="20" height="20" viewbox="0 0 20 21" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+        <div class="trp-language-item trp-language-item__default trp-language-item__current" data-no-translation role="button" aria-expanded="false" tabindex="0" aria-label="Byt språk" aria-controls="trp-shortcode-dropdown-6a3d44ef3a5b3"><img decoding="async" src="https://denatlahi.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/sv_SE.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy"><span class="trp-language-item-name">Swedish</span></div>                    <svg class="trp-shortcode-arrow" width="20" height="20" viewbox="0 0 20 21" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 8L10 13L15 8" stroke="var(--text)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
             </div>
     
-            <div class="trp-switcher-dropdown-list" id="trp-shortcode-dropdown-6a2c080605270" role="group" aria-label="Tillgängliga språk" hidden inert>
+            <div class="trp-switcher-dropdown-list" id="trp-shortcode-dropdown-6a3d44ef3a5b3" role="group" aria-label="Tillgängliga språk" hidden inert>
                                                             <a class="trp-language-item" href="https://denatlahi.com/privacy-policy/" title="English">
                             <img decoding="async" src="https://denatlahi.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_GB.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy">                                                            <span class="trp-language-item-name" data-no-translation>English</span>
                                                                                 </a>
@@ -823,12 +850,12 @@ var SiteParameters = {"days":"days","hours":"hours","minutes":"minutes","seconds
         <!-- OVERLAY (positioned; interactive surface) -->
         <div class="trp-language-switcher trp-ls-dropdown trp-shortcode-switcher trp-shortcode-overlay trp-open-on-hover" role="navigation" aria-label="Webbplatsens språkväljare" data-no-translation>
                 <div class="trp-current-language-item__wrapper">
-        <div class="trp-language-item trp-language-item__default trp-language-item__current" data-no-translation role="button" aria-expanded="false" tabindex="0" aria-label="Byt språk" aria-controls="trp-shortcode-dropdown-6a2c080609dd9"><img decoding="async" src="https://denatlahi.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/sv_SE.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy"><span class="trp-language-item-name">Swedish</span></div>                    <svg class="trp-shortcode-arrow" width="20" height="20" viewbox="0 0 20 21" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+        <div class="trp-language-item trp-language-item__default trp-language-item__current" data-no-translation role="button" aria-expanded="false" tabindex="0" aria-label="Byt språk" aria-controls="trp-shortcode-dropdown-6a3d44ef3f5e8"><img decoding="async" src="https://denatlahi.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/sv_SE.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy"><span class="trp-language-item-name">Swedish</span></div>                    <svg class="trp-shortcode-arrow" width="20" height="20" viewbox="0 0 20 21" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 8L10 13L15 8" stroke="var(--text)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
             </div>
     
-            <div class="trp-switcher-dropdown-list" id="trp-shortcode-dropdown-6a2c080609dd9" role="group" aria-label="Tillgängliga språk" hidden inert>
+            <div class="trp-switcher-dropdown-list" id="trp-shortcode-dropdown-6a3d44ef3f5e8" role="group" aria-label="Tillgängliga språk" hidden inert>
                                                             <a class="trp-language-item" href="https://denatlahi.com/privacy-policy/" title="English">
                             <img decoding="async" src="https://denatlahi.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_GB.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy">                                                            <span class="trp-language-item-name" data-no-translation>English</span>
                                                                                 </a>
@@ -990,7 +1017,7 @@ var _wpmejsSettings = {"pluginPath":"/wp-includes/js/mediaelement/","classPrefix
 //# sourceURL=mediaelement-js-extra
 </script>
 <script id="wp-mediaelement-js" src="https://denatlahi.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=7.0"></script>
-<script id="uncode-plugins-js" src="https://denatlahi.com/wp-content/themes/uncode/library/js/plugins.js?ver=1194598930"></script>
-<script id="uncode-app-js" src="https://denatlahi.com/wp-content/themes/uncode/library/js/app.js?ver=1194598930"></script>
+<script id="uncode-plugins-js" src="https://denatlahi.com/wp-content/themes/uncode/library/js/plugins.js?ver=2004450729"></script>
+<script id="uncode-app-js" src="https://denatlahi.com/wp-content/themes/uncode/library/js/app.js?ver=2004450729"></script>
 <script></script></body>
 </html>
