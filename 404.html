@@ -81,20 +81,6 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Redirect to 404 page if page fails to load properly
-window.addEventListener("load", async function () {
-  // Determine correct 404 path based on current language directory
-  const isSwedishPath = window.location.pathname.startsWith('/svenska');
-  const errorPage = isSwedishPath ? 'https://denatlahi.com/svenska/404-error' : 'https://denatlahi.com/404-error';
-
-  try {
-    const res = await fetch(window.location.href, { method: 'HEAD' });
-    if (!res.ok) {
-      window.location.replace(errorPage);
-    }
-  } catch (e) {
-    window.location.replace(errorPage);
-  }
 });</script><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
 	<!-- This site is optimized with the Yoast SEO plugin v27.7 - https://yoast.com/product/yoast-seo-wordpress/ -->
