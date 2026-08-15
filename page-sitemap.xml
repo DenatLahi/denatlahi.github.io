@@ -1817,8 +1817,36 @@
 		<lastmod>2026-08-14T23:37:10+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://denatlahi.com/press-photos/</loc>
+		<lastmod>2026-08-14T23:54:26+00:00</lastmod>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/08/Denat_Lahi_Portrait_2.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/08/Denat-Lahi-Portrait-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/08/Denat_Lahi_Portrait_2-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/08/Denat_Lahi_Portrait_Color-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-Wildlife-Photographer-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-1024x683.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/IMG_2344-2-01-40-08_1-1024x576.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://denatlahi.com/about/</loc>
-		<lastmod>2026-08-14T23:43:52+00:00</lastmod>
+		<lastmod>2026-08-15T00:03:32+00:00</lastmod>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-Wildlife-Photographer.jpg</image:loc>
 		</image:image>
@@ -1874,9 +1902,6 @@
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/08/Denat-Lahi-Selfie-768x1024.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/08/DenatLahi_MG_9608-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/FlOLiw-WQAAKAHc-1024x512.jpg</image:loc>
 		</image:image>
 		<image:image>
@@ -1923,34 +1948,6 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://denatlahi.com/wp-content/uploads/2026/03/Denat-Lahi-Forelasning.4.image_-1024x479.png</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://denatlahi.com/press-photos/</loc>
-		<lastmod>2026-08-14T23:54:26+00:00</lastmod>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/08/Denat_Lahi_Portrait_2.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/08/Denat-Lahi-Portrait-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/08/Denat_Lahi_Portrait_2-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/08/Denat_Lahi_Portrait_Color-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-Wildlife-Photographer-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/05/Denat-Lahi-1024x683.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/denat-lahi-naturfotograf-teknik-lodjur-1024x576.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://denatlahi.com/wp-content/uploads/2026/04/IMG_2344-2-01-40-08_1-1024x576.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
